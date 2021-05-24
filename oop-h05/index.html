@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+<link rel="preconnect" href="//fonts.loli.net" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/favicon-16x16-next.png">
+  <link rel="mask-icon" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/logo.svg" color="#222">
+  <meta name="google-site-verification" content="x9QrCFUQQjnZBdHkQ0mqAkg6gfGFETfoVXHE3BzvAnk">
+  <meta name="baidu-site-verification" content="code-KXBxipeAZA">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.loli.net/css?family=Monta:300,300italic,400,400italic,700,700italic%7CLobster+two:300,300italic,400,400italic,700,700italic%7CRoboto+Slab:300,300italic,400,400italic,700,700italic%7CPT+Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.superpung.xyz","root":"/","images":"/images","scheme":"Pisces","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"manual"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="OOP h05">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第一个 Java 小游戏">
+<meta property="og:url" content="https://blog.superpung.xyz/oop-h05/">
+<meta property="og:site_name" content="SuperPung">
+<meta property="og:description" content="OOP h05">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-15T10:31:11.000Z">
+<meta property="article:modified_time" content="2021-03-19T05:18:55.794Z">
+<meta property="article:author" content="SUPER">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.superpung.xyz/oop-h05/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script><script src="https://super-bucket2-1305010619.cos.ap-beijing.myqcloud.com/super_live2d/autoload.js"></script>
+
+<title>第一个 Java 小游戏 | SuperPung</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168209848-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-168209848-1');
+      }
+    </script>
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?9782e47b62b25abcec3da362ad68042b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="SuperPung" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">SuperPung</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Follow Your Heart</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-lover"><a href="/lover/" rel="section"><i class="fa fa-heart fa-fw"></i>Lover</a></li>
+        <li class="menu-item menu-item-friends"><a href="/links/" rel="section"><i class="fas fa-handshake fa-fw"></i>Friends</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0x00-%E5%88%86%E6%9E%90"><span class="nav-text">0x00 分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x01-Base"><span class="nav-text">0x01 Base</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x02-WarFactory-amp-Barrack"><span class="nav-text">0x02 WarFactory&amp;Barrack</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x03-Tank-amp-Soldier-amp-Dog"><span class="nav-text">0x03 Tank&amp;Soldier&amp;Dog</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x04-HeavyTank-amp-MediumTank"><span class="nav-text">0x04 HeavyTank&amp;MediumTank</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x05-RifleSoldier-amp-RPGSoldier"><span class="nav-text">0x05 RifleSoldier&amp;RPGSoldier</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x06-Test"><span class="nav-text">0x06 Test</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="SUPER"
+      src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/avatar.png">
+  <p class="site-author-name" itemprop="name">SUPER</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">80</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/SuperPung" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;SuperPung" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:superpung.lee@gmail.com" title="E-Mail → mailto:superpung.lee@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/super_lee" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;super_lee" rel="noopener" target="_blank"><i class="fab fa-telegram-plane fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/super_pung" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;super_pung" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/syeopung.lee.3" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;syeopung.lee.3" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/superpung.lee" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;superpung.lee" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://superpung.xyz/" title="https:&#x2F;&#x2F;superpung.xyz" rel="noopener" target="_blank">me</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blog.superpung.xyz/oop-h05/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/avatar.png">
+      <meta itemprop="name" content="SUPER">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SuperPung">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          第一个 Java 小游戏
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+  
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-03-15 18:31:11" itemprop="dateCreated datePublished" datetime="2021-03-15T18:31:11+08:00">2021-03-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-03-19 13:18:55" itemprop="dateModified" datetime="2021-03-19T13:18:55+08:00">2021-03-19</time>
+      </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="Symbols count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Symbols count in article: </span>
+      <span>9.1k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>8 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>OOP h05</p>
+<a id="more"></a>
+
+<div class="note info"><p>某一款游戏，其主要角色如下:</p>
+<ul>
+<li><code>Tank</code> 坦克<ul>
+<li><code>Heavy Tank</code> 重型坦克：初始生命值 <code>200</code>，攻击力 <code>20</code></li>
+<li><code>Medium Tank</code> 轻型坦克：初始生命值 <code>100</code>，攻击力 <code>10</code></li>
+</ul>
+</li>
+<li><code>War Factory</code> 兵工厂：初始生命值 <code>100</code>，无攻击力</li>
+<li><code>Barrack</code> 兵营：可以训练出步枪兵、 RPG 兵、军犬，初始生命值 <code>100</code>，无攻击力<ul>
+<li><code>Rifle Soldier</code> 步枪兵：初始生命值 <code>50</code>（对战 军犬除外），攻击力 <code>5</code>（对战军犬可以一次击毙军犬）</li>
+<li><code>Rocket Soldier</code> 火箭兵：初始生命值 <code>50</code>（对战 军犬除外），攻击力 <code>10</code></li>
+<li><code>Dog</code> 军犬：初始生命值 <code>50</code>，攻击力 <code>5</code>（对战人类时候一口毙命）</li>
+</ul>
+</li>
+</ul>
+<p>此外还要能通过 <code>Soldier.getLivingSoldierCount</code> / <code>Soldier.getDeadedSoldierCount</code> 统计现在有多少个活着的和死去的士兵数量</p>
+<p>请遵循以上游戏规则，并根据如下测试代码（见文末）设计代码</p>
+<p>作业批改的时候，除了如下调用的方法以外，不会增加新的调用方法，但是可能有不同的组合方式。例如让一个 <code>Dog</code> 反复攻击 <code>HeavyTank</code>，判断 <code>HeavyTank.getHealth()</code></p>
+<p>任何对象有 <code>getHealth()</code> 方法，返回当前生命值，如果已经死亡则返回 <code>&lt;=0</code> 的一个数字</p>
+</div>
+
+<div class="note primary"><p><strong>2021.3.19 更新</strong></p>
+<ol>
+<li>文中定义的 <code>Base</code> 类可更名为 <code>GameObject</code> 抽象类。定义更改（和初始化）生命值的方法，其中参数为攻击力；定义死亡方法，修改生命值后调用（只需在 <code>Soldier</code> 类中重写）；在攻击方法中先判断攻击力，再调用更改生命值的方法。</li>
+<li>定义 <code>Param</code> 类，存放全部常量（生命值和攻击力）。</li>
+<li><code>WarFactory</code> 和 <code>Barrack</code> 继承 <code>Building</code> 类。</li>
+<li>利用 <code>instanceof</code> 判断参数属于何种类。</li>
+</ol>
+</div>
+
+<h1 id="0x00-分析"><a href="#0x00-分析" class="headerlink" title="0x00 分析"></a>0x00 分析</h1><p>阅读需求，可以发现要实现的是一个“小游戏”，游戏中有许多角色，分为「工厂」和「兵营」两大类。工厂可以建造「坦克」，分为「重型坦克」和「轻型坦克」；兵营可以训练「士兵」和「军犬」，士兵分为「步枪兵」和「火箭兵」。每种角色都有「生命值」和「攻击力」。</p>
+<p>综合以上分析，可以发现需要将上述角色抽象为「类」，而且存在明显的继承关系：</p>
+<ul>
+<li>每种角色都有「生命值」和「攻击力」，即它们可以继承同一个父类，这个父类中有「生命值」和「攻击力」的属性；</li>
+<li>坦克分为重坦和轻坦，即重坦和轻坦继承自坦克类，同理步枪兵和火箭兵也继承自士兵类。</li>
+</ul>
+<p>综合以上分析，可以首先创建 <code>Base</code> 类作为所有类的父类，再依次创建 <code>WarFactory</code> 和 <code>Barrack</code>、<code>Tank</code>、<code>Soldier</code> 和 <code>Dog</code>、<code>HeavyTank</code> 和 <code>MediumTank</code>、<code>RifleSoldier</code> 和 <code>RPGSoldier</code>。</p>
+<h1 id="0x01-Base"><a href="#0x01-Base" class="headerlink" title="0x01 Base"></a>0x01 <code>Base</code></h1><p><code>Base</code> 作为下面所有类的父类，具有所有类共有的属性：「生命值」和「攻击力」。</p>
+<p>类的初始化时需要指明其生命值和攻击力，所以 <code>Base</code> 的构造方法需要对其生命值和攻击力进行初始化，供子类继承。</p>
+<p>阅读 <code>Test</code> 代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mediumTank1.attack(rifleSoldier1);</span><br><span class="line"><span class="comment">//被mediumTank1攻击一次，health-10</span></span><br></pre></td></tr></table></figure>
+<p>可以发现需要具有 <code>attack</code> 方法，攻击其他对象。结合其他示例可以发现，需要攻击的对象有 <code>Tank</code>、<code>Soldier</code> 和 <code>Dog</code>，所以在 <code>Base</code> 中需要进行重载。</p>
+<blockquote>
+<p>第一次写的时候没能正确理解 <code>attack</code> 方法的攻击范围，错误地认为坦克只能攻击士兵和军犬、士兵只能攻击坦克和军犬……</p>
+<p>而且当时由于错误的理解，遂即把 <code>attack</code> 方法写在坦克、士兵和军犬类中，为了不直接修改生命值，又对应写了“被攻击”方法……</p>
+<p>改正思路后，<code>attack</code> 方法统一写在基本类中，提高了内聚性，降低了耦合性。</p>
+</blockquote>
+<p>结合说明，任何对象都需要有 <code>getHealth()</code> 方法，返回当前生命值；<code>isDestroy()</code> 方法判断是否被消灭。</p>
+<p>完整代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h05;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Base</span> </span>&#123;</span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">int</span> lifeValue; <span class="comment">//生命值</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">int</span> attackPower; <span class="comment">//攻击力</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Base</span><span class="params">(<span class="keyword">int</span> lv, <span class="keyword">int</span> ap)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.lifeValue = lv;</span><br><span class="line">        <span class="keyword">this</span>.attackPower = ap;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">attack</span><span class="params">(Soldier soldier)</span> </span>&#123; <span class="comment">//Soldier为后续实现的士兵类</span></span><br><span class="line">        <span class="keyword">if</span> (soldier.lifeValue &gt; <span class="number">0</span>) &#123; <span class="comment">// 只有活着的士兵才能被攻击，下面同理</span></span><br><span class="line">            soldier.lifeValue -= <span class="keyword">this</span>.attackPower; <span class="comment">//攻击士兵的结果就是它的生命值减少，减少的量为攻击者的攻击力</span></span><br><span class="line">            <span class="keyword">if</span> (soldier.lifeValue &lt;= <span class="number">0</span>) <span class="comment">//由于需要判断士兵死亡数量，所以每当士兵被攻击时都需要进行判断</span></span><br><span class="line">                Soldier.setDeadedSoldierCount(); <span class="comment">//士兵类中实现的方法，使总士兵死亡数增加1，生存数减少1</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">attack</span><span class="params">(Tank tank)</span> </span>&#123; <span class="comment">//Tank为后续实现的坦克类</span></span><br><span class="line">        <span class="keyword">if</span> (tank.lifeValue &gt; <span class="number">0</span>)</span><br><span class="line">            tank.lifeValue -= <span class="keyword">this</span>.attackPower;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">attack</span> <span class="params">(Dog dog)</span> </span>&#123; <span class="comment">//Dog为后续实现的军犬类</span></span><br><span class="line">        <span class="keyword">if</span> (dog.lifeValue &gt; <span class="number">0</span>)</span><br><span class="line">            dog.lifeValue -= <span class="keyword">this</span>.attackPower;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getHealth</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.lifeValue;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isDestroyed</span><span class="params">()</span> </span>&#123; 被消灭的标志就是生命值小于等于<span class="number">0</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.lifeValue &lt;= <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="0x02-WarFactory-amp-Barrack"><a href="#0x02-WarFactory-amp-Barrack" class="headerlink" title="0x02 WarFactory&amp;Barrack"></a>0x02 <code>WarFactory</code>&amp;<code>Barrack</code></h1><p><code>WarFactory</code> 为工厂类，继承 <code>Base</code>，且可以建造坦克。</p>
+<p>阅读 <code>Test</code> 代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//building 建造各自型号坦克</span></span><br><span class="line">Tank mediumTank1=(MediumTank)warFactory.building(EnumObjectType.mediumTank);</span><br></pre></td></tr></table></figure>
+<p>可以发现建造坦克方法 <code>building</code> 的参数为枚举类型 <code>EnumObjectType</code>，则需要新建 <code>EnumObjectType</code>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h05;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">enum</span> <span class="title">EnumObjectType</span> </span>&#123;</span><br><span class="line">    RPGSoldier, dog, rifleSoldier, mediumTank, heavyTank</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>WarFactory</code> 完整代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h05;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WarFactory</span> <span class="keyword">extends</span> <span class="title">Base</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">WarFactory</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(<span class="number">100</span>, <span class="number">0</span>); <span class="comment">//调用Base构造方法，初始化工厂的生命值和攻击力</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Tank <span class="title">building</span><span class="params">(EnumObjectType built)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (built == EnumObjectType.mediumTank)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> MediumTank();</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (built == EnumObjectType.heavyTank)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> HeavyTank();</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>Barrack</code> 和 <code>WarFactory</code> 类似，可以训练士兵和军犬，同样用到 <code>EnumObjectType</code>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h05;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Barrack</span> <span class="keyword">extends</span> <span class="title">Base</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Barrack</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(<span class="number">100</span>, <span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Base <span class="title">traing</span><span class="params">(EnumObjectType trained)</span> </span>&#123; <span class="comment">//士兵和军犬不属于同一子类，不能像Tank一样直接返回，只能返回基本类Base，这时Test中的类型转换起作用</span></span><br><span class="line">        <span class="keyword">if</span> (trained == EnumObjectType.rifleSoldier)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> RifleSoldier();</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (trained == EnumObjectType.RPGSoldier)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> RPGSoldier();</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (trained == EnumObjectType.dog)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> Dog();</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="0x03-Tank-amp-Soldier-amp-Dog"><a href="#0x03-Tank-amp-Soldier-amp-Dog" class="headerlink" title="0x03 Tank&amp;Soldier&amp;Dog"></a>0x03 <code>Tank</code>&amp;<code>Soldier</code>&amp;<code>Dog</code></h1><p><code>Tank</code> 类无需进行额外操作，只需继承 <code>Base</code> 的构造方法，供子类继承：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h05;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Tank</span> <span class="keyword">extends</span> <span class="title">Base</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Tank</span><span class="params">(<span class="keyword">int</span> lv, <span class="keyword">int</span> ap)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(lv, ap);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>Soldier</code> 类需要记录生存和死亡的士兵数目，应定义为静态变量，定义 setter 和 getter 便于修改记录：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h05;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Soldier</span> <span class="keyword">extends</span> <span class="title">Base</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> livingSoldierCount;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> deadSoldierCount;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Soldier</span><span class="params">(<span class="keyword">int</span> lv, <span class="keyword">int</span> ap)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(lv, ap);</span><br><span class="line">        setLivingSoldierCount();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getLivingSoldierCount</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> livingSoldierCount;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">setLivingSoldierCount</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        livingSoldierCount++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getDeadedSoldierCount</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> deadSoldierCount;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">setDeadedSoldierCount</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        deadSoldierCount++;</span><br><span class="line">        livingSoldierCount--;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>Dog</code> 类继承 <code>Base</code> 的构造方法，初始化特定的生命值和攻击力。注意到特殊要求“对战人类时候一口毙命”，则需要重写（此处和重载无区别）<code>Base</code> 的 <code>attack</code> 方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h05;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Dog</span> <span class="keyword">extends</span> <span class="title">Base</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Dog</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(<span class="number">50</span>, <span class="number">5</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">attack</span><span class="params">(Soldier soldier)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (soldier.lifeValue &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            soldier.lifeValue = <span class="number">0</span>;</span><br><span class="line">            Soldier.setDeadedSoldierCount(); <span class="comment">//消灭士兵需要修改死亡数量</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="0x04-HeavyTank-amp-MediumTank"><a href="#0x04-HeavyTank-amp-MediumTank" class="headerlink" title="0x04 HeavyTank&amp;MediumTank"></a>0x04 <code>HeavyTank</code>&amp;<code>MediumTank</code></h1><p>只需要继承 <code>Tank</code> 的构造方法，初始化特定的生命值和攻击力：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h05;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HeavyTank</span> <span class="keyword">extends</span> <span class="title">Tank</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">HeavyTank</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(<span class="number">200</span>, <span class="number">20</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h05;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MediumTank</span> <span class="keyword">extends</span> <span class="title">Tank</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MediumTank</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(<span class="number">100</span>, <span class="number">10</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="0x05-RifleSoldier-amp-RPGSoldier"><a href="#0x05-RifleSoldier-amp-RPGSoldier" class="headerlink" title="0x05 RifleSoldier&amp;RPGSoldier"></a>0x05 <code>RifleSoldier</code>&amp;<code>RPGSoldier</code></h1><p><code>RifleSoldier</code> “可以一次击毙军犬”，所以需要重写（重载）<code>attack</code> 方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h05;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RifleSoldier</span> <span class="keyword">extends</span> <span class="title">Soldier</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">RifleSoldier</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(<span class="number">50</span>, <span class="number">5</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">attack</span><span class="params">(Dog dog)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (dog.lifeValue &gt; <span class="number">0</span>)</span><br><span class="line">            dog.lifeValue = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>RPGSoldier</code> 只需初始化特定生命值和攻击力即可：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h05;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RPGSoldier</span> <span class="keyword">extends</span> <span class="title">Soldier</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">RPGSoldier</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(<span class="number">50</span>, <span class="number">10</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="0x06-Test"><a href="#0x06-Test" class="headerlink" title="0x06 Test"></a>0x06 <code>Test</code></h1><p><code>Test</code> 测试：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h05;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Test</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated constructor stub</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">		<span class="comment">//某一款游戏，其主要角色如下:</span></span><br><span class="line">		<span class="comment">//Tank HeavyTank 重型坦克 初始生命值200，攻击力 20</span></span><br><span class="line">		<span class="comment">//Medium Tank  轻型坦克  初始生命值100，攻击力 10</span></span><br><span class="line">		<span class="comment">//War Factroy 兵工厂   初始生命值100，无攻击力  </span></span><br><span class="line">		<span class="comment">//Barrack 兵营，可以训练出步枪兵、 RPG兵、军犬,初始生命值100，无攻击力</span></span><br><span class="line">		<span class="comment">//Rifle soldier 步枪兵  初始生命值50(对战 军犬除外)，攻击力 5（对战军犬可以一次击毙军犬)</span></span><br><span class="line">		<span class="comment">//Rocket soldier 火箭兵  初始生命值50(对战 军犬除外)，攻击力 10 </span></span><br><span class="line">		<span class="comment">//Dog 军犬 ,初始生命值50，攻击力5(对战人类时候一口毙命)</span></span><br><span class="line">		<span class="comment">//此外还要能通过Soldier.getLivingSoldierCount/getDeadedSoldierCount 统计现在有多少个活着的和死去的士兵数量</span></span><br><span class="line">		<span class="comment">//请遵循以上游戏规则，并根据如下测试代码设计代码</span></span><br><span class="line">		<span class="comment">//作业批改的时候，除了如下调用的方法以外，不会增加新的调用方法，但是可能有不同的组合方式</span></span><br><span class="line">		<span class="comment">//例如让一个Dog反复攻击HeavyTank，判断HeayTank.getHealth()</span></span><br><span class="line">		<span class="comment">//任何对象有getHealth() 方法，返回当前生命值，如果已经死亡则返回 &lt;=0的一个数字</span></span><br><span class="line">		Barrack barrack=<span class="keyword">new</span> Barrack();</span><br><span class="line">		<span class="keyword">if</span>(barrack.getHealth()==<span class="number">100</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;ok1&quot;</span>); </span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//traing 训练出新的士兵或者狗</span></span><br><span class="line">		RifleSoldier rifleSoldier1=(RifleSoldier)barrack.traing(EnumObjectType.rifleSoldier);</span><br><span class="line">		<span class="keyword">if</span>(rifleSoldier1.getHealth()==<span class="number">50</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;ok2&quot;</span>); </span><br><span class="line">		&#125;</span><br><span class="line">		RPGSoldier rPGSoldier1=(RPGSoldier)barrack.traing(EnumObjectType.RPGSoldier );</span><br><span class="line">		<span class="keyword">if</span>(rPGSoldier1.getHealth()==<span class="number">50</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;ok3&quot;</span>); </span><br><span class="line">		&#125;</span><br><span class="line">		Dog dog1=(Dog)barrack.traing(EnumObjectType.dog );</span><br><span class="line">		<span class="keyword">if</span>(dog1.getHealth()==<span class="number">50</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;ok4&quot;</span>); </span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//构造新的兵工厂</span></span><br><span class="line">		WarFactory warFactory=<span class="keyword">new</span> WarFactory();</span><br><span class="line">		<span class="keyword">if</span>(warFactory.getHealth()==<span class="number">100</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;ok5&quot;</span>); </span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//building 建造各自型号坦克</span></span><br><span class="line">		Tank mediumTank1=(MediumTank)warFactory.building(EnumObjectType.mediumTank);</span><br><span class="line">		<span class="keyword">if</span>(mediumTank1.getHealth()==<span class="number">100</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;ok6&quot;</span>); </span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		Tank heavyTank1=(HeavyTank)warFactory.building(EnumObjectType.heavyTank );</span><br><span class="line">		<span class="keyword">if</span>(heavyTank1.getHealth()==<span class="number">200</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;ok7&quot;</span>); </span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		heavyTank1.attack(mediumTank1);</span><br><span class="line">		<span class="comment">//attacked by heavyTank1, health-20</span></span><br><span class="line">		<span class="keyword">if</span> (mediumTank1.getHealth() == <span class="number">80</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;ok7.3&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		mediumTank1.attack(heavyTank1);</span><br><span class="line">		<span class="comment">//attacked by mediumTank1, health-10</span></span><br><span class="line">		<span class="keyword">if</span> (heavyTank1.getHealth() == <span class="number">190</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;ok7.6&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		mediumTank1.attack(rifleSoldier1);</span><br><span class="line">		<span class="comment">//被mediumTank1攻击一次，health-10</span></span><br><span class="line">		<span class="keyword">if</span>(rifleSoldier1.getHealth()==<span class="number">40</span>)&#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;ok8&quot;</span>); </span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		dog1.attack(rifleSoldier1);</span><br><span class="line">		<span class="comment">//被 dog 攻击一次，health&lt;=0</span></span><br><span class="line">		<span class="keyword">if</span>(rifleSoldier1.isDestroyed()) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;ok9&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		mediumTank1.attack(dog1);</span><br><span class="line">		<span class="comment">//被攻击后  health-10</span></span><br><span class="line">		<span class="keyword">if</span>(dog1.getHealth()==<span class="number">40</span>)&#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;ok10&quot;</span>); </span><br><span class="line">		&#125;</span><br><span class="line">		RifleSoldier  rifleSoldier2=(RifleSoldier)barrack.traing(EnumObjectType.rifleSoldier);</span><br><span class="line">		<span class="comment">//被RifleSoldier攻击 一击毙命</span></span><br><span class="line">		rifleSoldier2.attack(dog1);</span><br><span class="line">		<span class="keyword">if</span>(dog1.isDestroyed()) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;ok11&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//System.out.println(&quot;getliving: &quot; + Soldier.getLivingSoldierCount());</span></span><br><span class="line">		<span class="comment">//System.out.println(&quot;getdead: &quot; + Soldier.getDeadedSoldierCount());</span></span><br><span class="line">		<span class="comment">//Soldier 当前活着的数量2（rifleSoldier2，rPGSoldier1），死亡的数量1（rifleSoldier1）</span></span><br><span class="line">		<span class="keyword">if</span>(Soldier.getLivingSoldierCount()==<span class="number">2</span>&amp;&amp;Soldier.getDeadedSoldierCount()==<span class="number">1</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;ok12&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>Thanks for your reading.</div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    Donate
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/wechatpay.png" alt="SUPER WeChat Pay">
+        <span>WeChat Pay</span>
+      </div>
+      <div>
+        <img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/alipay.png" alt="SUPER Alipay">
+        <span>Alipay</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>SUPER
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://blog.superpung.xyz/oop-h05/" title="第一个 Java 小游戏">https://blog.superpung.xyz/oop-h05/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://twitter.com/super_pung">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
+
+          <span class="label">Twitter</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://t.me/super_lee">
+          <span class="icon">
+            <i class="fab fa-telegram"></i>
+          </span>
+
+          <span class="label">Telegram</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/ExiTalk.png">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/oop-h04/" rel="prev" title="Java 类练习">
+                  <i class="fa fa-chevron-left"></i> Java 类练习
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/oop-h06/" rel="next" title="第一个 Java 小游戏（plus）">
+                  第一个 Java 小游戏（plus） <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-bolt"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SUPER</span>
+    <a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="Symbols count total">632k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">9:35</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div><span id="jinrishici-sentence">正在加载今日诗词....</span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+
+
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '82c8eaceb93d09104333',
+      clientSecret: '904ddba4148f24b2bc7a29bec6360fa63d79b8e4',
+      repo        : 'Blog',
+      owner       : 'SuperPung',
+      admin       : ['SUPER'],
+      id          : '24b8ffdd3cfed721ffd3a2da43223c28',
+      proxy       : 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
+        language: 'en',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
+
+
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+  <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+  <script async src="/js/cursor/explosion.min.js"></script>
+
+
+</body>
+</html>
+

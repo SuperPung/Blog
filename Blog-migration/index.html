@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+<link rel="preconnect" href="//fonts.loli.net" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/favicon-16x16-next.png">
+  <link rel="mask-icon" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/logo.svg" color="#222">
+  <meta name="google-site-verification" content="x9QrCFUQQjnZBdHkQ0mqAkg6gfGFETfoVXHE3BzvAnk">
+  <meta name="baidu-site-verification" content="code-KXBxipeAZA">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.loli.net/css?family=Monta:300,300italic,400,400italic,700,700italic%7CLobster+two:300,300italic,400,400italic,700,700italic%7CRoboto+Slab:300,300italic,400,400italic,700,700italic%7CPT+Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.superpung.xyz","root":"/","images":"/images","scheme":"Pisces","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"manual"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="记录博客的又一次迁移，不过这次的迁移不太一样。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="再见了👋 GitHub Pages">
+<meta property="og:url" content="https://blog.superpung.xyz/Blog-migration/">
+<meta property="og:site_name" content="SuperPung">
+<meta property="og:description" content="记录博客的又一次迁移，不过这次的迁移不太一样。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/blog%E8%A1%A8%E7%8E%B0.png">
+<meta property="og:image" content="https://super-bucket2-1305010619.cos.ap-beijing.myqcloud.com/foreverblog.png">
+<meta property="article:published_time" content="2021-02-18T14:35:20.000Z">
+<meta property="article:modified_time" content="2021-02-26T04:41:13.388Z">
+<meta property="article:author" content="SUPER">
+<meta property="article:tag" content="Blog Config">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/blog%E8%A1%A8%E7%8E%B0.png">
+
+
+<link rel="canonical" href="https://blog.superpung.xyz/Blog-migration/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script><script src="https://super-bucket2-1305010619.cos.ap-beijing.myqcloud.com/super_live2d/autoload.js"></script>
+
+<title>再见了👋 GitHub Pages | SuperPung</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168209848-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-168209848-1');
+      }
+    </script>
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?9782e47b62b25abcec3da362ad68042b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="SuperPung" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">SuperPung</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Follow Your Heart</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-lover"><a href="/lover/" rel="section"><i class="fa fa-heart fa-fw"></i>Lover</a></li>
+        <li class="menu-item menu-item-friends"><a href="/links/" rel="section"><i class="fas fa-handshake fa-fw"></i>Friends</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8F%88%E8%A6%81%E8%BF%81%E7%A7%BB%EF%BC%9F"><span class="nav-text">为什么又要迁移？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B2%A1%E6%9C%89%E4%BD%BF%E7%94%A8%E3%80%8C%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E3%80%8D%EF%BC%9F"><span class="nav-text">为什么没有使用「持续集成」？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Netlify-%E8%AE%A9%E7%BD%91%E7%AB%99%E7%9A%84%E8%A1%A8%E7%8E%B0%E6%9B%B4%E5%87%BA%E8%89%B2%E4%BA%86%E5%90%97%EF%BC%9F"><span class="nav-text">Netlify 让网站的表现更出色了吗？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%80%E8%BF%91%E5%8D%9A%E5%AE%A2%E6%9C%89%E5%93%AA%E4%BA%9B%E6%94%B9%E5%8F%98%EF%BC%9F"><span class="nav-text">最近博客有哪些改变？</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="SUPER"
+      src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/avatar.png">
+  <p class="site-author-name" itemprop="name">SUPER</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">80</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/SuperPung" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;SuperPung" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:superpung.lee@gmail.com" title="E-Mail → mailto:superpung.lee@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/super_lee" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;super_lee" rel="noopener" target="_blank"><i class="fab fa-telegram-plane fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/super_pung" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;super_pung" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/syeopung.lee.3" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;syeopung.lee.3" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/superpung.lee" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;superpung.lee" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://superpung.xyz/" title="https:&#x2F;&#x2F;superpung.xyz" rel="noopener" target="_blank">me</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blog.superpung.xyz/Blog-migration/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/avatar.png">
+      <meta itemprop="name" content="SUPER">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SuperPung">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          再见了👋 GitHub Pages
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+  
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-02-18 22:35:20" itemprop="dateCreated datePublished" datetime="2021-02-18T22:35:20+08:00">2021-02-18</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-02-26 12:41:13" itemprop="dateModified" datetime="2021-02-26T12:41:13+08:00">2021-02-26</time>
+      </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="Symbols count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Symbols count in article: </span>
+      <span>1.7k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>2 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>记录博客的又一次迁移，不过这次的迁移不太一样。</p>
+<a id="more"></a>
+
+<h1 id="为什么又要迁移？"><a href="#为什么又要迁移？" class="headerlink" title="为什么又要迁移？"></a>为什么又要迁移？</h1><p><del>之前博客是由 GitHub Pages 托管的，但一个 GitHub 账号只能用一个 GitHub Pages，如果想再搭建一个博客网站的话就没办法了。而且</del>打算尝试优化一下博客的加载速度，尝试使用「持续集成」（Continuous Integration，CI），所以开始着手将博客迁移至 Netlify。</p>
+<p><a target="_blank" rel="noopener" href="https://www.netlify.com/">Netlify</a> 是一个提供静态资源网络托管的综合平台，提供 CI 服务，能够将托管 GitHub，GitLab 等网站上的 Jekyll，Hexo，Hugo 等代码自动编译并生成静态网站。</p>
+<p>Netlify 有如下的功能:</p>
+<ul>
+<li>能够托管服务，免费 CDN</li>
+<li>能够绑定自定义域名</li>
+<li>能够启用免费的TLS证书，启用HTTPS</li>
+<li>支持自动构建</li>
+</ul>
+<p>为了便于版本控制，我开始将博客源码 push 到 GitHub，然后添加到 Netlify，则每一次 push 后 Netlify 就会自动执行 <code>hexo g</code> 生成并托管网站。</p>
+<p>Netlify 的官网虽然只有英文，但操作十分方便。注册账号后，新建站点，从 GitHub 中选择仓库绑定，设置 build 选项（<code>hexo g</code>），然后就基本配置完成了。</p>
+<p>之前写完文章需要 <code>hexo g &amp;&amp; hexo d</code>，现在只需<code> git add &amp;&amp; git commit &amp;&amp; git push</code> 到GitHub，然后 Netlify 会自动部署到一个域名下。这时可以设置一个自定义域名，或者再将原博客域名解析到 Netlify。</p>
+<p>至于具体操作，请看下一篇文章。</p>
+<h1 id="为什么没有使用「持续集成」？"><a href="#为什么没有使用「持续集成」？" class="headerlink" title="为什么没有使用「持续集成」？"></a>为什么没有使用「持续集成」？</h1><p>持续集成就像是自动化，编辑工作流让 Netlify 去执行。但执行时出现了一些问题，包括但不限于文章的更新日期出错、置顶效果消失等。要想解决这些问题，就要重新编辑工作流，而且要考虑 Netlify 的 build 平台。</p>
+<p>而且于我而言，Git 版本控制有些鸡肋，目前来看我并没有这些需求，而且这样只会使得每次发表文章更加繁琐（相比 <code>hexo g &amp;&amp; hexo d</code>）。</p>
+<p>那么，我放弃了 Netlify 吗？并没有。我采用了另一种方式，即通过 <code>hexo d</code> 将 public 部署到 GitHub 仓库，然后 Netlify 拉取仓库内容（public）直接部署，不再通过 Netlify 而是在本地执行 <code>hexo g</code>。</p>
+<h1 id="Netlify-让网站的表现更出色了吗？"><a href="#Netlify-让网站的表现更出色了吗？" class="headerlink" title="Netlify 让网站的表现更出色了吗？"></a>Netlify 让网站的表现更出色了吗？</h1><p>说实话，并没有。</p>
+<p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/blog%E8%A1%A8%E7%8E%B0.png"></p>
+<p>测试了一下，网站的表现并没有更出色，可以说是很差。可以发现，影响网站性能的原因主要是加载网页的 css 样式、Google 分析等资源。</p>
+<p>我认为，网站的动画效果和访问速度是不可兼得的，目前没有继续优化网站访问速度的打算。</p>
+<h1 id="最近博客有哪些改变？"><a href="#最近博客有哪些改变？" class="headerlink" title="最近博客有哪些改变？"></a>最近博客有哪些改变？</h1><ol>
+<li><p><strong>最大的改变是域名。</strong></p>
+<p>原域名 <a target="_blank" rel="noopener" href="https://superpung.xyz/">https://superpung.xyz</a> 用于新建的个人主页，博客域名改为 <a target="_blank" rel="noopener" href="https://blog.superpung.xyz./">https://blog.superpung.xyz。</a></p>
+</li>
+<li><p><strong>改变网站标题和 logo。</strong></p>
+<p>标题改为「SuperPung」，即最初创建网站时的标题。logo 改为闪电标。</p>
+</li>
+<li><p><strong>关于微信公众号。</strong></p>
+<p>个人观点，微信公众号不是一个很好的分享平台。它虽然有很多优点，天然的订阅功能、更容易传播，但由于众所周知的原因，有些话题无法分享甚至会受封禁，而且无法插入链接，像其他平台一样不能自定义界面（不是指排版），不利于桌面平台的分享等。所以博客网站依旧是主阵地，也欢迎关注我的微信公众号，以后会发布一些其他东西，不再同步发布。</p>
+</li>
+<li><p><strong>改变了一些布局细节。</strong></p>
+<ul>
+<li>NexT 主题从 Mist 改为 Pisces，且缩减了内容所占页面比例，让页面更美观，不至于有大片空白。</li>
+<li>改变网站标题背景色为渐变色，改变标题字体。</li>
+<li>标题增加抖动效果。</li>
+<li>文章头部和网站底部增加「不蒜子」访问量统计（会影响网站性能）。</li>
+<li>优化看板娘，从 GitHub 迁移到腾讯云 COS，增加换装效果，更新相应文章。</li>
+<li>增加「RSS 订阅」功能，点击页面左侧或文章底部「RSS」按钮即可体验（需安装 RSS 阅读器）。</li>
+<li>增加「About」界面，记录博客搭建历史。</li>
+<li>优化「Lover」界面。</li>
+<li>增加「Search」站内搜索功能。</li>
+<li>尝试添加「友链」界面，不会，放弃了。以后学学前端再说。</li>
+<li>手写了 404 界面，很满意。</li>
+</ul>
+</li>
+<li><p><strong>加入了<a target="_blank" rel="noopener" href="https://www.foreverblog.cn/">「十年之约」</a>。</strong></p>
+<p>希望 2030 年的我，依旧坚持写作，坚持更新文章。</p>
+<p>「我们的博客十年不关闭或者更久， 并保持更新和活力。」</p>
+</li>
+</ol>
+<p><img src="https://super-bucket2-1305010619.cos.ap-beijing.myqcloud.com/foreverblog.png"></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>Thanks for your reading.</div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    Donate
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/wechatpay.png" alt="SUPER WeChat Pay">
+        <span>WeChat Pay</span>
+      </div>
+      <div>
+        <img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/alipay.png" alt="SUPER Alipay">
+        <span>Alipay</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>SUPER
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://blog.superpung.xyz/Blog-migration/" title="再见了👋 GitHub Pages">https://blog.superpung.xyz/Blog-migration/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://twitter.com/super_pung">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
+
+          <span class="label">Twitter</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://t.me/super_lee">
+          <span class="icon">
+            <i class="fab fa-telegram"></i>
+          </span>
+
+          <span class="label">Telegram</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/ExiTalk.png">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Blog-Config/" rel="tag"><i class="fa fa-tag"></i> Blog Config</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/Blog-insert-images/" rel="prev" title="在博客文章中插入图片">
+                  <i class="fa fa-chevron-left"></i> 在博客文章中插入图片
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/netlify-config/" rel="next" title="Hexo&Netlify 博客搭建过程记录">
+                  Hexo&Netlify 博客搭建过程记录 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-bolt"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SUPER</span>
+    <a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="Symbols count total">632k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">9:35</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div><span id="jinrishici-sentence">正在加载今日诗词....</span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+
+
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '82c8eaceb93d09104333',
+      clientSecret: '904ddba4148f24b2bc7a29bec6360fa63d79b8e4',
+      repo        : 'Blog',
+      owner       : 'SuperPung',
+      admin       : ['SUPER'],
+      id          : 'ab8a6b88b89cebf8c9dd5afe0f12bbdb',
+      proxy       : 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
+        language: 'en',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
+
+
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+  <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+  <script async src="/js/cursor/explosion.min.js"></script>
+
+
+</body>
+</html>
+

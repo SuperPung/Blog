@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+<link rel="preconnect" href="//fonts.loli.net" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/favicon-16x16-next.png">
+  <link rel="mask-icon" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/logo.svg" color="#222">
+  <meta name="google-site-verification" content="x9QrCFUQQjnZBdHkQ0mqAkg6gfGFETfoVXHE3BzvAnk">
+  <meta name="baidu-site-verification" content="code-KXBxipeAZA">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.loli.net/css?family=Monta:300,300italic,400,400italic,700,700italic%7CLobster+two:300,300italic,400,400italic,700,700italic%7CRoboto+Slab:300,300italic,400,400italic,700,700italic%7CPT+Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.superpung.xyz","root":"/","images":"/images","scheme":"Pisces","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"manual"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="OOP h09">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java 集合练习">
+<meta property="og:url" content="https://blog.superpung.xyz/oop-h09/">
+<meta property="og:site_name" content="SuperPung">
+<meta property="og:description" content="OOP h09">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-22T12:29:18.000Z">
+<meta property="article:modified_time" content="2021-03-29T16:50:11.953Z">
+<meta property="article:author" content="SUPER">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.superpung.xyz/oop-h09/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script><script src="https://super-bucket2-1305010619.cos.ap-beijing.myqcloud.com/super_live2d/autoload.js"></script>
+
+<title>Java 集合练习 | SuperPung</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168209848-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-168209848-1');
+      }
+    </script>
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?9782e47b62b25abcec3da362ad68042b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="SuperPung" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">SuperPung</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Follow Your Heart</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-lover"><a href="/lover/" rel="section"><i class="fa fa-heart fa-fw"></i>Lover</a></li>
+        <li class="menu-item menu-item-friends"><a href="/links/" rel="section"><i class="fas fa-handshake fa-fw"></i>Friends</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0x00-getDistinctCharCount"><span class="nav-text">0x00 getDistinctCharCount</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x01-getFrequentChar"><span class="nav-text">0x01 getFrequentChar</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x02-getFrequentWord"><span class="nav-text">0x02 getFrequentWord</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x03-zipStringBufer"><span class="nav-text">0x03 zipStringBufer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x04-%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81"><span class="nav-text">0x04 完整代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x05-Test"><span class="nav-text">0x05 Test</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="SUPER"
+      src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/avatar.png">
+  <p class="site-author-name" itemprop="name">SUPER</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">80</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/SuperPung" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;SuperPung" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:superpung.lee@gmail.com" title="E-Mail → mailto:superpung.lee@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/super_lee" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;super_lee" rel="noopener" target="_blank"><i class="fab fa-telegram-plane fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/super_pung" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;super_pung" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/syeopung.lee.3" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;syeopung.lee.3" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/superpung.lee" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;superpung.lee" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://superpung.xyz/" title="https:&#x2F;&#x2F;superpung.xyz" rel="noopener" target="_blank">me</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blog.superpung.xyz/oop-h09/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/avatar.png">
+      <meta itemprop="name" content="SUPER">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SuperPung">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Java 集合练习
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+  
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-03-22 20:29:18" itemprop="dateCreated datePublished" datetime="2021-03-22T20:29:18+08:00">2021-03-22</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-03-30 00:50:11" itemprop="dateModified" datetime="2021-03-30T00:50:11+08:00">2021-03-30</time>
+      </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="Symbols count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Symbols count in article: </span>
+      <span>6.5k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>6 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>OOP h09</p>
+<a id="more"></a>
+
+<div class="note warning"><ul>
+<li>不可以修改类的名字、包名、和固有的几个方法名以及方法的可见性</li>
+<li>可以增加其他方法、属性、类</li>
+<li>可以引用 jdk 的类</li>
+<li>不要引用 jdk1.8 以外第三方的包</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="0x00-getDistinctCharCount"><a href="#0x00-getDistinctCharCount" class="headerlink" title="0x00 getDistinctCharCount"></a>0x00 <code>getDistinctCharCount</code></h1><div class="note info"><p>计算出一段文字中不重复的字符的个数，例如“北京市北京大学”不重复字符为 5</p>
+<p>提示：使用 java.util.HashSet </p>
+</div>
+
+<p>集合中的元素是无序的，唯一的。利用集合的这个特性去存储一个数组，得到的将是互不重复的元素，由此可计算不同元素的个数。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getDistinctCharCount</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">	Set&lt;Character&gt; set = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">	<span class="keyword">char</span>[] chars = s.toCharArray();</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">char</span> cha : chars) &#123;</span><br><span class="line">		set.add(cha);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> set.size();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="0x01-getFrequentChar"><a href="#0x01-getFrequentChar" class="headerlink" title="0x01 getFrequentChar"></a>0x01 <code>getFrequentChar</code></h1><div class="note info"><p>返回一段文字中，出现频率最高的字符（不考虑并列第一的情况）</p>
+<ul>
+<li>例如：<code>getFrequentChar(&quot;好好学习&quot;)</code> 返回 <code>&#39;好&#39;</code></li>
+<li>例如：<code>getFrequentChar(&quot;我是xx大学软件学院学生&quot;)</code> 返回 <code>&#39;学&#39;</code></li>
+</ul>
+<p>提示：使用一个长度为 65535 的数组，或者使用 HashMap </p>
+</div>
+
+<p>自然的想法：</p>
+<ol>
+<li>记录每一个字符出现的次数</li>
+<li>找到最大的次数</li>
+<li>找到最大次数对应的字符</li>
+</ol>
+<p>可以利用 HashMap，创建键值对，字符为键，出现次数为值。</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">	public char getFrequentChar(String s) &#123;</span><br><span class="line">		int i, max;</span><br><span class="line"><span class="addition">+		char ans = 0;</span></span><br><span class="line">		// 1.记录每一个字符出现的次数</span><br><span class="line">		HashMap&lt;Character, Integer&gt; map = new HashMap&lt;&gt;();// 创建哈希映射</span><br><span class="line">		for (i = 0; i &lt; s.length(); i++) &#123;</span><br><span class="line">			char cha = s.charAt(i);// s中按字符存储</span><br><span class="line">			if (!map.containsKey(cha)) &#123;// 这个字符没存</span><br><span class="line">				map.put(cha, 1);// 出现次数为1</span><br><span class="line">			&#125; else &#123;// 这个字符存过了</span><br><span class="line">				map.put(cha, map.get(cha) + 1);// 出现次数加1</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">    </span><br><span class="line">		// 2.找到最大的次数</span><br><span class="line">		max = 0;</span><br><span class="line">		Set&lt;Character&gt; characterSet = map.keySet();// 所有不重复字符的集合</span><br><span class="line">		for (Character cha: characterSet) &#123;// 遍历</span><br><span class="line"><span class="deletion">-			max = max &gt; map.get(cha) ? max : map.get(cha);// 找到最大值</span></span><br><span class="line"><span class="addition">+			if (max &lt; map.get(cha)) &#123;</span></span><br><span class="line"><span class="addition">+				max = map.get(cha);</span></span><br><span class="line"><span class="addition">+				ans = cha;</span></span><br><span class="line"><span class="addition">+			&#125;</span></span><br><span class="line">		&#125;</span><br><span class="line">    </span><br><span class="line">		// 3.找到最大次数对应的字符</span><br><span class="line"><span class="deletion">-		Set&lt;Map.Entry&lt;Character, Integer&gt;&gt; entries = map.entrySet();// 所有键值对的集合</span></span><br><span class="line"><span class="deletion">-		for (Map.Entry&lt;Character, Integer&gt; entry : entries) &#123;// 遍历</span></span><br><span class="line"><span class="deletion">-			if (entry.getValue().equals(max)) &#123;// 这个键值对的值是最大值，字符为出现最多的字符</span></span><br><span class="line"><span class="deletion">-				return entry.getKey();// 返回键，即字符</span></span><br><span class="line"><span class="deletion">-			&#125;</span></span><br><span class="line"><span class="deletion">-		&#125;</span></span><br><span class="line"><span class="deletion">-		return &#x27; &#x27;;// 默认返回空格</span></span><br><span class="line"><span class="addition">+		return ans;</span></span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="0x02-getFrequentWord"><a href="#0x02-getFrequentWord" class="headerlink" title="0x02 getFrequentWord"></a>0x02 <code>getFrequentWord</code></h1><div class="note info"><p>返回一段文字中，出现频率最高的词（每个词由2个字符构成，任意两个相邻的字符称为一个词，例如“xx大学，你好”由“xx”“x大”“大学”“学，”“，你”“你好” 6 个词构成）</p>
+<p>不会出现频率最高并列的情况</p>
+<p>提示：使用 HashMap </p>
+</div>
+
+<p>同上，字符换成两个字符组成的子串。</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">	public String getFrequentWord(String content)&#123;</span><br><span class="line">		int i, max;</span><br><span class="line"><span class="addition">+		String ans = null;</span></span><br><span class="line">		HashMap&lt;String, Integer&gt; map = new HashMap&lt;&gt;();</span><br><span class="line"><span class="deletion">-		for (i = 0; i &lt; content.length() - 2; i++) &#123;</span></span><br><span class="line"><span class="addition">+		for (i = 0; i &lt; content.length() - 1; i++) &#123;</span></span><br><span class="line">			String str = content.substring(i, i + 2);</span><br><span class="line">			if (!map.containsKey(str)) &#123;</span><br><span class="line">				map.put(str, 1);</span><br><span class="line">			&#125; else &#123;</span><br><span class="line">				map.put(str, map.get(str) + 1);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		max = 0;</span><br><span class="line">		Set&lt;String&gt; stringSet = map.keySet();</span><br><span class="line">		for (String str: stringSet) &#123;</span><br><span class="line"><span class="deletion">-			max = max &gt; map.get(str) ? max : map.get(str);</span></span><br><span class="line"><span class="addition">+			if (max &lt; map.get(str)) &#123;</span></span><br><span class="line"><span class="addition">+				max = map.get(str);</span></span><br><span class="line"><span class="addition">+				ans = str;</span></span><br><span class="line"><span class="addition">+			&#125;</span></span><br><span class="line">		&#125;</span><br><span class="line"><span class="deletion">-		Set&lt;Map.Entry&lt;String, Integer&gt;&gt; entries = map.entrySet();</span></span><br><span class="line"><span class="deletion">-		for (Map.Entry&lt;String, Integer&gt; entry : entries) &#123;</span></span><br><span class="line"><span class="deletion">-			if (entry.getValue().equals(max)) &#123;</span></span><br><span class="line"><span class="deletion">-				return entry.getKey();</span></span><br><span class="line"><span class="deletion">-			&#125;</span></span><br><span class="line"><span class="deletion">-		&#125;</span></span><br><span class="line"><span class="deletion">-		return null;</span></span><br><span class="line"><span class="addition">+		return ans;</span></span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning"><p><strong>2021.3.23 更新</strong></p>
+<p>这样做是不可以的，第 4 行遍历少了一个字符。</p>
+<p>应 <code>i &lt; content.length() - 1</code>。</p>
+</div>
+
+<h1 id="0x03-zipStringBufer"><a href="#0x03-zipStringBufer" class="headerlink" title="0x03 zipStringBufer"></a>0x03 <code>zipStringBufer</code></h1><div class="note info"><p>把一个 StringBufer 中所有的空格去掉</p>
+<p>提示：不能新建 StringBuffer 对象，必须在原来的基础上删掉原来字符串</p>
+</div>
+
+<p>找到空格，删除它。</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">	public void zipStringBufer(StringBuffer buf) &#123;</span><br><span class="line">		int i;</span><br><span class="line">		for (i = 0; i &lt; buf.length(); i++) &#123;</span><br><span class="line">			if (buf.charAt(i) == &#x27; &#x27;) &#123;</span><br><span class="line"><span class="deletion">-				buf.deleteCharAt(i);</span></span><br><span class="line"><span class="addition">+				buf.deleteCharAt(i--);</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning"><p><strong>2021.3.23 更新</strong></p>
+<p>这样做是不可以的，删除字符之后索引值会发生改变，导致跳过一些可能是空格的字符。</p>
+<p>应 <code>i--</code>。</p>
+</div>
+
+<h1 id="0x04-完整代码"><a href="#0x04-完整代码" class="headerlink" title="0x04 完整代码"></a>0x04 完整代码</h1><p><del>不完整</del></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h09;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 把你作业的代码写到这个类里面</span></span><br><span class="line"><span class="comment"> * 不可以修改类的名字、包名、和固有的几个方法名以及方法的可见性</span></span><br><span class="line"><span class="comment"> * 可以增加其他方法、属性、类</span></span><br><span class="line"><span class="comment"> * 可以引用jdk的类</span></span><br><span class="line"><span class="comment"> * 不要引用jdk1.8以外第三方的包</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Home09</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Home09</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated constructor stub</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 计算出一段文字中不重复的字符的个数，例如“北京市北京大学 ”不重复字符为5</span></span><br><span class="line"><span class="comment">	 * 提示：使用java.util.HashSet </span></span><br><span class="line"><span class="comment">	 * 难度系数1星</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> s</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getDistinctCharCount</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">		Set&lt;Character&gt; set = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">		<span class="keyword">char</span>[] chars = s.toCharArray();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">char</span> cha : chars) &#123;</span><br><span class="line">			set.add(cha);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> set.size();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 返回一段文字中，出现频率最高的字符（不考虑并列第一的情况） 例如：getFrequentChar(&quot;好好学习&quot;) 返回&#x27;好&#x27;</span></span><br><span class="line"><span class="comment">	 * 例如：getFrequentChar(&quot;我是xx大学软件学院学生&quot;) 返回&#x27;学&#x27;</span></span><br><span class="line"><span class="comment">	 * 提示：使用一个长度为65535的数组，或者使用HashMap   </span></span><br><span class="line"><span class="comment">	 * 难度系数2星</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> s</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">char</span> <span class="title">getFrequentChar</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> i, max;</span><br><span class="line">		HashMap&lt;Character, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">		<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line">			<span class="keyword">char</span> cha = s.charAt(i);</span><br><span class="line">			<span class="keyword">if</span> (!map.containsKey(cha)) &#123;</span><br><span class="line">				map.put(cha, <span class="number">1</span>);</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				map.put(cha, map.get(cha) + <span class="number">1</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		max = <span class="number">0</span>;</span><br><span class="line">		Set&lt;Character&gt; characterSet = map.keySet();</span><br><span class="line">		<span class="keyword">for</span> (Character cha: characterSet) &#123;</span><br><span class="line">			max = max &gt; map.get(cha) ? max : map.get(cha);</span><br><span class="line">		&#125;</span><br><span class="line">		Set&lt;Map.Entry&lt;Character, Integer&gt;&gt; entries = map.entrySet();</span><br><span class="line">		<span class="keyword">for</span> (Map.Entry&lt;Character, Integer&gt; entry : entries) &#123;</span><br><span class="line">			<span class="keyword">if</span> (entry.getValue().equals(max)) &#123;</span><br><span class="line">				<span class="keyword">return</span> entry.getKey();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 返回一段文字中，出现频率最高的词（每个词由2个字符构成，任意两个相邻的字符称为一个词，例如“xx大学，你好”由“xx”“x大”“大学”“学，”“，你”“你好” 6个词构成)</span></span><br><span class="line"><span class="comment">	 * 不会出现频率最高并列的情况</span></span><br><span class="line"><span class="comment">	 * 提示：使用HashMap </span></span><br><span class="line"><span class="comment">	 * 难度系数2星</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> content</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">getFrequentWord</span><span class="params">(String content)</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> i, max;</span><br><span class="line">		HashMap&lt;String, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">		<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; content.length() - <span class="number">2</span>; i++) &#123;</span><br><span class="line">			String str = content.substring(i, i + <span class="number">2</span>);</span><br><span class="line">			<span class="keyword">if</span> (!map.containsKey(str)) &#123;</span><br><span class="line">				map.put(str, <span class="number">1</span>);</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				map.put(str, map.get(str) + <span class="number">1</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		max = <span class="number">0</span>;</span><br><span class="line">		Set&lt;String&gt; stringSet = map.keySet();</span><br><span class="line">		<span class="keyword">for</span> (String str: stringSet) &#123;</span><br><span class="line">			max = max &gt; map.get(str) ? max : map.get(str);</span><br><span class="line">		&#125;</span><br><span class="line">		Set&lt;Map.Entry&lt;String, Integer&gt;&gt; entries = map.entrySet();</span><br><span class="line">		<span class="keyword">for</span> (Map.Entry&lt;String, Integer&gt; entry : entries) &#123;</span><br><span class="line">			<span class="keyword">if</span> (entry.getValue().equals(max)) &#123;</span><br><span class="line">				<span class="keyword">return</span> entry.getKey();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 把一个StringBufer中所有的空格去掉</span></span><br><span class="line"><span class="comment">	 * 提示：不能新建StringBuffer对象，必须在原来的基础上删掉原来字符串</span></span><br><span class="line"><span class="comment">	 * 难度系数1星</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> buf</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">zipStringBufer</span><span class="params">(StringBuffer buf)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> i;</span><br><span class="line">		<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; buf.length(); i++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (buf.charAt(i) == <span class="string">&#x27; &#x27;</span>) &#123;</span><br><span class="line">				buf.deleteCharAt(i);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="0x05-Test"><a href="#0x05-Test" class="headerlink" title="0x05 Test"></a>0x05 <code>Test</code></h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h09;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * 不要引用jdk1.8以外第三方的包</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Test</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated constructor stub</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		 </span><br><span class="line">		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">		<span class="comment">//完成Home09的代码 使得下列代码能够编译 并且通过测试用例</span></span><br><span class="line">		Home09 util=<span class="keyword">new</span>  Home09();</span><br><span class="line">		<span class="keyword">if</span>(util.getDistinctCharCount(<span class="string">&quot;北京市北京大学&quot;</span>)==<span class="number">5</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;getDistinctCharCount ok&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(util.getFrequentChar(<span class="string">&quot;我是xx大学软件学院学生&quot;</span>)==<span class="string">&#x27;学&#x27;</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;getFrequentChar ok&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span>(util.getFrequentWord(<span class="string">&quot;北京市北京大学&quot;</span>).equals(<span class="string">&quot;北京&quot;</span>)) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;getFrequentWord ok&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		StringBuffer buf=<span class="keyword">new</span> StringBuffer(<span class="string">&quot;a b c &quot;</span>);</span><br><span class="line">		util.zipStringBufer(buf);</span><br><span class="line">		<span class="keyword">if</span>(buf.toString().equals(<span class="string">&quot;abc&quot;</span>) ) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;zipStringBufer ok&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>Thanks for your reading.</div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    Donate
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/wechatpay.png" alt="SUPER WeChat Pay">
+        <span>WeChat Pay</span>
+      </div>
+      <div>
+        <img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/alipay.png" alt="SUPER Alipay">
+        <span>Alipay</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>SUPER
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://blog.superpung.xyz/oop-h09/" title="Java 集合练习">https://blog.superpung.xyz/oop-h09/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://twitter.com/super_pung">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
+
+          <span class="label">Twitter</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://t.me/super_lee">
+          <span class="icon">
+            <i class="fab fa-telegram"></i>
+          </span>
+
+          <span class="label">Telegram</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/ExiTalk.png">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/oop-h08/" rel="prev" title="Java 异常练习">
+                  <i class="fa fa-chevron-left"></i> Java 异常练习
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/oop-h10/" rel="next" title="Java 集合练习（续）">
+                  Java 集合练习（续） <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-bolt"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SUPER</span>
+    <a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="Symbols count total">632k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">9:35</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div><span id="jinrishici-sentence">正在加载今日诗词....</span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+
+
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '82c8eaceb93d09104333',
+      clientSecret: '904ddba4148f24b2bc7a29bec6360fa63d79b8e4',
+      repo        : 'Blog',
+      owner       : 'SuperPung',
+      admin       : ['SUPER'],
+      id          : '8e6c64ab3b4b4df24fc54706824de291',
+      proxy       : 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
+        language: 'en',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
+
+
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+  <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+  <script async src="/js/cursor/explosion.min.js"></script>
+
+
+</body>
+</html>
+

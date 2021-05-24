@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+<link rel="preconnect" href="//fonts.loli.net" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/favicon-16x16-next.png">
+  <link rel="mask-icon" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/logo.svg" color="#222">
+  <meta name="google-site-verification" content="x9QrCFUQQjnZBdHkQ0mqAkg6gfGFETfoVXHE3BzvAnk">
+  <meta name="baidu-site-verification" content="code-KXBxipeAZA">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.loli.net/css?family=Monta:300,300italic,400,400italic,700,700italic%7CLobster+two:300,300italic,400,400italic,700,700italic%7CRoboto+Slab:300,300italic,400,400italic,700,700italic%7CPT+Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.superpung.xyz","root":"/","images":"/images","scheme":"Pisces","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"manual"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="OOP h02">
+<meta property="og:type" content="article">
+<meta property="og:title" content="熟悉 Java 语法">
+<meta property="og:url" content="https://blog.superpung.xyz/oop-h02/">
+<meta property="og:site_name" content="SuperPung">
+<meta property="og:description" content="OOP h02">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-15T10:31:03.000Z">
+<meta property="article:modified_time" content="2021-03-16T13:10:03.020Z">
+<meta property="article:author" content="SUPER">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.superpung.xyz/oop-h02/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script><script src="https://super-bucket2-1305010619.cos.ap-beijing.myqcloud.com/super_live2d/autoload.js"></script>
+
+<title>熟悉 Java 语法 | SuperPung</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168209848-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-168209848-1');
+      }
+    </script>
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?9782e47b62b25abcec3da362ad68042b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="SuperPung" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">SuperPung</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Follow Your Heart</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-lover"><a href="/lover/" rel="section"><i class="fa fa-heart fa-fw"></i>Lover</a></li>
+        <li class="menu-item menu-item-friends"><a href="/links/" rel="section"><i class="fas fa-handshake fa-fw"></i>Friends</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0x00-%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="nav-text">0x00 问题描述及解决方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x01-%E6%80%BB%E7%BB%93"><span class="nav-text">0x01 总结</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="SUPER"
+      src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/avatar.png">
+  <p class="site-author-name" itemprop="name">SUPER</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">80</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/SuperPung" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;SuperPung" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:superpung.lee@gmail.com" title="E-Mail → mailto:superpung.lee@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/super_lee" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;super_lee" rel="noopener" target="_blank"><i class="fab fa-telegram-plane fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/super_pung" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;super_pung" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/syeopung.lee.3" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;syeopung.lee.3" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/superpung.lee" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;superpung.lee" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://superpung.xyz/" title="https:&#x2F;&#x2F;superpung.xyz" rel="noopener" target="_blank">me</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blog.superpung.xyz/oop-h02/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/avatar.png">
+      <meta itemprop="name" content="SUPER">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SuperPung">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          熟悉 Java 语法
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+  
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-03-15 18:31:03" itemprop="dateCreated datePublished" datetime="2021-03-15T18:31:03+08:00">2021-03-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-03-16 21:10:03" itemprop="dateModified" datetime="2021-03-16T21:10:03+08:00">2021-03-16</time>
+      </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="Symbols count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Symbols count in article: </span>
+      <span>4.6k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>4 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>OOP h02</p>
+<a id="more"></a>
+
+<h1 id="0x00-问题描述及解决方法"><a href="#0x00-问题描述及解决方法" class="headerlink" title="0x00 问题描述及解决方法"></a>0x00 问题描述及解决方法</h1><div class="note info"><p>计算圆的面积</p>
+</div>
+
+<p>Java 默认的浮点数类型为 <code>double</code>，所以声明 <code>float</code> 类型时需要后加 <code>f</code>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">float</span> <span class="title">calcArea</span><span class="params">(<span class="keyword">float</span> radius)</span> </span>&#123;</span><br><span class="line">	<span class="comment">/**可修改代码开始，以下部分代码存在错误，请修正***/</span></span><br><span class="line">	<span class="keyword">float</span> pi=<span class="number">3.14f</span>;</span><br><span class="line">	<span class="keyword">return</span> pi*radius*radius;</span><br><span class="line">	<span class="comment">/**可修正代码结束****/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<div class="note info"><p>计算 <code>a+ a+1 + ... b</code> 的和</p>
+</div>
+
+<p>注意整型数字相加可能会产生溢出，且此方法的返回值类型为 <code>double</code>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">double</span> <span class="title">getSum</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b  )</span> </span>&#123;</span><br><span class="line">	<span class="comment">/**可修改代码开始，以下部分代码存在错误，请修正***/</span></span><br><span class="line">	<span class="keyword">double</span> sum=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=a;i&lt;=b;i++) &#123;</span><br><span class="line">		sum=sum+i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> sum;</span><br><span class="line">	<span class="comment">/**可修正代码结束****/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<div class="note info"><p>判断 <code>a</code>, <code>b</code> ,<code>c</code> 是否能够构成三角形的三个边</p>
+</div>
+
+<p>三角形两边之和大于第三边。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isTriangle</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b,<span class="keyword">int</span> c)</span> </span>&#123;</span><br><span class="line">	<span class="comment">//完成本函数里面的代码</span></span><br><span class="line">	<span class="keyword">return</span> a + b &gt; c &amp;&amp; a + c &gt; b &amp;&amp; b + c &gt; a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<div class="note info"><p>判断两个浮点数是否相等，一般认为如果两个浮点数的差值小于 0.0001，即认为相等</p>
+</div>
+
+<p>根据提示，注意绝对值。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isEq</span><span class="params">(<span class="keyword">float</span> f1, <span class="keyword">float</span> f2)</span> </span>&#123;</span><br><span class="line">	<span class="comment">//完成本函数里面的代码</span></span><br><span class="line">	<span class="keyword">return</span> Math.abs(f1 - f2) &lt; <span class="number">0.0001</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<div class="note info"><p>将学生百分之成绩变换为 A（&gt;= 90，B &gt;= 80 且非 A，C &gt;= 70 且非 B，D &gt;= 60 且非 C，E 其他）</p>
+</div>
+
+<p><code>if</code> 判断。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">char</span> <span class="title">getGrade</span><span class="params">(<span class="keyword">int</span> score)</span> </span>&#123;</span><br><span class="line">	<span class="comment">//完成本函数里面的代码</span></span><br><span class="line">	<span class="keyword">if</span> (score &gt;= <span class="number">90</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="string">&#x27;A&#x27;</span>;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span> (score &gt;= <span class="number">80</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="string">&#x27;B&#x27;</span>;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span> (score &gt;= <span class="number">70</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="string">&#x27;C&#x27;</span>;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span> (score &gt;= <span class="number">60</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="string">&#x27;D&#x27;</span>;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">return</span> <span class="string">&#x27;E&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<div class="note info"><p>判断一个数字是否是质数，如果是质数返回 <code>true</code>，否则 <code>false</code></p>
+</div>
+
+<p>从 <code>2</code> 到其算术平方根之间，判断是否有除 <code>1</code> 和自身外的因子。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isPrime</span><span class="params">(<span class="keyword">int</span> i)</span> </span>&#123;</span><br><span class="line">	<span class="comment">// 完成本函数里面的代码</span></span><br><span class="line">	<span class="keyword">int</span> j;</span><br><span class="line">	<span class="keyword">boolean</span> flag = <span class="keyword">true</span>;</span><br><span class="line">	<span class="keyword">if</span> (i &lt; <span class="number">2</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">	<span class="keyword">for</span> (j = <span class="number">2</span>; j &lt; Math.sqrt(i); j++)</span><br><span class="line">		<span class="keyword">if</span> (i % j == <span class="number">0</span>) &#123;</span><br><span class="line">			flag = <span class="keyword">false</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> flag;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<div class="note info"><p>返回大于等于 <code>i</code>，且小于等于 <code>j</code> 的所有的偶数的加和</p>
+</div>
+
+<p>如题。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getEvenSum</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">	<span class="comment">// 完成本函数里面的代码</span></span><br><span class="line">	<span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">if</span> (i % <span class="number">2</span> != <span class="number">0</span>)</span><br><span class="line">		i++;</span><br><span class="line">	<span class="keyword">for</span> (; i &lt;= j; i += <span class="number">2</span>)</span><br><span class="line">		sum += i;</span><br><span class="line">	<span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<div class="note info"><p>返回 <code>i</code>, <code>j</code>, <code>k</code> 中的最大值</p>
+</div>
+
+<p>两两取最大值。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getMax</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j,<span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">	<span class="comment">// 完成本函数里面的代码</span></span><br><span class="line">	<span class="keyword">int</span> max = Math.max(i, j);</span><br><span class="line">	max = Math.max(max, k);</span><br><span class="line">	<span class="keyword">return</span> max;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="0x01-总结"><a href="#0x01-总结" class="headerlink" title="0x01 总结"></a>0x01 总结</h1><p>完整代码如下。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h02;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Home02</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> args</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">		<span class="keyword">if</span>(Math.abs(calcArea(<span class="number">1</span>)-<span class="number">3.14</span>)&lt;<span class="number">0.1</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot; calcArea pass!&quot;</span>);</span><br><span class="line">		&#125; </span><br><span class="line">		<span class="keyword">if</span>(Math.abs((getSum(<span class="number">1</span>,<span class="number">100</span>)-<span class="number">5050</span>)/<span class="number">5050</span>)&lt;<span class="number">0.1</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot; getSum pass!&quot;</span>);</span><br><span class="line">		&#125; </span><br><span class="line">		<span class="keyword">if</span>(isTriangle(<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>)) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot; isTriangle pass!&quot;</span>);</span><br><span class="line">		&#125; </span><br><span class="line">		<span class="keyword">if</span>(isEq(<span class="number">0.1f</span>,<span class="number">0.10000000001f</span>)) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot; isEq pass!&quot;</span>);</span><br><span class="line">		&#125; </span><br><span class="line">		<span class="keyword">if</span>(getGrade(<span class="number">84</span>)==<span class="string">&#x27;B&#x27;</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot; getGrade pass!&quot;</span>);</span><br><span class="line">		&#125; </span><br><span class="line">		<span class="keyword">if</span>(isPrime(<span class="number">13</span>) ) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot; isPrime pass!&quot;</span>);</span><br><span class="line">		&#125; </span><br><span class="line">		<span class="keyword">if</span>(getEvenSum(<span class="number">0</span>,<span class="number">4</span>)==<span class="number">6</span> ) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot; getEvenSum pass!&quot;</span>);</span><br><span class="line">		&#125; </span><br><span class="line">		<span class="keyword">if</span>(getMax(<span class="number">1</span>,-<span class="number">1</span>,<span class="number">8</span>)==<span class="number">8</span> ) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot; getMax pass!&quot;</span>);</span><br><span class="line">		&#125; </span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 修改代码</span></span><br><span class="line"><span class="comment">	 * 计算圆的面积</span></span><br><span class="line"><span class="comment">	 * 难度系数1星</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> radius</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">float</span> <span class="title">calcArea</span><span class="params">(<span class="keyword">float</span> radius)</span> </span>&#123;</span><br><span class="line">		<span class="comment">/**可修改代码开始，以下部分代码存在错误，请修正***/</span></span><br><span class="line">		<span class="keyword">float</span> pi=<span class="number">3.14f</span>;</span><br><span class="line">		<span class="keyword">return</span> pi*radius*radius;</span><br><span class="line">		<span class="comment">/**可修正代码结束****/</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 修改代码</span></span><br><span class="line"><span class="comment">	 * 计算a+ a+1 + .... b的和</span></span><br><span class="line"><span class="comment">	 * 难度系数1星</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">double</span> <span class="title">getSum</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b  )</span> </span>&#123;</span><br><span class="line">		<span class="comment">/**可修改代码开始，以下部分代码存在错误，请修正***/</span></span><br><span class="line">		<span class="keyword">double</span> sum=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=a;i&lt;=b;i++) &#123;</span><br><span class="line">			sum=sum+i;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> sum;</span><br><span class="line">		<span class="comment">/**可修正代码结束****/</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 完成代码</span></span><br><span class="line"><span class="comment">	 * 判断a,b,c是否能够构成三角形的三个边</span></span><br><span class="line"><span class="comment">	 * 难度系数1星</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> a</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> b</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> c</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isTriangle</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b,<span class="keyword">int</span> c)</span> </span>&#123;</span><br><span class="line">		<span class="comment">//完成本函数里面的代码</span></span><br><span class="line">		<span class="keyword">return</span> a + b &gt; c &amp;&amp; a + c &gt; b &amp;&amp; b + c &gt; a;</span><br><span class="line">	&#125;	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 *  完成代码</span></span><br><span class="line"><span class="comment">	 * 判断两个浮点数是否相等，一般认为如果两个浮点数的差值小于0.0001，即认为相等</span></span><br><span class="line"><span class="comment">	 * 难度系数1星</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> f1</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> f2</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isEq</span><span class="params">(<span class="keyword">float</span> f1, <span class="keyword">float</span> f2)</span> </span>&#123;</span><br><span class="line">		<span class="comment">//完成本函数里面的代码</span></span><br><span class="line">		<span class="keyword">return</span> Math.abs(f1 - f2) &lt; <span class="number">0.0001</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 *  完成代码</span></span><br><span class="line"><span class="comment">	 * 将学生百分之成绩变换为A(&gt;=90,B&gt;=80且非A,C&gt;=70且非B,D&gt;=60且非C,E 其他)</span></span><br><span class="line"><span class="comment">	 * 难度系数1星</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> score</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">char</span> <span class="title">getGrade</span><span class="params">(<span class="keyword">int</span> score)</span> </span>&#123;</span><br><span class="line">		<span class="comment">//完成本函数里面的代码</span></span><br><span class="line">		<span class="keyword">if</span> (score &gt;= <span class="number">90</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="string">&#x27;A&#x27;</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (score &gt;= <span class="number">80</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="string">&#x27;B&#x27;</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (score &gt;= <span class="number">70</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="string">&#x27;C&#x27;</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (score &gt;= <span class="number">60</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="string">&#x27;D&#x27;</span>;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="keyword">return</span> <span class="string">&#x27;E&#x27;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 *  完成代码</span></span><br><span class="line"><span class="comment">	 * 判断一个数字是否是质数，如果是质数返回true，否则false</span></span><br><span class="line"><span class="comment">	 * 难度系数1星</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> i</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isPrime</span><span class="params">(<span class="keyword">int</span> i)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 完成本函数里面的代码</span></span><br><span class="line">		<span class="keyword">int</span> j;</span><br><span class="line">		<span class="keyword">boolean</span> flag = <span class="keyword">true</span>;</span><br><span class="line">		<span class="keyword">if</span> (i &lt; <span class="number">2</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">		<span class="keyword">for</span> (j = <span class="number">2</span>; j &lt; Math.sqrt(i); j++)</span><br><span class="line">			<span class="keyword">if</span> (i % j == <span class="number">0</span>) &#123;</span><br><span class="line">				flag = <span class="keyword">false</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		<span class="keyword">return</span> flag;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 *  完成代码</span></span><br><span class="line"><span class="comment">	 * 返回大于等于i，且小于等于j的所有的偶数的加和</span></span><br><span class="line"><span class="comment">	 * 难度系数1星</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> i</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> j</span></span><br><span class="line"><span class="comment">		 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getEvenSum</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 完成本函数里面的代码</span></span><br><span class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">if</span> (i % <span class="number">2</span> != <span class="number">0</span>)</span><br><span class="line">			i++;</span><br><span class="line">		<span class="keyword">for</span> (; i &lt;= j; i += <span class="number">2</span>)</span><br><span class="line">			sum += i;</span><br><span class="line">		<span class="keyword">return</span> sum;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 *  完成代码</span></span><br><span class="line"><span class="comment">	 * 返回i,j,k中的最大值</span></span><br><span class="line"><span class="comment">	 * 难度系数1星</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> i</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> j</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> k</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getMax</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j,<span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 完成本函数里面的代码</span></span><br><span class="line">		<span class="keyword">int</span> max = Math.max(i, j);</span><br><span class="line">		max = Math.max(max, k);</span><br><span class="line">		<span class="keyword">return</span> max;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>Thanks for your reading.</div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    Donate
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/wechatpay.png" alt="SUPER WeChat Pay">
+        <span>WeChat Pay</span>
+      </div>
+      <div>
+        <img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/alipay.png" alt="SUPER Alipay">
+        <span>Alipay</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>SUPER
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://blog.superpung.xyz/oop-h02/" title="熟悉 Java 语法">https://blog.superpung.xyz/oop-h02/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://twitter.com/super_pung">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
+
+          <span class="label">Twitter</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://t.me/super_lee">
+          <span class="icon">
+            <i class="fab fa-telegram"></i>
+          </span>
+
+          <span class="label">Telegram</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://super-bucket1.oss-cn-beijing.aliyuncs.com/ExiTalk.png">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/oop-h01/" rel="prev" title="Java の初体验">
+                  <i class="fa fa-chevron-left"></i> Java の初体验
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/oop-h03/" rel="next" title="继续熟悉 Java 语法">
+                  继续熟悉 Java 语法 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-bolt"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SUPER</span>
+    <a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="Symbols count total">632k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">9:35</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div><span id="jinrishici-sentence">正在加载今日诗词....</span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+
+
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '82c8eaceb93d09104333',
+      clientSecret: '904ddba4148f24b2bc7a29bec6360fa63d79b8e4',
+      repo        : 'Blog',
+      owner       : 'SuperPung',
+      admin       : ['SUPER'],
+      id          : '547cbcf2b2af8cb81eb0f83644566804',
+      proxy       : 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
+        language: 'en',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
+
+
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+  <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+  <script async src="/js/cursor/explosion.min.js"></script>
+
+
+</body>
+</html>
+
