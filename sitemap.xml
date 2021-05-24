@@ -606,7 +606,7 @@
 
   
   <url>
-    <loc>https://blog.superpung.xyz/tags/Others/</loc>
+    <loc>https://blog.superpung.xyz/tags/Notes/</loc>
     <lastmod>2021-05-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -620,7 +620,7 @@
   </url>
   
   <url>
-    <loc>https://blog.superpung.xyz/tags/Notes/</loc>
+    <loc>https://blog.superpung.xyz/tags/Others/</loc>
     <lastmod>2021-05-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -676,14 +676,14 @@
   </url>
   
   <url>
-    <loc>https://blog.superpung.xyz/tags/C/</loc>
+    <loc>https://blog.superpung.xyz/tags/Operating-Systems/</loc>
     <lastmod>2021-05-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.superpung.xyz/tags/Operating-Systems/</loc>
+    <loc>https://blog.superpung.xyz/tags/C/</loc>
     <lastmod>2021-05-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
