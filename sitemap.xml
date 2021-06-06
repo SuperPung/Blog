@@ -613,13 +613,6 @@
 
   
   <url>
-    <loc>https://blog.superpung.xyz/tags/Others/</loc>
-    <lastmod>2021-06-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.superpung.xyz/tags/Notes/</loc>
     <lastmod>2021-06-06</lastmod>
     <changefreq>daily</changefreq>
@@ -634,14 +627,14 @@
   </url>
   
   <url>
-    <loc>https://blog.superpung.xyz/tags/Computer-Systems/</loc>
+    <loc>https://blog.superpung.xyz/tags/Others/</loc>
     <lastmod>2021-06-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.superpung.xyz/tags/Experiments/</loc>
+    <loc>https://blog.superpung.xyz/tags/Computer-Systems/</loc>
     <lastmod>2021-06-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -656,6 +649,13 @@
   
   <url>
     <loc>https://blog.superpung.xyz/tags/Data-Structures/</loc>
+    <lastmod>2021-06-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.superpung.xyz/tags/Experiments/</loc>
     <lastmod>2021-06-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -683,14 +683,14 @@
   </url>
   
   <url>
-    <loc>https://blog.superpung.xyz/tags/Operating-Systems/</loc>
+    <loc>https://blog.superpung.xyz/tags/C/</loc>
     <lastmod>2021-06-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.superpung.xyz/tags/C/</loc>
+    <loc>https://blog.superpung.xyz/tags/Operating-Systems/</loc>
     <lastmod>2021-06-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
