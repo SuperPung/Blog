@@ -40,7 +40,7 @@
 <meta property="og:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/dec.jpeg">
 <meta property="og:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/1988.jpeg">
 <meta property="article:published_time" content="2020-05-03T11:47:32.000Z">
-<meta property="article:modified_time" content="2021-02-17T05:26:11.198Z">
+<meta property="article:modified_time" content="2021-06-10T04:46:07.714Z">
 <meta property="article:author" content="SUPER">
 <meta property="article:tag" content="Computer Systems">
 <meta property="article:tag" content="Lab Assignments">
@@ -337,11 +337,6 @@
         <div class="post-meta-container">
           <div class="post-meta">
   
-    <span class="post-top-icon">
-      <i class="fas fa-thumbtack"></i>
-    </span>
-    <font color=FF0000>&nbsp;TOP</font>
-  
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar"></i>
@@ -355,7 +350,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-02-17 13:26:11" itemprop="dateModified" datetime="2021-02-17T13:26:11+08:00">2021-02-17</time>
+        <time title="Modified: 2021-06-10 12:46:07" itemprop="dateModified" datetime="2021-06-10T12:46:07+08:00">2021-06-10</time>
       </span>
 
   
@@ -392,7 +387,9 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Bomb Lab: Defusing a Binary Bomb</p>
+        <!--top: 2-->
+
+<p>Bomb Lab: Defusing a Binary Bomb</p>
 <a id="more"></a>
 
 <p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/ExiTalk.png"></p>
@@ -890,7 +887,7 @@
 <p>转换成十进制：</p>
 <p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/dec.jpeg" alt="dec"></p>
 <p>即传入<code>fun7</code>函数的第一个参数就是此二叉树根结点的地址。结合<code>fun7</code>函数改写的C语句：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">  <span class="function"><span class="keyword">int</span> <span class="title">fun7</span><span class="params">(<span class="keyword">int</span>* p_node, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">  	<span class="keyword">if</span> (p_node == <span class="number">0</span>)</span><br><span class="line">      <span class="keyword">return</span> <span class="number">0xffffffff</span>;</span><br><span class="line">    num = *p_node;<span class="comment">// current node</span></span><br><span class="line">    <span class="keyword">if</span> (num &lt;= target) &#123;</span><br><span class="line">      result = <span class="number">0</span>;</span><br><span class="line">      <span class="keyword">if</span> (num == target)</span><br><span class="line">        <span class="keyword">return</span> result;<span class="comment">// 0</span></span><br><span class="line">      <span class="keyword">else</span> &#123;</span><br><span class="line">      	p_node = *(p_node + <span class="number">2</span>);<span class="comment">// right child</span></span><br><span class="line">      	result = fun7(p_node, target);</span><br><span class="line">      	<span class="keyword">return</span> result * <span class="number">2</span> + <span class="number">1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      p_node = *(p_node + <span class="number">1</span>);<span class="comment">// left child</span></span><br><span class="line">      result = fun7(p_node, target);</span><br><span class="line">    <span class="keyword">return</span> result * <span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">fun7</span><span class="params">(<span class="keyword">int</span>* p_node, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (p_node == <span class="number">0</span>)</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0xffffffff</span>;</span><br><span class="line">  num = *p_node;<span class="comment">// current node</span></span><br><span class="line">  <span class="keyword">if</span> (num &lt;= target) &#123;</span><br><span class="line">    result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (num == target)</span><br><span class="line">      <span class="keyword">return</span> result;<span class="comment">// 0</span></span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">    	p_node = *(p_node + <span class="number">2</span>);<span class="comment">// right child</span></span><br><span class="line">    	result = fun7(p_node, target);</span><br><span class="line">    	<span class="keyword">return</span> result * <span class="number">2</span> + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    p_node = *(p_node + <span class="number">1</span>);<span class="comment">// left child</span></span><br><span class="line">    result = fun7(p_node, target);</span><br><span class="line">  <span class="keyword">return</span> result * <span class="number">2</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>可以发现<code>fun7</code>函数的功能是：</p>
 <ul>
