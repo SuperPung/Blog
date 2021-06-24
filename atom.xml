@@ -6,7 +6,7 @@
   <link href="https://blog.superpung.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.superpung.xyz/"/>
-  <updated>2021-06-22T12:55:51.243Z</updated>
+  <updated>2021-06-24T07:12:47.872Z</updated>
   <id>https://blog.superpung.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《数字逻辑与数字系统》笔记</title>
+    <link href="https://blog.superpung.xyz/ddca-notes/"/>
+    <id>https://blog.superpung.xyz/ddca-notes/</id>
+    <published>2021-06-24T07:10:29.000Z</published>
+    <updated>2021-06-24T07:12:47.872Z</updated>
+    
+    <content type="html"><![CDATA[<p>《数字设计和计算机体系结构》</p><a id="more"></a>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;《数字设计和计算机体系结构》&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Notes" scheme="https://blog.superpung.xyz/tags/Notes/"/>
+    
+  </entry>
   
   <entry>
     <title>《形式化方法》笔记</title>
@@ -369,25 +388,6 @@
     
     
     <summary type="html">&lt;p&gt;OOP h16&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="Java" scheme="https://blog.superpung.xyz/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java 类及接口练习</title>
-    <link href="https://blog.superpung.xyz/oop-h20/"/>
-    <id>https://blog.superpung.xyz/oop-h20/</id>
-    <published>2021-04-07T08:32:30.000Z</published>
-    <updated>2021-04-07T13:59:00.964Z</updated>
-    
-    <content type="html"><![CDATA[<p>OOP h20</p><a id="more"></a><div class="note info"><p>定义合适的类、接口，使得下面的代码编译并能正确运行。</p></div><p>Test：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h20;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**定义合适的类、接口，使得下面的代码编译并能正确运行*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Test</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="comment">// TODO Auto-generated constructor stub</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">A a = <span class="keyword">new</span> D();<span class="comment">// D继承/实现A</span></span><br><span class="line">C c = <span class="keyword">new</span> D();<span class="comment">// D继承/实现C</span></span><br><span class="line">D d = <span class="keyword">new</span> D();</span><br><span class="line"> </span><br><span class="line">System.out.println(<span class="string">&quot;pass 1&quot;</span>);</span><br><span class="line"></span><br><span class="line">B b = c;<span class="comment">// C继承/实现B</span></span><br><span class="line">System.out.println(<span class="string">&quot;pass 2&quot;</span>);</span><br><span class="line"></span><br><span class="line">a = d;</span><br><span class="line">System.out.println(<span class="string">&quot;pass 3&quot;</span>);</span><br><span class="line"></span><br><span class="line">c=<span class="keyword">new</span> E();<span class="comment">// E继承/实现C</span></span><br><span class="line">System.out.println(<span class="string">&quot;pass 4&quot;</span>);</span><br><span class="line"></span><br><span class="line">a=<span class="keyword">new</span> A();</span><br><span class="line"><span class="keyword">if</span> (!(a <span class="keyword">instanceof</span> B)) &#123;<span class="comment">// A不继承/实现B</span></span><br><span class="line">System.out.println(<span class="string">&quot;pass 5&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (!(c <span class="keyword">instanceof</span> A)) &#123;<span class="comment">// C不继承/实现A</span></span><br><span class="line">System.out.println(<span class="string">&quot;pass 6&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (!(c <span class="keyword">instanceof</span> D)) &#123;<span class="comment">// C不继承/实现D</span></span><br><span class="line">System.out.println(<span class="string">&quot;pass 7&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>综上：</p><ul><li>D 继承/实现 A</li><li>D 继承/实现 C</li><li>C 继承/实现 B</li><li>E 继承/实现 C</li><li>A 不继承/实现 B</li><li>C 不继承/实现 A</li><li>C 不继承/实现 D</li></ul><p>D 同时继承/实现 A 和 C，由于 Java 不支持多继承，猜测可能为多重继承——由于 C 不继承/实现 A、A 不继承/实现 B、C 继承/实现 B，则 A 和 C 之间不存在继承关系。所以得出结论：A 和 C 一个为接口、一个为类，D 继承了类、实现了接口。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h20;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">A</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h20;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">B</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h20;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">C</span> <span class="keyword">extends</span> <span class="title">B</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h20;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">D</span> <span class="keyword">extends</span> <span class="title">A</span> <span class="keyword">implements</span> <span class="title">C</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h20;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">E</span> <span class="keyword">implements</span> <span class="title">C</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;OOP h20&lt;/p&gt;</summary>
     
     
     
