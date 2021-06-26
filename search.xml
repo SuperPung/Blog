@@ -3775,9 +3775,11 @@
 </details>
 
 <h1 id="iOS-15"><a href="#iOS-15" class="headerlink" title="iOS 15"></a><a href="https://www.apple.com.cn/ios/ios-15-preview/">iOS 15</a></h1><p>型号名称：iPhone XR</p>
-<h2 id="软件版本：15-0-19A5261w"><a href="#软件版本：15-0-19A5261w" class="headerlink" title="软件版本：15.0 (19A5261w)"></a>软件版本：15.0 (19A5261w)</h2><ol>
+<h2 id="软件版本：15-0-19A5261w"><a href="#软件版本：15-0-19A5261w" class="headerlink" title="软件版本：15.0 (19A5261w)"></a>软件版本：15.0 (19A5261w)</h2><p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/iOS15beta1.PNG" alt="iOS15beta1"></p>
+<ol>
 <li><p>首先最直观的就是通知中心变小了（根据消息长度改变）、通知横幅变小了。不仅如此，包括设置等 app 在内的很多应用中每一行都变窄了，上下左右的间隔都变大了。</p>
-<p> 感觉弧度也变大了，很不适应，感觉更丑了，以前统一的好看。</p>
+<p>感觉弧度也变大了，很不适应，感觉更丑了，以前统一的好看。</p>
+<p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/iOS15notice.PNG" alt="iOS15notice"></p>
 </li>
 <li><p>很多地方都开始采用卡片式布局，造成了左右的留白。</p>
 </li>
@@ -3827,9 +3829,8 @@
 </li>
 </ol>
 <h1 id="watchOS-8"><a href="#watchOS-8" class="headerlink" title="watchOS 8"></a><a href="https://www.apple.com.cn/watchos/watchos-preview/">watchOS 8</a></h1><p>基本没更新。</p>
-<h1 id="iPadOS-15"><a href="#iPadOS-15" class="headerlink" title="iPadOS 15"></a><a href="https://www.apple.com.cn/ipados/ipados-preview/">iPadOS 15</a></h1><p>软件版本：15.0 (19A5261w)</p>
-<p>型号名称：iPad（第 6 代）</p>
-<ol>
+<h1 id="iPadOS-15"><a href="#iPadOS-15" class="headerlink" title="iPadOS 15"></a><a href="https://www.apple.com.cn/ipados/ipados-preview/">iPadOS 15</a></h1><p>型号名称：iPad（第 6 代）</p>
+<h2 id="软件版本：15-0-19A5261w-1"><a href="#软件版本：15-0-19A5261w-1" class="headerlink" title="软件版本：15.0 (19A5261w)"></a>软件版本：15.0 (19A5261w)</h2><ol>
 <li>挤牙膏，小组件可以自由拖动了，但是好像变小了以至于特别丑，尤其是电量小组件。</li>
 <li>很多地方 UI 很奇怪，大小很不合适。</li>
 <li>app 资源库也是挤牙膏，无用。</li>
@@ -3839,6 +3840,12 @@
 <li>下载新的 app 没有图标。</li>
 <li>Swift playground 可以编译 app，但还不是生产力工具。</li>
 <li>挤牙膏，支持低电量模式。</li>
+</ol>
+<h2 id="软件版本：15-0-19A5281h-1"><a href="#软件版本：15-0-19A5281h-1" class="headerlink" title="软件版本：15.0 (19A5281h)"></a>软件版本：15.0 (19A5281h)</h2><ol>
+<li><p>增加了「健身」app，但没什么用。</p>
+<p> <img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/iPad%E5%81%A5%E8%BA%AB.PNG" alt="iPad健身"></p>
+<p> <img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/iPad-Fitness-plus.PNG" alt="iPad-Fitness-plus"></p>
+</li>
 </ol>
 <h1 id="macOS-Monterey"><a href="#macOS-Monterey" class="headerlink" title="macOS Monterey"></a><a href="https://www.apple.com.cn/macos/monterey-preview/">macOS Monterey</a></h1><p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/macos-monterey.png" alt="macos-monterey"></p>
 <p>macOS Big Sur 还没用多久，软件厂商还没全适配，又更新。</p>
