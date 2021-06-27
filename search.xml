@@ -3761,9 +3761,7 @@
 <p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/IMG_0298.jpg" alt="IMG_0298"></p>
 <p>今年充满期待地迎接 WWDC21，但说实话远没有去年那么多惊喜。但还是想记录一下使用了一天的体验。官方的新功能就不过多列举了，只记录我自己的想法，会持续更新。</p>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>总体来看，感觉 Apple 对这次升级准备的很少，很多地方显得很突兀、不和谐，而且官网的中文介绍暂时还没有出，macOS Monterey 中新的特性很少。</p>
-<details class="note "><summary><p>prime</p>
-</summary>
-<h4 id="2021-6-25-更新"><a href="#2021-6-25-更新" class="headerlink" title="2021.6.25 更新"></a>2021.6.25 更新</h4><p>iOS、iPadOS、watchOS 发布了 Beta 2，同时官网在最近也更新了中文版。</p>
+<div class="note primary"><h4 id="2021-6-25-更新"><a href="#2021-6-25-更新" class="headerlink" title="2021.6.25 更新"></a>2021.6.25 更新</h4><p>iOS、iPadOS、watchOS 发布了 Beta 2，同时官网在最近也更新了中文版。</p>
 <p>原英文版如下：</p>
 <ul>
 <li><a href="https://www.apple.com/ios/ios-15-preview/">iOS 15</a></li>
@@ -3771,8 +3769,7 @@
 <li><a href="https://www.apple.com/ipados/ipados-preview/">iPadOS 15</a></li>
 <li><a href="https://www.apple.com/macos/monterey-preview/">macOS Monterey</a></li>
 </ul>
-
-</details>
+</div>
 
 <h1 id="iOS-15"><a href="#iOS-15" class="headerlink" title="iOS 15"></a><a href="https://www.apple.com.cn/ios/ios-15-preview/">iOS 15</a></h1><p>型号名称：iPhone XR</p>
 <h2 id="软件版本：15-0-19A5261w"><a href="#软件版本：15-0-19A5261w" class="headerlink" title="软件版本：15.0 (19A5261w)"></a>软件版本：15.0 (19A5261w)</h2><p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/iOS15beta1.PNG" alt="iOS15beta1"></p>
