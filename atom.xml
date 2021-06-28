@@ -6,7 +6,7 @@
   <link href="https://blog.superpung.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.superpung.xyz/"/>
-  <updated>2021-06-24T07:12:47.872Z</updated>
+  <updated>2021-06-28T12:58:07.292Z</updated>
   <id>https://blog.superpung.xyz/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《数据库原理》笔记</title>
+    <link href="https://blog.superpung.xyz/fcds-notes/"/>
+    <id>https://blog.superpung.xyz/fcds-notes/</id>
+    <published>2021-06-28T12:56:49.000Z</published>
+    <updated>2021-06-28T12:58:07.292Z</updated>
+    
+    <content type="html"><![CDATA[<p>《数据库系统基础教程》《数据库系统全书》</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;《数据库系统基础教程》《数据库系统全书》&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="Notes" scheme="https://blog.superpung.xyz/tags/Notes/"/>
+    
+  </entry>
   
   <entry>
     <title>《数字逻辑与数字系统》笔记</title>
@@ -369,25 +392,6 @@
     
     
     <summary type="html">&lt;p&gt;OOP h17&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="Java" scheme="https://blog.superpung.xyz/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java Socket 练习</title>
-    <link href="https://blog.superpung.xyz/oop-h16/"/>
-    <id>https://blog.superpung.xyz/oop-h16/</id>
-    <published>2021-04-19T08:55:49.000Z</published>
-    <updated>2021-04-19T10:39:56.672Z</updated>
-    
-    <content type="html"><![CDATA[<p>OOP h16</p><a id="more"></a><div class="note info"><p>完成 MyServer 类，随机测试向服务器端输入几句话，要求服务器端原封不动返回，向服务器端输入 bye ，表示断开连接。</p></div><p>开始没有完全理解，需要启动线程：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * MyServer.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> com.huawei.classroom.student.h16;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> super</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyServer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">MyServer</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">startListen</span><span class="params">(<span class="keyword">int</span> port)</span> </span>&#123;</span><br><span class="line">Thread serverThread = <span class="keyword">new</span> ServerThread(port);</span><br><span class="line">serverThread.start();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>新建 ServerThread 类继承 Thread，用于监听端口。</p><p>会用到的成员变量：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">int</span> port;<span class="comment">// 端口</span></span><br><span class="line"><span class="keyword">private</span> ServerSocket server;<span class="comment">// 服务器</span></span><br><span class="line"><span class="keyword">private</span> Socket socket;<span class="comment">// socket</span></span><br><span class="line"><span class="keyword">private</span> InputStream in;<span class="comment">// 输入流</span></span><br><span class="line"><span class="keyword">private</span> OutputStream out;<span class="comment">// 输出流</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> MAX_LEN = <span class="number">100</span>;<span class="comment">// 最大长度</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String STOP_STRING = <span class="string">&quot;bye&quot;</span> + <span class="string">&quot;\r\n&quot;</span>;<span class="comment">// 断开连接口令</span></span><br></pre></td></tr></table></figure><p>构造方法：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ServerThread</span><span class="params">(<span class="keyword">int</span> port)</span> </span>&#123;</span><br><span class="line">server = <span class="keyword">null</span>;</span><br><span class="line">socket = <span class="keyword">null</span>;</span><br><span class="line">in = <span class="keyword">null</span>;</span><br><span class="line">out = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">this</span>.port = port;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>重写 <code>run</code>：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="keyword">try</span> &#123;<span class="comment">// Test 没有捕获异常，这里不能抛出</span></span><br><span class="line">server = <span class="keyword">new</span> ServerSocket(port);<span class="comment">// 服务器</span></span><br><span class="line">socket = server.accept();<span class="comment">// 等待客户端连接</span></span><br><span class="line">in = socket.getInputStream();<span class="comment">// 获取客户端输入流</span></span><br><span class="line">out = socket.getOutputStream();<span class="comment">// 获取客户端输出流</span></span><br><span class="line"><span class="keyword">byte</span>[] data = <span class="keyword">new</span> <span class="keyword">byte</span>[MAX_LEN];<span class="comment">// 读取的字节</span></span><br><span class="line"><span class="keyword">int</span> readed = in.read(data);<span class="comment">// 从输入流读，读取的长度</span></span><br><span class="line">String line = <span class="keyword">new</span> String(data, <span class="number">0</span>, readed);<span class="comment">// 字符串格式</span></span><br><span class="line"><span class="keyword">while</span> (!STOP_STRING.equals(line)) &#123;<span class="comment">// 没断开</span></span><br><span class="line">out.write(line.getBytes());<span class="comment">// 向输出流写</span></span><br><span class="line">readed = in.read(data);<span class="comment">// 再读</span></span><br><span class="line">line = <span class="keyword">new</span> String(data, <span class="number">0</span>, readed);</span><br><span class="line">&#125;</span><br><span class="line">in.close();</span><br><span class="line">out.close();</span><br><span class="line">socket.close();</span><br><span class="line">server.close();</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">e.printStackTrace();</span><br><span class="line">&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">close(in);</span><br><span class="line">close(out);</span><br><span class="line">close(socket);</span><br><span class="line">close(server);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">(Closeable inout)</span> </span>&#123;</span><br><span class="line"><span class="keyword">if</span> (inout != <span class="keyword">null</span>) &#123;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">inout.close();</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr><p>终于忙完了，一年的大创结束了……</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;OOP h16&lt;/p&gt;</summary>
     
     
     
