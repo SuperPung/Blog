@@ -11951,4 +11951,23 @@
         <tag>Review</tag>
       </tags>
   </entry>
+  <entry>
+    <title>在 swiftUI 中自定义修饰器</title>
+    <url>/custom-modifier/</url>
+    <content><![CDATA[<p>学习 swiftUI 的记录。</p>
+<a id="more"></a>
+
+<p>首先定义结构体，在其中对内容修饰：</p>
+<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Watermark</span>: <span class="title">ViewModifier</span> </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> text: <span class="type">String</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">body</span>(<span class="params">content</span>: <span class="type">Content</span>)</span> -&gt; <span class="keyword">some</span> <span class="type">View</span> &#123;</span><br><span class="line">        <span class="type">ZStack</span>(alignment: .bottomTrailing) &#123;</span><br><span class="line">            content</span><br><span class="line">            <span class="type">Text</span>(text)</span><br><span class="line">                .font(.caption)</span><br><span class="line">                .foregroundColor(.white)</span><br><span class="line">                .padding(<span class="number">5</span>)</span><br><span class="line">                .background(<span class="type">Color</span>.black)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后根据此结构体，定义 <code>extension</code>，在其中定义修饰器函数：</p>
+<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">View</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">watermarked</span>(<span class="params">with</span> <span class="params">text</span>: <span class="type">String</span>)</span> -&gt; <span class="keyword">some</span> <span class="type">View</span> &#123;</span><br><span class="line">        <span class="keyword">self</span>.modifier(<span class="type">Watermark</span>(text: text))</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>最终只需调用 <code>extension</code> 中的函数即可实现：</p>
+<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="type">Color</span>.green</span><br><span class="line">    .frame(width: <span class="number">300</span>, height: <span class="number">200</span>)</span><br><span class="line">    .watermarked(with: <span class="string">&quot;Hacking with Swift&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>效果图：</p>
+<p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/image-20210713104903030.png" alt="image-20210713104903030"></p>
+]]></content>
+      <tags>
+        <tag>Swift</tag>
+      </tags>
+  </entry>
 </search>
