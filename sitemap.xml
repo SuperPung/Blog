@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.superpung.xyz/wwdc21/</loc>
+    
+    <lastmod>2021-07-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.superpung.xyz/custom-modifier/</loc>
     
     <lastmod>2021-07-13</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://blog.superpung.xyz/Data-Structures-Notes/</loc>
     
     <lastmod>2021-06-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.superpung.xyz/wwdc21/</loc>
-    
-    <lastmod>2021-06-27</lastmod>
     
   </url>
   
@@ -655,7 +655,7 @@
 
   <url>
     <loc>https://blog.superpung.xyz/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -663,98 +663,98 @@
   
   <url>
     <loc>https://blog.superpung.xyz/tags/Blog-Config/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.xyz/tags/Others/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.xyz/tags/Notes/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.xyz/tags/Computer-Systems/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.xyz/tags/Experiments/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.xyz/tags/Data-Structures/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.xyz/tags/Lab-Assignments/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.xyz/tags/Java/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.xyz/tags/Practice/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.xyz/tags/Python/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.xyz/tags/C/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.xyz/tags/Operating-Systems/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.xyz/tags/Review/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.xyz/tags/Swift/</loc>
-    <lastmod>2021-07-13</lastmod>
+    <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

@@ -3752,9 +3752,9 @@
       </tags>
   </entry>
   <entry>
-    <title> WWDC21 体验</title>
+    <title>iOS 15、iPadOS 15、macOS Monterey 体验</title>
     <url>/wwdc21/</url>
-    <content><![CDATA[<p>“创新”的苹果，也难逃挤牙膏的趋势。</p>
+    <content><![CDATA[<p>创新还是挤牙膏，这是一个问题。</p>
 <a id="more"></a>
 
 <p>去年的此时，在家里迎来了 WWDC20，升级了 iOS 14、iPadOS 14 和 watchOS 7。不得不说，14 的更新幅度确实很大，有很多令人惊喜的功能，当时宣布的 Apple Silicon 也更是充满期待。当时使用的 Hackintosh 仍在 macOS Catalina，并不支持 Big Sur。后来添加了设备 MacBook Air，很喜欢 Big Sur 的新界面，很多地方做了半透明化，像是打通了边界，除了很丑的方形图标。</p>
@@ -3865,6 +3865,10 @@
 <li><p>系统扩展需要重新设置，部分兼容 Big Sur 的软件不能兼容 Monterey，本来不兼容 Big Sur 的软件应该更不能兼容 Monterey。</p>
 </li>
 </ol>
+<h2 id="版本-12-0-Beta版-21A5284e"><a href="#版本-12-0-Beta版-21A5284e" class="headerlink" title="版本 12.0 Beta版(21A5284e)"></a>版本 12.0 Beta版(21A5284e)</h2><p>降级更新：Safari 变回了原来的样子，甚至更难看了：</p>
+<p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/%E6%88%AA%E5%B1%8F2021-07-15%20%E4%B8%8B%E5%8D%8812.15.27.png" alt="截屏2021-07-15 下午12.15.27"></p>
+<p>笑死，直接打脸自己。</p>
+<p>使用了这么长时间，感觉 Monterey 刚更新的 Safari 标签栏确实不太好用，恢复到原来的样子也是情理之中，但是加大标签页栏的宽度只是把原来的方形变成卡片式，只能说是很丑，且没有意义，毫不实用。</p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>推荐文章：<a href="https://mp.weixin.qq.com/s/EFqnDiR9HzJKIM84Ocfoxw">WWDC 这 9 个细节关键词，我想展开说说｜果核 Group</a></p>
 <blockquote class="blockquote-center">
 <p>2021 年的 WWDC 给的功能很少，但它给的想象很多。</p>
