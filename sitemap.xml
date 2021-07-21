@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.superpung.xyz/lover/</loc>
+    
+    <lastmod>2021-07-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.superpung.xyz/wwdc21/</loc>
     
     <lastmod>2021-07-21</lastmod>
@@ -360,13 +367,6 @@
   
   <url>
     <loc>https://blog.superpung.xyz/netlify-config/</loc>
-    
-    <lastmod>2021-02-21</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.superpung.xyz/lover/</loc>
     
     <lastmod>2021-02-21</lastmod>
     
