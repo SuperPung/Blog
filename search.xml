@@ -3873,7 +3873,9 @@
 <p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/%E6%88%AA%E5%B1%8F2021-07-15%20%E4%B8%8B%E5%8D%8812.15.27.png" alt="截屏2021-07-15 下午12.15.27"></p>
 <p>笑死，直接打脸自己。</p>
 <p>使用了这么长时间，感觉 Monterey 刚更新的 Safari 标签栏确实不太好用，恢复到原来的样子也是情理之中，但是加大标签页栏的宽度只是把原来的方形变成卡片式，只能说是很丑，且没有意义，毫不实用。</p>
-<p>致命 bug：Xcode 无法连接模拟器……直接回到 Big Sur，等待今秋正式发布 Monterey 再更新。不再等待 Universal Control、不再使用 AirPlay，不再依赖 Safari 的标签页分组。</p>
+<p>致命 bug：Xcode 无法连接模拟器……直接回到 Big Sur。</p>
+<p>回不去，无法降级……</p>
+<p>Xcode 无法连接模拟器不完全解决方式：取消 Debug executable，但会导致无法打断点。</p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>推荐文章：<a href="https://mp.weixin.qq.com/s/EFqnDiR9HzJKIM84Ocfoxw">WWDC 这 9 个细节关键词，我想展开说说｜果核 Group</a></p>
 <blockquote class="blockquote-center">
 <p>2021 年的 WWDC 给的功能很少，但它给的想象很多。</p>
