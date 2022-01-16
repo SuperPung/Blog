@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>SuperPung</title>
+  <title>Super Blog</title>
   
   <subtitle>Follow Your Heart</subtitle>
-  <link href="https://blog.superpung.xyz/atom.xml" rel="self"/>
+  <link href="https://blog.superpung.cn/atom.xml" rel="self"/>
   
-  <link href="https://blog.superpung.xyz/"/>
+  <link href="https://blog.superpung.cn/"/>
   <updated>2021-12-31T06:01:45.248Z</updated>
-  <id>https://blog.superpung.xyz/</id>
+  <id>https://blog.superpung.cn/</id>
   
   <author>
     <name>SUPER</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>我和我的 2021</title>
-    <link href="https://blog.superpung.xyz/rev-2021/"/>
-    <id>https://blog.superpung.xyz/rev-2021/</id>
+    <link href="https://blog.superpung.cn/rev-2021/"/>
+    <id>https://blog.superpung.cn/rev-2021/</id>
     <published>2021-12-31T03:07:41.000Z</published>
     <updated>2021-12-31T06:01:45.248Z</updated>
     
@@ -31,14 +31,14 @@
     
     
     
-    <category term="Review" scheme="https://blog.superpung.xyz/tags/Review/"/>
+    <category term="Review" scheme="https://blog.superpung.cn/tags/Review/"/>
     
   </entry>
   
   <entry>
     <title>我的第二个 App</title>
-    <link href="https://blog.superpung.xyz/my-2nd-app/"/>
-    <id>https://blog.superpung.xyz/my-2nd-app/</id>
+    <link href="https://blog.superpung.cn/my-2nd-app/"/>
+    <id>https://blog.superpung.cn/my-2nd-app/</id>
     <published>2021-09-14T14:34:21.000Z</published>
     <updated>2021-09-14T15:42:13.957Z</updated>
     
@@ -50,14 +50,14 @@
     
     
     
-    <category term="Review" scheme="https://blog.superpung.xyz/tags/Review/"/>
+    <category term="Review" scheme="https://blog.superpung.cn/tags/Review/"/>
     
   </entry>
   
   <entry>
     <title>在 swiftUI 中自定义修饰器</title>
-    <link href="https://blog.superpung.xyz/custom-modifier/"/>
-    <id>https://blog.superpung.xyz/custom-modifier/</id>
+    <link href="https://blog.superpung.cn/custom-modifier/"/>
+    <id>https://blog.superpung.cn/custom-modifier/</id>
     <published>2021-07-13T02:41:14.000Z</published>
     <updated>2021-07-13T02:49:32.569Z</updated>
     
@@ -69,14 +69,14 @@
     
     
     
-    <category term="Swift" scheme="https://blog.superpung.xyz/tags/Swift/"/>
+    <category term="Swift" scheme="https://blog.superpung.cn/tags/Swift/"/>
     
   </entry>
   
   <entry>
     <title>关于最近，以及……</title>
-    <link href="https://blog.superpung.xyz/rev-1/"/>
-    <id>https://blog.superpung.xyz/rev-1/</id>
+    <link href="https://blog.superpung.cn/rev-1/"/>
+    <id>https://blog.superpung.cn/rev-1/</id>
     <published>2021-07-07T04:00:37.000Z</published>
     <updated>2021-07-17T14:17:26.915Z</updated>
     
@@ -88,14 +88,14 @@
     
     
     
-    <category term="Review" scheme="https://blog.superpung.xyz/tags/Review/"/>
+    <category term="Review" scheme="https://blog.superpung.cn/tags/Review/"/>
     
   </entry>
   
   <entry>
     <title>《数据库原理》笔记</title>
-    <link href="https://blog.superpung.xyz/fcds-notes/"/>
-    <id>https://blog.superpung.xyz/fcds-notes/</id>
+    <link href="https://blog.superpung.cn/fcds-notes/"/>
+    <id>https://blog.superpung.cn/fcds-notes/</id>
     <published>2021-06-28T12:56:49.000Z</published>
     <updated>2021-06-28T12:58:07.292Z</updated>
     
@@ -111,14 +111,14 @@
     
     
     
-    <category term="Notes" scheme="https://blog.superpung.xyz/tags/Notes/"/>
+    <category term="Notes" scheme="https://blog.superpung.cn/tags/Notes/"/>
     
   </entry>
   
   <entry>
     <title>《数字逻辑与数字系统》笔记</title>
-    <link href="https://blog.superpung.xyz/ddca-notes/"/>
-    <id>https://blog.superpung.xyz/ddca-notes/</id>
+    <link href="https://blog.superpung.cn/ddca-notes/"/>
+    <id>https://blog.superpung.cn/ddca-notes/</id>
     <published>2021-06-24T07:10:29.000Z</published>
     <updated>2021-06-24T07:12:47.872Z</updated>
     
@@ -130,14 +130,14 @@
     
     
     
-    <category term="Notes" scheme="https://blog.superpung.xyz/tags/Notes/"/>
+    <category term="Notes" scheme="https://blog.superpung.cn/tags/Notes/"/>
     
   </entry>
   
   <entry>
     <title>《形式化方法》笔记</title>
-    <link href="https://blog.superpung.xyz/fsv-notes/"/>
-    <id>https://blog.superpung.xyz/fsv-notes/</id>
+    <link href="https://blog.superpung.cn/fsv-notes/"/>
+    <id>https://blog.superpung.cn/fsv-notes/</id>
     <published>2021-06-22T12:50:21.000Z</published>
     <updated>2021-06-22T12:55:51.243Z</updated>
     
@@ -149,14 +149,14 @@
     
     
     
-    <category term="Notes" scheme="https://blog.superpung.xyz/tags/Notes/"/>
+    <category term="Notes" scheme="https://blog.superpung.cn/tags/Notes/"/>
     
   </entry>
   
   <entry>
     <title>宣言</title>
-    <link href="https://blog.superpung.xyz/declaration/"/>
-    <id>https://blog.superpung.xyz/declaration/</id>
+    <link href="https://blog.superpung.cn/declaration/"/>
+    <id>https://blog.superpung.cn/declaration/</id>
     <published>2021-06-11T03:39:31.000Z</published>
     <updated>2021-06-11T04:20:28.816Z</updated>
     
@@ -168,14 +168,14 @@
     
     
     
-    <category term="Others" scheme="https://blog.superpung.xyz/tags/Others/"/>
+    <category term="Others" scheme="https://blog.superpung.cn/tags/Others/"/>
     
   </entry>
   
   <entry>
     <title>iOS 15、iPadOS 15、macOS Monterey 体验</title>
-    <link href="https://blog.superpung.xyz/wwdc21/"/>
-    <id>https://blog.superpung.xyz/wwdc21/</id>
+    <link href="https://blog.superpung.cn/wwdc21/"/>
+    <id>https://blog.superpung.cn/wwdc21/</id>
     <published>2021-06-09T00:10:09.000Z</published>
     <updated>2021-07-28T04:16:45.444Z</updated>
     
@@ -187,14 +187,14 @@
     
     
     
-    <category term="Others" scheme="https://blog.superpung.xyz/tags/Others/"/>
+    <category term="Others" scheme="https://blog.superpung.cn/tags/Others/"/>
     
   </entry>
   
   <entry>
     <title>访问控制远程文件</title>
-    <link href="https://blog.superpung.xyz/primary-practice-h62/"/>
-    <id>https://blog.superpung.xyz/primary-practice-h62/</id>
+    <link href="https://blog.superpung.cn/primary-practice-h62/"/>
+    <id>https://blog.superpung.cn/primary-practice-h62/</id>
     <published>2021-05-30T06:54:41.000Z</published>
     <updated>2021-05-30T16:41:03.333Z</updated>
     
@@ -206,14 +206,14 @@
     
     
     
-    <category term="Practice" scheme="https://blog.superpung.xyz/tags/Practice/"/>
+    <category term="Practice" scheme="https://blog.superpung.cn/tags/Practice/"/>
     
   </entry>
   
   <entry>
     <title>疾病传播模拟</title>
-    <link href="https://blog.superpung.xyz/primary-practice-h61/"/>
-    <id>https://blog.superpung.xyz/primary-practice-h61/</id>
+    <link href="https://blog.superpung.cn/primary-practice-h61/"/>
+    <id>https://blog.superpung.cn/primary-practice-h61/</id>
     <published>2021-05-22T12:35:30.000Z</published>
     <updated>2021-05-30T16:40:00.498Z</updated>
     
@@ -225,14 +225,14 @@
     
     
     
-    <category term="Practice" scheme="https://blog.superpung.xyz/tags/Practice/"/>
+    <category term="Practice" scheme="https://blog.superpung.cn/tags/Practice/"/>
     
   </entry>
   
   <entry>
     <title>简单的爬虫尝试</title>
-    <link href="https://blog.superpung.xyz/tju-drive-crawling/"/>
-    <id>https://blog.superpung.xyz/tju-drive-crawling/</id>
+    <link href="https://blog.superpung.cn/tju-drive-crawling/"/>
+    <id>https://blog.superpung.cn/tju-drive-crawling/</id>
     <published>2021-05-22T11:30:07.000Z</published>
     <updated>2021-05-22T12:24:44.388Z</updated>
     
@@ -244,14 +244,14 @@
     
     
     
-    <category term="Python" scheme="https://blog.superpung.xyz/tags/Python/"/>
+    <category term="Python" scheme="https://blog.superpung.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>简单的聊天室</title>
-    <link href="https://blog.superpung.xyz/primary-practice-h60/"/>
-    <id>https://blog.superpung.xyz/primary-practice-h60/</id>
+    <link href="https://blog.superpung.cn/primary-practice-h60/"/>
+    <id>https://blog.superpung.cn/primary-practice-h60/</id>
     <published>2021-05-22T08:51:20.000Z</published>
     <updated>2021-05-22T11:27:27.535Z</updated>
     
@@ -263,14 +263,14 @@
     
     
     
-    <category term="Practice" scheme="https://blog.superpung.xyz/tags/Practice/"/>
+    <category term="Practice" scheme="https://blog.superpung.cn/tags/Practice/"/>
     
   </entry>
   
   <entry>
     <title>化学反应分析</title>
-    <link href="https://blog.superpung.xyz/primary-practice-h59/"/>
-    <id>https://blog.superpung.xyz/primary-practice-h59/</id>
+    <link href="https://blog.superpung.cn/primary-practice-h59/"/>
+    <id>https://blog.superpung.cn/primary-practice-h59/</id>
     <published>2021-05-06T13:12:11.000Z</published>
     <updated>2021-05-13T13:45:52.490Z</updated>
     
@@ -282,14 +282,14 @@
     
     
     
-    <category term="Practice" scheme="https://blog.superpung.xyz/tags/Practice/"/>
+    <category term="Practice" scheme="https://blog.superpung.cn/tags/Practice/"/>
     
   </entry>
   
   <entry>
     <title>投票统计</title>
-    <link href="https://blog.superpung.xyz/primary-practice-h58/"/>
-    <id>https://blog.superpung.xyz/primary-practice-h58/</id>
+    <link href="https://blog.superpung.cn/primary-practice-h58/"/>
+    <id>https://blog.superpung.cn/primary-practice-h58/</id>
     <published>2021-05-06T13:12:08.000Z</published>
     <updated>2021-05-12T07:05:41.640Z</updated>
     
@@ -301,14 +301,14 @@
     
     
     
-    <category term="Practice" scheme="https://blog.superpung.xyz/tags/Practice/"/>
+    <category term="Practice" scheme="https://blog.superpung.cn/tags/Practice/"/>
     
   </entry>
   
   <entry>
     <title>目录下文件大小统计</title>
-    <link href="https://blog.superpung.xyz/primary-practice-h57/"/>
-    <id>https://blog.superpung.xyz/primary-practice-h57/</id>
+    <link href="https://blog.superpung.cn/primary-practice-h57/"/>
+    <id>https://blog.superpung.cn/primary-practice-h57/</id>
     <published>2021-05-06T13:12:05.000Z</published>
     <updated>2021-05-12T07:05:33.180Z</updated>
     
@@ -320,14 +320,14 @@
     
     
     
-    <category term="Practice" scheme="https://blog.superpung.xyz/tags/Practice/"/>
+    <category term="Practice" scheme="https://blog.superpung.cn/tags/Practice/"/>
     
   </entry>
   
   <entry>
     <title>文本文件内容替换</title>
-    <link href="https://blog.superpung.xyz/primary-practice-h56/"/>
-    <id>https://blog.superpung.xyz/primary-practice-h56/</id>
+    <link href="https://blog.superpung.cn/primary-practice-h56/"/>
+    <id>https://blog.superpung.cn/primary-practice-h56/</id>
     <published>2021-05-06T13:12:02.000Z</published>
     <updated>2021-05-06T13:38:41.384Z</updated>
     
@@ -339,14 +339,14 @@
     
     
     
-    <category term="Practice" scheme="https://blog.superpung.xyz/tags/Practice/"/>
+    <category term="Practice" scheme="https://blog.superpung.cn/tags/Practice/"/>
     
   </entry>
   
   <entry>
     <title>李白杜甫诗词分析</title>
-    <link href="https://blog.superpung.xyz/primary-practice-h55/"/>
-    <id>https://blog.superpung.xyz/primary-practice-h55/</id>
+    <link href="https://blog.superpung.cn/primary-practice-h55/"/>
+    <id>https://blog.superpung.cn/primary-practice-h55/</id>
     <published>2021-05-01T12:35:37.000Z</published>
     <updated>2021-05-01T16:07:03.867Z</updated>
     
@@ -358,14 +358,14 @@
     
     
     
-    <category term="Practice" scheme="https://blog.superpung.xyz/tags/Practice/"/>
+    <category term="Practice" scheme="https://blog.superpung.cn/tags/Practice/"/>
     
   </entry>
   
   <entry>
     <title>判断复杂口令</title>
-    <link href="https://blog.superpung.xyz/primary-practice-h54/"/>
-    <id>https://blog.superpung.xyz/primary-practice-h54/</id>
+    <link href="https://blog.superpung.cn/primary-practice-h54/"/>
+    <id>https://blog.superpung.cn/primary-practice-h54/</id>
     <published>2021-05-01T12:35:34.000Z</published>
     <updated>2021-05-01T15:06:44.957Z</updated>
     
@@ -377,14 +377,14 @@
     
     
     
-    <category term="Practice" scheme="https://blog.superpung.xyz/tags/Practice/"/>
+    <category term="Practice" scheme="https://blog.superpung.cn/tags/Practice/"/>
     
   </entry>
   
   <entry>
     <title>兔子繁殖问题</title>
-    <link href="https://blog.superpung.xyz/primary-practice-h53/"/>
-    <id>https://blog.superpung.xyz/primary-practice-h53/</id>
+    <link href="https://blog.superpung.cn/primary-practice-h53/"/>
+    <id>https://blog.superpung.cn/primary-practice-h53/</id>
     <published>2021-05-01T12:35:30.000Z</published>
     <updated>2021-05-01T13:51:51.224Z</updated>
     
@@ -396,7 +396,7 @@
     
     
     
-    <category term="Practice" scheme="https://blog.superpung.xyz/tags/Practice/"/>
+    <category term="Practice" scheme="https://blog.superpung.cn/tags/Practice/"/>
     
   </entry>
   
