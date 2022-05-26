@@ -6,7 +6,7 @@
   <link href="https://blog.superpung.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.superpung.cn/"/>
-  <updated>2022-04-05T06:06:05.245Z</updated>
+  <updated>2022-05-26T10:19:14.418Z</updated>
   <id>https://blog.superpung.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《软件测试技术》笔记</title>
+    <link href="https://blog.superpung.cn/stt-notes/"/>
+    <id>https://blog.superpung.cn/stt-notes/</id>
+    <published>2022-05-26T10:18:30.000Z</published>
+    <updated>2022-05-26T10:19:14.418Z</updated>
+    
+    <content type="html"><![CDATA[<p>《软件测试技术》</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;《软件测试技术》&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="Notes" scheme="https://blog.superpung.cn/tags/Notes/"/>
+    
+  </entry>
   
   <entry>
     <title>Q-Learning 简介</title>
@@ -377,25 +400,6 @@
     
     
     <summary type="html">&lt;p&gt;Primary Practice h56&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="Practice" scheme="https://blog.superpung.cn/tags/Practice/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>李白杜甫诗词分析</title>
-    <link href="https://blog.superpung.cn/primary-practice-h55/"/>
-    <id>https://blog.superpung.cn/primary-practice-h55/</id>
-    <published>2021-05-01T12:35:37.000Z</published>
-    <updated>2021-05-01T16:07:03.867Z</updated>
-    
-    <content type="html"><![CDATA[<p>Primary Practice h55</p><a id="more"></a><div class="note info"><p>用计算机来证明：为什么说李白是浪漫主义诗人、杜甫是现实主义诗人？</p><p>分析不同诗人使用一些汉字时候的特点。</p><ol><li>分析：不同诗人使用一个汉字的时候，将这些汉字组成什么词汇使用在诗句里面；</li><li>按这些词汇出现的频率高低排序；</li><li>只要是两个汉字连起来就视为一个词。</li></ol></div><p><a href="https://blog.superpung.xyz/oop-h13/">上一次</a> 分析比较了红楼梦的前八十回和后四十回，这一次分析比较李白和杜甫的诗词。</p><p>主体代码几乎和 h13 相同。</p><p>借用了 h13 的 <code>getTopNWords</code> 方法，属性有：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> String[] verses = <span class="keyword">new</span> String[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">private</span> Set&lt;String&gt; charSet = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br></pre></td></tr></table></figure><p>改写 <code>getTopNWords</code> 方法：</p><ul><li>返回值改为 <code>List&lt;Map.Entry&lt;String, Integer&gt;&gt;</code> 便于得到频率值；</li><li>对切割后子串的判断条件改为 <code>!charSet.contains(str.substring(0, 1)) &amp;&amp; !charSet.contains(str.substring(1))</code>，即两个字都不在要判断的字集里时跳过。</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> List&lt;Map.Entry&lt;String, Integer&gt;&gt; getTopNWords(<span class="keyword">int</span> n)&#123;</span><br><span class="line"><span class="keyword">int</span> i, j;</span><br><span class="line">Map&lt;String, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">List&lt;Map.Entry&lt;String, Integer&gt;&gt; mapList;</span><br><span class="line">List&lt;Map.Entry&lt;String, Integer&gt;&gt; ans = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">1</span>; i &lt; <span class="keyword">this</span>.verses.length; i++)&#123;</span><br><span class="line">String content = <span class="keyword">this</span>.verses[i];</span><br><span class="line"><span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; content.length() - <span class="number">1</span>; j++) &#123;</span><br><span class="line">String str = content.substring(j, j + <span class="number">2</span>);</span><br><span class="line"><span class="keyword">if</span> (!charSet.contains(str.substring(<span class="number">0</span>, <span class="number">1</span>)) &amp;&amp; !charSet.contains(str.substring(<span class="number">1</span>))) &#123;</span><br><span class="line"><span class="keyword">continue</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> count;</span><br><span class="line">count = map.getOrDefault(str, <span class="number">0</span>);</span><br><span class="line">map.put(str, count + <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">mapList = <span class="keyword">new</span> ArrayList&lt;&gt;(map.entrySet());</span><br><span class="line">mapList.sort((o1, o2) -&gt; o2.getValue().compareTo(o1.getValue()));</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">ans.add(mapList.get(i));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>最终 <code>analysis</code> 方法只需处理文件读入和判断的字并打印结果：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">analysis</span><span class="params">(String pathFilename, String chars)</span> </span>&#123;</span><br><span class="line">String content = readFromTxt(pathFilename);</span><br><span class="line">List&lt;Map.Entry&lt;String, Integer&gt;&gt; result = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">charSet = <span class="keyword">new</span> HashSet&lt;&gt;(Arrays.asList(chars.split(<span class="string">&quot;;&quot;</span>)));</span><br><span class="line">verses = content.split(<span class="string">&quot;[，。]&quot;</span>);</span><br><span class="line">result = getTopNWords(<span class="number">10</span>);</span><br><span class="line"><span class="keyword">for</span> (Map.Entry&lt;String, Integer&gt; res : result) &#123;</span><br><span class="line">System.out.println(res.getKey() + <span class="string">&quot;\t&quot;</span> + res.getValue());</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>最后分析不同词汇（不完整）。</p><h4 id="“春-夏-秋-冬-暑-寒-风-雨-雪-霜-露”"><a href="#“春-夏-秋-冬-暑-寒-风-雨-雪-霜-露”" class="headerlink" title="“春;夏;秋;冬;暑;寒;风;雨;雪;霜;露”"></a>“春;夏;秋;冬;暑;寒;风;雨;雪;霜;露”</h4><table><thead><tr><th>李白</th><th>杜甫</th></tr></thead><tbody><tr><td>春风    72<br/>风吹    51<br/>秋月    40<br/>清风    28<br/>秋风    25<br/>东风    24<br/>白雪    21<br/>长风    21<br/>秋浦    21<br/>秋霜    20</td><td>风尘    48<br/>秋风    30<br/>风吹    28<br/>天寒    27<br/>清秋    25<br/>春色    20<br/>春风    19<br/>风雨    17<br/>高秋    16<br/>云雨    16</td></tr></tbody></table><p>这些是几个和季节有关的词汇，李白和杜甫在高频词上有所不同，李白喜欢“春风”、“风吹”、“秋月”，杜甫喜欢“风尘”、“秋风”。</p><h4 id="“醉-酒-饮-杯”"><a href="#“醉-酒-饮-杯”" class="headerlink" title="“醉;酒;饮;杯”"></a>“醉;酒;饮;杯”</h4><table><thead><tr><th>李白</th><th>杜甫</th></tr></thead><tbody><tr><td>美酒    27<br/>一杯    21<br/>杯酒    14<br/>对酒    13<br/>三杯    11<br/>斗酒    11<br/>杯中    8<br/>饮酒    8<br/>置酒    8<br/>衔杯    7</td><td>酒酣    10<br/>杯酒    7<br/>醉眠    6<br/>嗜酒    6<br/>痛饮    6<br/>酒杯    5<br/>对酒    5<br/>杯中    5<br/>酒肉    5<br/>春酒    5</td></tr></tbody></table><p>李白喝酒比杜甫多，而且酒量也比杜甫大。</p><h4 id="“东-西-南-北”"><a href="#“东-西-南-北”" class="headerlink" title="“东;西;南;北”"></a>“东;西;南;北”</h4><table><thead><tr><th>李白</th><th>杜甫</th></tr></thead><tbody><tr><td>东风    24<br/>东海    23<br/>东山    20<br/>东流    19<br/>南山    19<br/>西来    16<br/>东南    12<br/>北斗    12<br/>西施    10<br/>北海    10</td><td>西南    15<br/>北风    14<br/>北斗    14<br/>东西    13<br/>东流    12<br/>南国    12<br/>西江    11<br/>南征    11<br/>西戎    9<br/>瀼西    9</td></tr></tbody></table><p>李白更喜欢东风，杜甫总是想到北风。</p><h4 id="“云-日-月-山-河”"><a href="#“云-日-月-山-河”" class="headerlink" title="“云;日;月;山;河”"></a>“云;日;月;山;河”</h4><table><thead><tr><th>李白</th><th>杜甫</th></tr></thead><tbody><tr><td>白日    62<br/>明月    59<br/>青云    46<br/>浮云    44<br/>秋月    40<br/>白云    34<br/>落日    32<br/>今日    28<br/>五月    26<br/>黄河    26</td><td>今日    33<br/>落日    29<br/>白日    27<br/>浮云    23<br/>江山    22<br/>巫山    20<br/>日月    20<br/>终日    18<br/>他日    18<br/>日暮    18</td></tr></tbody></table><p>除去“白日”、“今日”等与自然景色无关的词汇，李白更喜欢“明月”，而杜甫更喜欢“落日”。</p><h4 id="“水-天-玉-心”"><a href="#“水-天-玉-心”" class="headerlink" title="“水;天;玉;心”"></a>“水;天;玉;心”</h4><table><thead><tr><th>李白</th><th>杜甫</th></tr></thead><tbody><tr><td>青天    54<br/>天地    53<br/>流水    34<br/>天上    31<br/>天子    28<br/>白玉    27<br/>绿水    26<br/>天下    22<br/>海水    17<br/>汉水    16</td><td>天下    35<br/>天地    32<br/>天子    29<br/>天寒    27<br/>江水    16<br/>寸心    13<br/>白水    13<br/>秋水    12<br/>天意    12<br/>水中    11</td></tr></tbody></table><p>可见杜甫更加挂念天下苍生，忧国忧民。</p><h4 id="“歌-愁”"><a href="#“歌-愁”" class="headerlink" title="“歌;愁”"></a>“歌;愁”</h4><table><thead><tr><th>李白</th><th>杜甫</th></tr></thead><tbody><tr><td>歌舞    9<br/>愁不    9<br/>人愁    9<br/>吴歌    9<br/>行歌    8<br/>歌白    8<br/>长歌    8<br/>愁杀    7<br/>歌钟    7<br/>棹歌    7</td><td>愁思    13<br/>穷愁    11<br/>客愁    10<br/>长歌    9<br/>高歌    8<br/>歌兮    7<br/>悲歌    6<br/>兮歌    6<br/>狂歌    5<br/>愁绝    5</td></tr></tbody></table><p>可以看出李白更加浪漫，喜欢歌舞；而杜甫则悲怆多愁，连“歌”都是“悲歌”。</p><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>由于不同的出身、经历，李白和杜甫两人的诗歌创作风格有所不同。李白和杜甫彼此深情凝望，又相互辉映。一个浪漫豪放，一个忧国忧民；一个富有激情，一个臻于深刻。李白的创作尚意韵，是神来之笔；杜甫的创作尚法度，是典范圭臬。李白和杜甫代表两种精神人格、两种风格境界。二者并立，成为两座高峰、两座丰碑，他们风格不同，却伟大相通。</p><blockquote class="blockquote-center"><p>李富于才，杜深于学。富于才者豪于情，深于学者笃于性。</p><p>诗原本性情。以性情为诗，所以凌驾一代，妙绝千古。</p></blockquote>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Primary Practice h55&lt;/p&gt;</summary>
     
     
     
