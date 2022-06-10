@@ -1159,6 +1159,7 @@ pre code {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 5;
 }
 @media (max-width: 413px) {
   .post-body .tabs ul.nav-tabs,
@@ -3137,11 +3138,11 @@ mjx-container[display='true'] + br {
   }
 }
 .site-brand-container {
-  background: linear-gradient(to right, #c31432, #240b36);
+  background: linear-gradient(to right, #1d2b64, #f8cdda);
 }
 .site-title {
   color: #fff;
-  font-family: 'Lobster', cursive;
+  font-family: 'Pacifico', cursive;
   font-size: 2em;
   font-weight: 900;
 }
@@ -3155,17 +3156,13 @@ blockquote p,
 }
 /* webkit, opera, IE9 */
 ::selection {
-  background: #00c4b6;
-  color: #f7f7f7;
+  background: #f8cdda;
+  color: #1d2b64;
 }
 /* firefox */
 ::-moz-selection {
-  background: #00c4b6;
-  color: #f7f7f7;
-}
-.headband {
-  height: 1.5px;
-  background-image: linear-gradient(90deg, #f79533 0%, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%);
+  background: #f8cdda;
+  color: #1d2b64;
 }
 .site-title:hover,
 .post-title:hover {
