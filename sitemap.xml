@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.superpung.cn/training-report/</loc>
+    
+    <lastmod>2022-06-18</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.superpung.cn/love/</loc>
     
     <lastmod>2022-06-11</lastmod>
@@ -690,7 +697,7 @@
 
   <url>
     <loc>https://blog.superpung.cn/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -698,119 +705,119 @@
   
   <url>
     <loc>https://blog.superpung.cn/tags/Computer-Systems/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Lab-Assignments/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Others/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Notes/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Blog-Config/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Experiments/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Data-Structures/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/C/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Swift/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Operating-Systems/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Review/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Java/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Practice/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Machine-Learning/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Reinforcement-Learning/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Q-Learning/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.superpung.cn/tags/Python/</loc>
-    <lastmod>2022-06-15</lastmod>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
