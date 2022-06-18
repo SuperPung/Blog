@@ -12372,7 +12372,10 @@
   <entry>
     <title>实训小记</title>
     <url>/training-report/</url>
-    <content><![CDATA[<h2 id="1-Linux-虚拟网络基础"><a href="#1-Linux-虚拟网络基础" class="headerlink" title="1 Linux 虚拟网络基础"></a>1 Linux 虚拟网络基础</h2><h3 id="1-1-tap"><a href="#1-1-tap" class="headerlink" title="1.1 tap"></a>1.1 tap</h3><p>tap 和 tun 是操作系统内核中的虚拟网络设备，tap 位于二层，tun 位于三层。它们的数据结构如下：</p>
+    <content><![CDATA[<p>简单记录一下一个多月的“实训”。</p>
+<a id="more"></a>
+
+<h2 id="1-Linux-虚拟网络基础"><a href="#1-Linux-虚拟网络基础" class="headerlink" title="1 Linux 虚拟网络基础"></a>1 Linux 虚拟网络基础</h2><h3 id="1-1-tap"><a href="#1-1-tap" class="headerlink" title="1.1 tap"></a>1.1 tap</h3><p>tap 和 tun 是操作系统内核中的虚拟网络设备，tap 位于二层，tun 位于三层。它们的数据结构如下：</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">tun_struct</span> &#123;</span></span><br><span class="line">    <span class="keyword">char</span> name[<span class="number">8</span>];                <span class="comment">// 设备名</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span> flags;         <span class="comment">// 区分tun和tap设备</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">fasync_struct</span> *<span class="title">fasync</span>;</span> <span class="comment">// 文件异步通知结构</span></span><br><span class="line">    <span class="keyword">wait_queue_head_t</span> read_wait; <span class="comment">// 等待队列</span></span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">net_device</span> <span class="title">dev</span>;</span>       <span class="comment">// Linux抽象网络设备结构</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">sk_buff_head</span> <span class="title">txq</span>;</span>     <span class="comment">// 网络缓冲区队列</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">net_device_stats</span> <span class="title">stats</span>;</span> <span class="comment">// 网卡状态信息结构</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>tap 和 tun 的数据结构定义相同，两者仅通过一个 Flag 来区分。但二者承载的功能区别很大：</p>
 <ul>
