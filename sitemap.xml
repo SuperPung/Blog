@@ -781,13 +781,6 @@
   </url>
   
   <url>
-    <loc>https://superpung.com/tags/Operating-Systems/</loc>
-    <lastmod>2023-01-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://superpung.com/tags/Arc-Browser/</loc>
     <lastmod>2023-01-27</lastmod>
     <changefreq>daily</changefreq>
@@ -795,7 +788,21 @@
   </url>
   
   <url>
-    <loc>https://superpung.com/tags/Swift/</loc>
+    <loc>https://superpung.com/tags/Operating-Systems/</loc>
+    <lastmod>2023-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://superpung.com/tags/Review/</loc>
+    <lastmod>2023-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://superpung.com/tags/Java/</loc>
     <lastmod>2023-01-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -816,14 +823,7 @@
   </url>
   
   <url>
-    <loc>https://superpung.com/tags/Review/</loc>
-    <lastmod>2023-01-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://superpung.com/tags/Java/</loc>
+    <loc>https://superpung.com/tags/Swift/</loc>
     <lastmod>2023-01-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
