@@ -739,6 +739,13 @@
   </url>
   
   <url>
+    <loc>https://superpung.com/tags/Blog-Config/</loc>
+    <lastmod>2023-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://superpung.com/tags/Computer-Systems/</loc>
     <lastmod>2023-01-27</lastmod>
     <changefreq>daily</changefreq>
@@ -747,13 +754,6 @@
   
   <url>
     <loc>https://superpung.com/tags/Lab-Assignments/</loc>
-    <lastmod>2023-01-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://superpung.com/tags/Blog-Config/</loc>
     <lastmod>2023-01-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -795,21 +795,14 @@
   </url>
   
   <url>
+    <loc>https://superpung.com/tags/Arc-Browser/</loc>
+    <lastmod>2023-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://superpung.com/tags/Swift/</loc>
-    <lastmod>2023-01-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://superpung.com/tags/%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2023-01-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://superpung.com/tags/Apple/</loc>
     <lastmod>2023-01-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -824,6 +817,20 @@
   
   <url>
     <loc>https://superpung.com/tags/Java/</loc>
+    <lastmod>2023-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://superpung.com/tags/%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2023-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://superpung.com/tags/Apple/</loc>
     <lastmod>2023-01-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -859,13 +866,6 @@
   
   <url>
     <loc>https://superpung.com/tags/Python/</loc>
-    <lastmod>2023-01-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://superpung.com/tags/Arc-Browser/</loc>
     <lastmod>2023-01-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
