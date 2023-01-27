@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 5.3.0">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="codeva-QE6cs67fKZ">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"superpung.com","root":"/","images":"/images","scheme":"Pisces","darkmode":"auto","version":"8.14.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"manual"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="方便、快捷地自定义网页，无需安装任何插件。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用 Arc 浏览器自定义网页">
+<meta property="og:url" content="https://superpung.com/arc-boost/">
+<meta property="og:site_name" content="Super Blog">
+<meta property="og:description" content="方便、快捷地自定义网页，无需安装任何插件。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-01.png">
+<meta property="og:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-02.png">
+<meta property="og:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-03.png">
+<meta property="og:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-04.png">
+<meta property="og:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-05.png">
+<meta property="og:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-06.png">
+<meta property="og:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-07.png">
+<meta property="og:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-08.png">
+<meta property="og:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-09.png">
+<meta property="article:published_time" content="2023-01-27T05:52:06.000Z">
+<meta property="article:modified_time" content="2023-01-27T08:43:16.789Z">
+<meta property="article:author" content="SUPER">
+<meta property="article:tag" content="Arc Browser">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-01.png">
+
+
+<link rel="canonical" href="https://superpung.com/arc-boost/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://superpung.com/arc-boost/","path":"arc-boost/","title":"使用 Arc 浏览器自定义网页"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>使用 Arc 浏览器自定义网页 | Super Blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-217297346-1"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-217297346-1","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?28e58f6349989ff6c10e095854dabae6"></script>
+
+
+
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "fhbczexkkr");
+</script>
+
+  <script class="next-config" data-name="matomo" type="application/json">{"enable":true,"server_url":"https://super.matomo.cloud/","site_id":1}</script>
+  <script src="/js/third-party/analytics/matomo.js"></script>
+
+  <script async defer data-website-id="6668f6e5-ac77-4a25-af25-c563ff187c3c" src="https://analytics.umami.is/script.js"></script>
+
+<!-- script src="https://super-bucket2-1305010619.cos.ap-beijing.myqcloud.com/super_live2d/autoload.js" -->
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Super Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Super Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Follow Your Heart</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-love"><a href="/love/" rel="section"><i class="fa fa-heart fa-fw"></i>Love</a></li><li class="menu-item menu-item-friends"><a href="/links/" rel="section"><i class="fas fa-handshake fa-fw"></i>Friends</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Arc-%E6%B5%8F%E8%A7%88%E5%99%A8"><span class="nav-text">什么是 Arc 浏览器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E9%A1%B5"><span class="nav-text">为什么要自定义网页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E2%80%A6%EF%BC%9F"><span class="nav-text">为什么不…？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E7%9B%B4%E6%8E%A5%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E6%BA%90%E4%BB%A3%E7%A0%81%EF%BC%9F"><span class="nav-text">为什么不直接修改网页源代码？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E7%9B%B4%E6%8E%A5%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%EF%BC%9F"><span class="nav-text">为什么不直接安装插件？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%88%A9%E7%94%A8-Arc-Boost-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E9%A1%B5%EF%BC%88%E4%BB%A5-Bilibili-%E4%B8%BA%E4%BE%8B%EF%BC%89"><span class="nav-text">如何快速利用 Arc Boost 自定义网页（以 Bilibili 为例）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%9B%B4%E5%A4%9A%E7%BD%91%E9%A1%B5"><span class="nav-text">修改更多网页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E7%9A%84%EF%BC%9F"><span class="nav-text">这是怎么实现的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%8F%91%E6%8C%A5-Arc-Boost-%E6%9B%B4%E5%A4%A7%E7%9A%84%E4%BD%9C%E7%94%A8%EF%BC%9F"><span class="nav-text">如何发挥 Arc Boost 更大的作用？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E5%A4%96%E8%AF%9D"><span class="nav-text">题外话</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="SUPER"
+      src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/avatar.png">
+  <p class="site-author-name" itemprop="name">SUPER</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">97</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/superpung" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;superpung" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:hi@repus.me" title="E-Mail → mailto:hi@repus.me" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/repusx" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;repusx" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/repusx" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;repusx" rel="noopener me" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/repusx" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;repusx" rel="noopener me" target="_blank"><i class="fab fa-telegram-plane fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://chat.repus.me/" title="Discord → https:&#x2F;&#x2F;chat.repus.me" rel="noopener me" target="_blank"><i class="fab fa-discord fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://slack.repus.me/" title="Slack → https:&#x2F;&#x2F;slack.repus.me" rel="noopener me" target="_blank"><i class="fab fa-slack fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://repus.me/" title="https:&#x2F;&#x2F;repus.me" rel="noopener" target="_blank">me</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://superpung.com/arc-boost/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/avatar.png">
+      <meta itemprop="name" content="SUPER">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Super Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="使用 Arc 浏览器自定义网页 | Super Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          使用 Arc 浏览器自定义网页
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2023-01-27 13:52:06 / Modified: 16:43:16" itemprop="dateCreated datePublished" datetime="2023-01-27T13:52:06+08:00">2023-01-27</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Word count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>3.4k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>3 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>方便、快捷地自定义网页，无需安装任何插件。</p>
+<a id="more"></a>
+
+<h2 id="什么是-Arc-浏览器"><a href="#什么是-Arc-浏览器" class="headerlink" title="什么是 Arc 浏览器"></a>什么是 Arc 浏览器</h2><p>在上一篇文章 —— <a href="https://superpung.com/rev-2022">2022 年度总结</a> 中，我提到了去年比较满意的一款产品：Arc 浏览器。它是一款基于 Chromium 的浏览器，有很多传统浏览器没有的新功能。这里不过多介绍它的其他功能，主要讲一讲自定义网页 —— 即 <a target="_blank" rel="noopener" href="https://youtu.be/53KQ2wUZG2s">Arc Boost</a>。</p>
+<h2 id="为什么要自定义网页"><a href="#为什么要自定义网页" class="headerlink" title="为什么要自定义网页"></a>为什么要自定义网页</h2><p>我喜欢使用浏览器，只要浏览器能做的，我一般不会下载 app。很多网站的布局、设计和推荐的内容都不是我想要的，我希望能够自定义网页，只看到我想要的内容。比如在用 Bilibili 时，视频上方的推荐搜索、直播间花里胡哨的活动通知和礼物等，我都不想看到。这些内容在 app 中是不可以自定义的，但正因为是浏览器，才有了自定义网页的可能。</p>
+<h2 id="为什么不…？"><a href="#为什么不…？" class="headerlink" title="为什么不…？"></a>为什么不…？</h2><h3 id="为什么不直接修改网页源代码？"><a href="#为什么不直接修改网页源代码？" class="headerlink" title="为什么不直接修改网页源代码？"></a>为什么不直接修改网页源代码？</h3><p>这样做的话，每次网页刷新都需要重新修改，而且不同路由下的网页都需要修改，比较麻烦。</p>
+<h3 id="为什么不直接安装插件？"><a href="#为什么不直接安装插件？" class="headerlink" title="为什么不直接安装插件？"></a>为什么不直接安装插件？</h3><div class="note info"><p>上文和下文提到的“插件”指的就是浏览器的扩展（extension）。</p>
+</div>
+
+<p>当然，对于 Bilibili 网站，有很多出色、强大的自定义插件可供使用。但插件提供了太多我不需要的功能，提供的需要的功能实现又过于复杂也不是我想要的样子，而且向插件中添加我想要的功能又太麻烦，最后成了为了自定义网页而去自定义插件。</p>
+<h2 id="如何快速利用-Arc-Boost-自定义网页（以-Bilibili-为例）"><a href="#如何快速利用-Arc-Boost-自定义网页（以-Bilibili-为例）" class="headerlink" title="如何快速利用 Arc Boost 自定义网页（以 Bilibili 为例）"></a>如何快速利用 Arc Boost 自定义网页（以 Bilibili 为例）</h2><p>首先，你要有一台运行 macOS 的电脑，因为 Arc 浏览器暂时只支持 macOS。</p>
+<p>其次，你需要安装 Arc 浏览器，这里是邀请码：</p>
+<blockquote>
+<p>hey, here’s an invite to Arc, the browser I was telling you about!</p>
+<p><a target="_blank" rel="noopener" href="https://arc.net/gift/44d83098">https://arc.net/gift/44d83098</a></p>
+</blockquote>
+<p>在浏览器中打开 <a target="_blank" rel="noopener" href="https://bilibili.com/">Bilibili</a>，在侧边栏的右下角 <code>+</code> 号中选择 <code>New Boost</code>，即可进入 Arc Boost 编辑页面。</p>
+<p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-01.png" alt="Arc Boost 编辑页面"></p>
+<p>点击 <code>Style</code> - <code>A specific website</code>，在窗口中将 <code>www.bilibili.com</code> 改为 <code>bilibili.com</code>，点击 <code>Create Boost</code>，即可进入 <code>styles.css</code> 编辑页面。</p>
+<div class="note info"><p>因为 Bilibili 空间、直播间等页面的三级域名都不是 www，如果这里只写 www，会导致自定义 css 在这些页面无法生效。</p>
+</div>
+
+<p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-02.png" alt="Arc Boost css 页面"></p>
+<p>这里就是自定义网页的地方了，你可以在这里添加你想要针对 Bilibili 的 css 代码，浏览器会自动覆盖掉原网页的 css。</p>
+<div class="note info"><p>你应该对 css 有一些比较基础的了解。如果完全不了解，Arc 浏览器还贴心地提供了很多教程，在右上角的 Handbook 中可以找到。</p>
+</div>
+
+<p>下面以隐藏 Bilibili 网页上方的推荐搜索为例，这里是修改前的网页：</p>
+<p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-03.png" alt="修改前"></p>
+<p>用开发者工具找到搜索框的元素路径，这里是 <code>#nav-searchform &gt; div.nav-search-content &gt; input</code>。</p>
+<p>删除原有的 css 代码，添加如下代码：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#nav-searchform</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.nav-search-content</span> &gt; <span class="selector-tag">input</span><span class="selector-pseudo">::placeholder</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>浏览器会自动保存并自动刷新，修改后的网页如下：</p>
+<p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-04.png" alt="修改后"></p>
+<p>而且此后只要通过 Arc 浏览器访问 Bilibili，都会自动隐藏搜索框的推荐搜索。</p>
+<p>是不是很简单！</p>
+<h2 id="修改更多网页"><a href="#修改更多网页" class="headerlink" title="修改更多网页"></a>修改更多网页</h2><p>这三行代码可以隐藏 Bilibili <strong>首页</strong> 上方的推荐搜索，但在其他页面可能不生效。因为 Bilibili 其他页面的结构可能有所不同，所以需要到不生效的页面再次找到对应的元素路径，然后添加 css 代码。</p>
+<p>这里以直播间页面（<a href="https://live.bilibili.com）的搜索框路径为例：">https://live.bilibili.com）的搜索框路径为例：</a></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#nav-searchform</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.p-relative</span><span class="selector-class">.search-bar</span><span class="selector-class">.over-hidden</span><span class="selector-class">.border-box</span><span class="selector-class">.t-nowrap</span> &gt; <span class="selector-tag">input</span><span class="selector-pseudo">::placeholder</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>应该可以隐藏全部搜索框的推荐搜索了。</p>
+<p>说到直播间，默认的 Bilibili 直播间是这样的：</p>
+<p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-05.png" alt="Bilibili 默认直播间"></p>
+<p>比如我只想看 v，不喜欢充值、送礼物、打赏、买周边、上舰，那么上面的礼物星球、限时领取、购物提示，以及下面的小橙车、一排礼物、上舰提示、充值按钮，都是我不想看到的。这时就可以找到它们的元素路径，然后添加 css 代码隐藏它们。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#head-info-vm</span> &gt; <span class="selector-tag">div</span> &gt; <span class="selector-tag">div</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.lower-row</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.left-ctnr</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.gift-planet-entry</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#head-info-vm</span> &gt; <span class="selector-tag">div</span> &gt; <span class="selector-tag">div</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.lower-row</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.left-ctnr</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.activity-gather-entry</span><span class="selector-class">.activity-entry</span><span class="selector-class">.s-activity-entry</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#gift-control-vm</span> &gt; <span class="selector-tag">div</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.vertical-middle</span><span class="selector-class">.dp-table</span><span class="selector-class">.section</span><span class="selector-class">.right-part</span><span class="selector-class">.p-relative</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#gift-control-vm</span> &gt; <span class="selector-tag">div</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.left-part-ctnr</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.ecommerce-entry</span><span class="selector-class">.gift-left-part</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#sections-vm</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.section-block</span><span class="selector-class">.f-clear</span><span class="selector-class">.z-section-blocks</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.left-container</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.flip-view</span><span class="selector-class">.p-relative</span><span class="selector-class">.over-hidden</span><span class="selector-class">.w-100</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#shop-popover-vm</span>, <span class="selector-id">#my-dear-haruna-vm</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>修改后：</p>
+<p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-06.png" alt="Bilibili 修改后直播间"></p>
+<p>是不是简洁很多！这下可以专心看直播了。</p>
+<p>同理，你可以修改任何网页，只要找到对应的元素路径，然后添加 css 代码就可以了。</p>
+<h2 id="这是怎么实现的？"><a href="#这是怎么实现的？" class="headerlink" title="这是怎么实现的？"></a>这是怎么实现的？</h2><p>实际上，Arc Boost 就是为浏览器添加了一个插件。比如刚才我们添加的对于 bilibili.com 的 Boost，可以在已安装的插件中找到：</p>
+<p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-07.png" alt="已安装的插件"></p>
+<p>在插件管理中，可以看到具体信息，包括插件的大小、权限和存储位置等：</p>
+<p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-08.png" alt="Arc Boost 详情"></p>
+<p>上面显示 &lt; 1 MB，其实也就 2 KB。</p>
+<p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/arc-boost-09.png" alt="Arc Boost 文件夹"></p>
+<h2 id="如何发挥-Arc-Boost-更大的作用？"><a href="#如何发挥-Arc-Boost-更大的作用？" class="headerlink" title="如何发挥 Arc Boost 更大的作用？"></a>如何发挥 Arc Boost 更大的作用？</h2><p>得益于 Arc 浏览器优秀的套壳技术，对于已经添加的 Boost，可以在作用的网页右上角的插件列表（Extensions）中看到，且单独以“Boosts”列出，可以一键删除、修改或置顶，不需要单独在 Finder 中打开并修改。</p>
+<p>Arc Boost 的作用远不止于此。本文只介绍了它的最简单的用法 —— 改变网站样式，实际上，正如一开始进入 Boost 所见，它还可以通过编写 JavaScript 代码替换、注入网站内容，或者做任何事情。它的存在将浏览器插件的开发门槛降到了极低，让任何人都可以轻松地编写并使用适合自己的浏览器插件，不依赖其他工具。</p>
+<p><a target="_blank" rel="noopener" href="https://arcboosts.com/">https://arcboosts.com/</a> 收录了很多有趣的 Boost，你可以在这里探索适合自己的，或者自己编写一个并上传上去。如果你有更多关于 Arc Boost 或 Arc Browser 的想法，欢迎在下方留言交流。</p>
+<h2 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h2><div class="note info"><p>如果你只想看关于本文主题的内容，可以跳过这一部分。</p>
+</div>
+
+<p>细心的小伙伴应该已经发现了，我的博客域名又又又换了。从最开始的 .xyz 到后来的 .cn，再到现在的 .com，以后应该不会再换了。这次换域名的原因是，之前在 <a target="_blank" rel="noopener" href="https://www.value-domain.com/">Value Domain</a> 上面一元买到了 6 个域名，现在的这个域名就是其中之一。.com 域名确实更加通用，而且不用放在国内的阿里云或腾讯云上（相比 .cn），我转移到了 Cloudflare 上，体验也更好。原来的 .cn 域名做了跳转，所以这次迁移暂时也不会影响到原来的链接（为什么说是“暂时”呢，因为 .cn 域名过期之后大概率不会再续费了，所以到时候原来的链接肯定会失效）。唯一受影响的就是之前不蒜子统计的浏览数据了，不过也没什么关系，新的开始，新的计数。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>Buy me a coffee</div>
+  <button>
+    Donate
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/wechatpay.png" alt="SUPER WeChat Pay">
+        <span>WeChat Pay</span>
+      </div>
+      <div>
+        <img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/alipay.png" alt="SUPER Alipay">
+        <span>Alipay</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>SUPER
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://superpung.com/arc-boost/" title="使用 Arc 浏览器自定义网页">https://superpung.com/arc-boost/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/+XbrKCtXLtDBlYTA1">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Arc-Browser/" rel="tag"><i class="fa fa-tag"></i> Arc Browser</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/rev-2022/" rel="prev" title="我和我的 2022">
+                  <i class="fa fa-chevron-left"></i> 我和我的 2022
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments utterances-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fas fa-bolt"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SUPER</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="Word count total">696k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">10:33</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div><span id="jinrishici-sentence">正在加载今日诗词....</span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.1/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"superpung/blog","issue_term":"pathname","theme":"github-light"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
+
+
+
+</body>
+</html>
