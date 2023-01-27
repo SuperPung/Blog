@@ -12833,7 +12833,7 @@
 <p>而且此后只要通过 Arc 浏览器访问 Bilibili，都会自动隐藏搜索框的推荐搜索。</p>
 <p>是不是很简单！</p>
 <h2 id="修改更多网页"><a href="#修改更多网页" class="headerlink" title="修改更多网页"></a>修改更多网页</h2><p>这三行代码可以隐藏 Bilibili <strong>首页</strong> 上方的推荐搜索，但在其他页面可能不生效。因为 Bilibili 其他页面的结构可能有所不同，所以需要到不生效的页面再次找到对应的元素路径，然后添加 css 代码。</p>
-<p>这里以直播间页面（<a href="https://live.bilibili.com）的搜索框路径为例：">https://live.bilibili.com）的搜索框路径为例：</a></p>
+<p>这里以直播间页面（<a href="https://live.bilibili.com/%EF%BC%89%E7%9A%84%E6%90%9C%E7%B4%A2%E6%A1%86%E8%B7%AF%E5%BE%84%E4%B8%BA%E4%BE%8B%EF%BC%9A">https://live.bilibili.com/）的搜索框路径为例：</a></p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#nav-searchform</span> &gt; <span class="selector-tag">div</span><span class="selector-class">.p-relative</span><span class="selector-class">.search-bar</span><span class="selector-class">.over-hidden</span><span class="selector-class">.border-box</span><span class="selector-class">.t-nowrap</span> &gt; <span class="selector-tag">input</span><span class="selector-pseudo">::placeholder</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>应该可以隐藏全部搜索框的推荐搜索了。</p>
 <p>说到直播间，默认的 Bilibili 直播间是这样的：</p>
