@@ -2904,16 +2904,16 @@ mjx-container[display='true'] + br {
   }
 }
 .site-brand-container {
-  background: linear-gradient(to right, #1d2b64, #f8cdda);
+  background: linear-gradient(90deg, rgba(247,149,51,0.102) 0, rgba(243,112,85,0.102) 15%, rgba(239,78,123,0.102) 30%, rgba(161,102,171,0.102) 44%, rgba(80,115,184,0.102) 58%, rgba(16,152,173,0.102) 72%, rgba(7,179,155,0.102) 86%, rgba(109,186,130,0.102) 100%);
 }
 .site-title {
-  color: #fff;
+  color: #666;
   font-family: 'Pacifico', cursive;
   font-size: 2em;
   font-weight: 900;
 }
 .site-subtitle {
-  color: #fff;
+  color: #aaa;
   font-family: 'Cinzel', serif;
 }
 blockquote p,
@@ -2921,15 +2921,7 @@ blockquote p,
   font-family: "EB Garamond", STKaiti, KaiTi, SimKai, DFKai-SB, "Noto Serif SC";
 }
 /* webkit, opera, IE9 */
-::selection {
-  background: #f8cdda;
-  color: #1d2b64;
-}
 /* firefox */
-::-moz-selection {
-  background: #f8cdda;
-  color: #1d2b64;
-}
 .site-title:hover,
 .post-title:hover {
   animation: shake-it 0.5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);

@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://superpung.com/data-structures-notes/</loc>
+    <loc>https://superpung.com/data-structures-experiments/</loc>
     
     <lastmod>2023-01-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://superpung.com/data-structures-experiments/</loc>
+    <loc>https://superpung.com/data-structures-notes/</loc>
     
     <lastmod>2023-01-28</lastmod>
     
@@ -93,14 +93,14 @@
   </url>
   
   <url>
-    <loc>https://superpung.com/oop-h07/</loc>
+    <loc>https://superpung.com/oop-h06/</loc>
     
     <lastmod>2023-01-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://superpung.com/oop-h06/</loc>
+    <loc>https://superpung.com/oop-h07/</loc>
     
     <lastmod>2023-01-28</lastmod>
     
@@ -725,6 +725,27 @@
 
   
   <url>
+    <loc>https://superpung.com/tags/Others/</loc>
+    <lastmod>2023-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://superpung.com/tags/Arc-Browser/</loc>
+    <lastmod>2023-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://superpung.com/tags/Blog-Config/</loc>
+    <lastmod>2023-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://superpung.com/tags/Computer-Systems/</loc>
     <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
@@ -733,13 +754,6 @@
   
   <url>
     <loc>https://superpung.com/tags/Lab-Assignments/</loc>
-    <lastmod>2023-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://superpung.com/tags/Blog-Config/</loc>
     <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -760,27 +774,6 @@
   </url>
   
   <url>
-    <loc>https://superpung.com/tags/Others/</loc>
-    <lastmod>2023-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://superpung.com/tags/Data-Structures/</loc>
-    <lastmod>2023-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://superpung.com/tags/Arc-Browser/</loc>
-    <lastmod>2023-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://superpung.com/tags/Swift/</loc>
     <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
@@ -788,21 +781,7 @@
   </url>
   
   <url>
-    <loc>https://superpung.com/tags/C/</loc>
-    <lastmod>2023-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://superpung.com/tags/Java/</loc>
-    <lastmod>2023-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://superpung.com/tags/Review/</loc>
+    <loc>https://superpung.com/tags/Data-Structures/</loc>
     <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -817,6 +796,27 @@
   
   <url>
     <loc>https://superpung.com/tags/Apple/</loc>
+    <lastmod>2023-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://superpung.com/tags/Review/</loc>
+    <lastmod>2023-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://superpung.com/tags/Java/</loc>
+    <lastmod>2023-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://superpung.com/tags/C/</loc>
     <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
