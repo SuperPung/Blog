@@ -26,26 +26,25 @@
     <meta name="description" content="Data Structures Experiment #9 - 完成哈夫曼树类的私有属性以及接口，实现哈夫曼树类。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="还不会实现「哈夫曼树」？">
-<meta property="og:url" content="https://superpung.com/Data-Structures-Experiment-9/">
+<meta property="og:url" content="https://superpung.com/data-structures-experiment-9/">
 <meta property="og:site_name" content="Super Blog">
 <meta property="og:description" content="Data Structures Experiment #9 - 完成哈夫曼树类的私有属性以及接口，实现哈夫曼树类。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/ExiTalk.png">
-<meta property="og:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/HufTree.png">
+<meta property="og:image" content="https://i0.hdslb.com/bfs/album/25e097dfaba0636eb8eb1f1d2a121ac69c3ba89c.png">
 <meta property="article:published_time" content="2020-04-09T01:46:32.000Z">
-<meta property="article:modified_time" content="2021-02-17T05:38:12.955Z">
+<meta property="article:modified_time" content="2023-01-28T05:57:16.149Z">
 <meta property="article:author" content="SUPER">
 <meta property="article:tag" content="Experiments">
 <meta property="article:tag" content="Data Structures">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/ExiTalk.png">
+<meta name="twitter:image" content="https://i0.hdslb.com/bfs/album/25e097dfaba0636eb8eb1f1d2a121ac69c3ba89c.png">
 
 
-<link rel="canonical" href="https://superpung.com/Data-Structures-Experiment-9/">
+<link rel="canonical" href="https://superpung.com/data-structures-experiment-9/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://superpung.com/Data-Structures-Experiment-9/","path":"Data-Structures-Experiment-9/","title":"还不会实现「哈夫曼树」？"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://superpung.com/data-structures-experiment-9/","path":"data-structures-experiment-9/","title":"还不会实现「哈夫曼树」？"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>还不会实现「哈夫曼树」？ | Super Blog</title>
@@ -172,7 +171,7 @@
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="SUPER"
-      src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/avatar.png">
+      src="https://i0.hdslb.com/bfs/album/6db03d7a87d05d17b228d94520cbfd017b2ded33.png">
   <p class="site-author-name" itemprop="name">SUPER</p>
   <div class="site-description" itemprop="description">Super Lee's personal blog.</div>
 </div>
@@ -254,10 +253,10 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://superpung.com/Data-Structures-Experiment-9/">
+    <link itemprop="mainEntityOfPage" href="https://superpung.com/data-structures-experiment-9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://super-bucket1.oss-cn-beijing.aliyuncs.com/avatar.png">
+      <meta itemprop="image" content="https://i0.hdslb.com/bfs/album/6db03d7a87d05d17b228d94520cbfd017b2ded33.png">
       <meta itemprop="name" content="SUPER">
     </span>
 
@@ -290,7 +289,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2021-02-17 13:38:12" itemprop="dateModified" datetime="2021-02-17T13:38:12+08:00">2021-02-17</time>
+      <time title="Modified: 2023-01-28 13:57:16" itemprop="dateModified" datetime="2023-01-28T13:57:16+08:00">2023-01-28</time>
     </span>
 
   
@@ -329,14 +328,18 @@
         <p>Data Structures Experiment #9 - 完成哈夫曼树类的私有属性以及接口，实现哈夫曼树类。</p>
 <a id="more"></a>
 
-<p><img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/ExiTalk.png"></p>
 <blockquote>
 <p>在<code>HuffmanTree</code>类中给出了四个函数:</p>
 <ul>
-<li><code>HuffmanTree(const char* str);</code><br>将<code>str</code>构建为哈夫曼树，要求权值较小的节点放在左子，左子编号为<code>0</code>。例如<code>&quot;aaaabbc&quot;</code>的树生成如下。<img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/HufTree.png" alt="HufTree"></li>
-<li><code>char* getencode(char c);</code><br>获取字符<code>c</code>的编码。将结果以<code>char*</code>的形式返回。上例中的 <code>getencode(‘c’)</code>返回结果为<code>00</code>。</li>
-<li><code>int getWPL();</code><br>返回哈夫曼树的WPL。</li>
-<li><code>~HuffmanTree();</code><br>哈夫曼树的析构函数。</li>
+<li><p><code>HuffmanTree(const char* str);</code><br>将<code>str</code>构建为哈夫曼树，要求权值较小的节点放在左子，左子编号为<code>0</code>。例如<code>&quot;aaaabbc&quot;</code>的树生成如下。</p>
+<p><img src="https://i0.hdslb.com/bfs/album/25e097dfaba0636eb8eb1f1d2a121ac69c3ba89c.png" alt="HufTree"></p>
+</li>
+<li><p><code>char* getencode(char c);</code><br>获取字符<code>c</code>的编码。将结果以<code>char*</code>的形式返回。上例中的 <code>getencode(‘c’)</code>返回结果为<code>00</code>。</p>
+</li>
+<li><p><code>int getWPL();</code><br>返回哈夫曼树的WPL。</p>
+</li>
+<li><p><code>~HuffmanTree();</code><br>哈夫曼树的析构函数。</p>
+</li>
 </ul>
 </blockquote>
 <h1 id="0x00-数据域封装"><a href="#0x00-数据域封装" class="headerlink" title="0x00 数据域封装"></a>0x00 数据域封装</h1><p>定义Huffman树结点类型<code>HTNode</code>，包括结点字符、权、父结点、左子、右子、编码等。<br>存储叶结点个数<code>leaves</code>和结点个数<code>nodes</code>。<br>存储结点转换后的编码。</p>
@@ -353,7 +356,7 @@
 <blockquote>
 <p>操作C字符串需要包含<code>&lt;cstring&gt;</code>头文件。</p>
 </blockquote>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> size;</span><br><span class="line"><span class="keyword">char</span>* ch = <span class="keyword">new</span> <span class="keyword">char</span>[<span class="built_in">strlen</span>(str)];</span><br><span class="line"><span class="keyword">int</span>* weigh = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="built_in">strlen</span>(str)];</span><br><span class="line">size = <span class="number">0</span>;</span><br><span class="line">ch[<span class="number">0</span>] = str[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="built_in">strlen</span>(str); i++) &#123;</span><br><span class="line">    <span class="keyword">bool</span> exist = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; size + <span class="number">1</span>; j++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (str[i] == ch[j])</span><br><span class="line">            exist = <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (!exist)</span><br><span class="line">        ch[++size] = str[i];        </span><br><span class="line">&#125;</span><br><span class="line">leaves = size + <span class="number">1</span>;</span><br><span class="line">nodes = <span class="number">2</span> * leaves - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; leaves; i++) &#123;</span><br><span class="line">    weigh[i] = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="built_in">strlen</span>(str); j++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (ch[i] == str[j])</span><br><span class="line">            weigh[i]++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> size;</span><br><span class="line"><span class="keyword">char</span>* ch = <span class="keyword">new</span> <span class="keyword">char</span>[<span class="built_in">strlen</span>(str)];</span><br><span class="line"><span class="keyword">int</span>* weigh = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="built_in">strlen</span>(str)];</span><br><span class="line">size = <span class="number">0</span>;</span><br><span class="line">ch[<span class="number">0</span>] = str[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="built_in">strlen</span>(str); i++) &#123;</span><br><span class="line">    <span class="keyword">bool</span> exist = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; size + <span class="number">1</span>; j++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (str[i] == ch[j])</span><br><span class="line">            exist = <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (!exist)</span><br><span class="line">        ch[++size] = str[i];</span><br><span class="line">&#125;</span><br><span class="line">leaves = size + <span class="number">1</span>;</span><br><span class="line">nodes = <span class="number">2</span> * leaves - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; leaves; i++) &#123;</span><br><span class="line">    weigh[i] = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="built_in">strlen</span>(str); j++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (ch[i] == str[j])</span><br><span class="line">            weigh[i]++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="Initializing"><a href="#Initializing" class="headerlink" title="Initializing"></a>Initializing</h2><p>此阶段用上一阶段存储的字符数组和权数组来初始化Huffman数组的前部分（叶结点），其他赋值为<code>-1</code>便于进行判断。</p>
 <p><code>char*</code>型结点编码<code>encode</code>在此处定义，便于<a href="#encode">以后</a>使用。</p>
 <blockquote>
@@ -368,14 +371,14 @@
 <blockquote>
 <p>不要忘记初始化后<code>break</code>。</p>
 </blockquote>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HuffmanTree::mini</span><span class="params">(<span class="keyword">int</span>&amp; left, <span class="keyword">int</span>&amp; right)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> min, _min;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nodes; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (HufTree[i].weight &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            min = _min = HufTree[i].weight;</span><br><span class="line">            left = right = i;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nodes; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (HufTree[i].weight &lt; min &amp;&amp; HufTree[i].weight &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            min = HufTree[i].weight;</span><br><span class="line">            left = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nodes; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (HufTree[i].weight &lt; _min &amp;&amp; HufTree[i].weight &gt; min &amp;&amp; HufTree[i].weight &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            _min = HufTree[i].weight;</span><br><span class="line">            right = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HuffmanTree::mini</span><span class="params">(<span class="keyword">int</span>&amp; left, <span class="keyword">int</span>&amp; right)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> min, _min;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nodes; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (HufTree[i].weight &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            min = _min = HufTree[i].weight;</span><br><span class="line">            left = right = i;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nodes; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (HufTree[i].weight &lt; min &amp;&amp; HufTree[i].weight &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            min = HufTree[i].weight;</span><br><span class="line">            left = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nodes; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (HufTree[i].weight &lt; _min &amp;&amp; HufTree[i].weight &gt; min &amp;&amp; HufTree[i].weight &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            _min = HufTree[i].weight;</span><br><span class="line">            right = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="Combining-1"><a href="#Combining-1" class="headerlink" title="Combining"></a>Combining</h3><p>寻找权最小的两个结点，进行合并。</p>
 <p>将所得父结点存储在Huffman数组后部分（根结点），将后部分进行初始化。</p>
 <p>合并之后需要将两个子结点<span id = "shield"><strong>屏蔽</strong></span>，不会出现在以后的<code>Searching</code>中。</p>
 <blockquote>
 <p>此处若不处理已经合并的结点，则下次寻找时仍会返回此结点而出现错误。</p>
 </blockquote>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = leaves; i &lt; nodes; i++) &#123;</span><br><span class="line">    <span class="keyword">int</span> min1, min2;</span><br><span class="line">    mini(min1, min2);</span><br><span class="line">    </span><br><span class="line">    HufTree[min1].parent = HufTree[min2].parent = i;</span><br><span class="line">    HufTree[i].lChild = min1;</span><br><span class="line">    HufTree[i].rChild = min2;</span><br><span class="line">    </span><br><span class="line">    HufTree[i].weight = HufTree[min1].weight + HufTree[min2].weight;</span><br><span class="line">    </span><br><span class="line">    HufTree[min1].weight = -HufTree[min1].weight;</span><br><span class="line">    HufTree[min2].weight = -HufTree[min2].weight;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = leaves; i &lt; nodes; i++) &#123;</span><br><span class="line">    <span class="keyword">int</span> min1, min2;</span><br><span class="line">    mini(min1, min2);</span><br><span class="line"></span><br><span class="line">    HufTree[min1].parent = HufTree[min2].parent = i;</span><br><span class="line">    HufTree[i].lChild = min1;</span><br><span class="line">    HufTree[i].rChild = min2;</span><br><span class="line"></span><br><span class="line">    HufTree[i].weight = HufTree[min1].weight + HufTree[min2].weight;</span><br><span class="line"></span><br><span class="line">    HufTree[min1].weight = -HufTree[min1].weight;</span><br><span class="line">    HufTree[min2].weight = -HufTree[min2].weight;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="Encoding"><a href="#Encoding" class="headerlink" title="Encoding"></a>Encoding</h2><p>此阶段将上一阶段构建完成的Huffman树的叶结点进行编码，通过寻找每一个叶结点的父结点，再寻找该父结点的父结点……以此类推，每次追溯父结点时判断子结点是父结点的左子还是右子，编码字符串相应地添加<code>0</code>或<code>1</code>。最后将所得字符串反转，即为编码。</p>
 <blockquote>
 <p>为实现字符串的反转，需要<code>#include &lt;algorithm&gt;</code>。</p>
@@ -404,11 +407,11 @@
   </button>
   <div class="post-reward">
       <div>
-        <img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/wechatpay.png" alt="SUPER WeChat Pay">
+        <img src="https://i0.hdslb.com/bfs/album/d5f382c57eebf6b471b86a8d9788c53423227bf7.jpg" alt="SUPER WeChat Pay">
         <span>WeChat Pay</span>
       </div>
       <div>
-        <img src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/alipay.png" alt="SUPER Alipay">
+        <img src="https://i0.hdslb.com/bfs/album/f7e7da9a8b950e3f17c1447e7f9a35586054a515.png" alt="SUPER Alipay">
         <span>Alipay</span>
       </div>
 
@@ -424,7 +427,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="https://superpung.com/Data-Structures-Experiment-9/" title="还不会实现「哈夫曼树」？">https://superpung.com/Data-Structures-Experiment-9/</a>
+      <a href="https://superpung.com/data-structures-experiment-9/" title="还不会实现「哈夫曼树」？">https://superpung.com/data-structures-experiment-9/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -456,7 +459,7 @@
             <span class="label">WeChat</span>
           </span>
 
-          <img class="social-item-img" src="https://super-bucket1.oss-cn-beijing.aliyuncs.com/ExiTalk.png">
+          <img class="social-item-img" src="https://i0.hdslb.com/bfs/album/d9137e1e399c83687fddf34c9aa2cef485d03afd.png">
       </div>
 
       <div class="social-item">
@@ -480,12 +483,12 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/Data-Lab-1/" rel="prev" title="简单又复杂的位级运算（未完待续）">
+                <a href="/data-lab-1/" rel="prev" title="简单又复杂的位级运算（未完待续）">
                   <i class="fa fa-chevron-left"></i> 简单又复杂的位级运算（未完待续）
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/IEEE754-float/" rel="next" title="什么是「单精度浮点数」？">
+                <a href="/ieee754-float/" rel="next" title="什么是「单精度浮点数」？">
                   什么是「单精度浮点数」？ <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
