@@ -1,43 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 5.3.0">
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/assets/images/logo.svg" color="#222">
   <meta name="baidu-site-verification" content="codeva-QE6cs67fKZ">
 
 <link rel="stylesheet" href="/css/main.css">
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.css">
-  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"superpung.com","root":"/","images":"/images","scheme":"Pisces","darkmode":"auto","version":"8.14.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"manual"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"superpung.com","root":"/","images":"/assets/images/","scheme":"Gemini","darkmode":"auto","version":"8.14.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="Data Structures Experiment #11 - 完成最小生成树Prim算法和Kruskal算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="还不知道 Prim 和 Kruskal 算法？">
+<meta property="og:title" content="Prim 和 Kruskal 算法">
 <meta property="og:url" content="https://superpung.com/data-structures-experiment-11/">
 <meta property="og:site_name" content="Super Blog">
 <meta property="og:description" content="Data Structures Experiment #11 - 完成最小生成树Prim算法和Kruskal算法">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i0.hdslb.com/bfs/album/fc32ff3b8089381e9ae15f27a01b8f63f0ee07eb.png">
 <meta property="og:image" content="https://i0.hdslb.com/bfs/album/eb24c019395607ba1022c2a79e44d32753548a95.png">
 <meta property="og:image" content="https://i0.hdslb.com/bfs/album/e9ee363b1c9836c2d50fee1dd3049e6d6fb54c13.png">
 <meta property="article:published_time" content="2020-04-23T11:16:56.000Z">
-<meta property="article:modified_time" content="2023-01-28T06:40:55.689Z">
 <meta property="article:author" content="SUPER">
-<meta property="article:tag" content="Experiments">
-<meta property="article:tag" content="Data Structures">
+<meta property="article:tag" content="数据结构实验">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i0.hdslb.com/bfs/album/fc32ff3b8089381e9ae15f27a01b8f63f0ee07eb.png">
 
@@ -46,10 +45,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://superpung.com/data-structures-experiment-11/","path":"data-structures-experiment-11/","title":"还不知道 Prim 和 Kruskal 算法？"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://superpung.com/data-structures-experiment-11/","path":"data-structures-experiment-11/","title":"Prim 和 Kruskal 算法"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>还不知道 Prim 和 Kruskal 算法？ | Super Blog</title>
+<title>Prim 和 Kruskal 算法 | Super Blog</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-217297346-1"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-217297346-1","only_pageview":false}</script>
@@ -73,8 +72,10 @@
 
   <script async defer data-website-id="6668f6e5-ac77-4a25-af25-c563ff187c3c" src="https://analytics.umami.is/script.js"></script>
 
-<!-- script src="https://super-bucket2-1305010619.cos.ap-beijing.myqcloud.com/super_live2d/autoload.js" -->
+  <script defer data-domain="" src=""></script>
 <meta name="referrer" content="no-referrer">
+
+<link rel="stylesheet" href="/assets/fonts/lxgw/lxgwwenkailite-regular.css" >
 
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
@@ -82,14 +83,14 @@
 <link rel="alternate" href="/atom.xml" title="Super Blog" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="headband"></div>
 
   <main class="main">
     <div class="column">
       <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    <div class="toggle" aria-label="切换导航栏" role="button">
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
@@ -103,12 +104,11 @@
       <p class="site-title">Super Blog</p>
       <i class="logo-line"></i>
     </a>
-      <p class="site-subtitle" itemprop="description">Follow Your Heart</p>
+      <p class="site-subtitle" itemprop="description">循此苦旅 以达星辰</p>
   </div>
 
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
     </div>
   </div>
 </div>
@@ -116,38 +116,12 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li><li class="menu-item menu-item-love"><a href="/love/" rel="section"><i class="fa fa-heart fa-fw"></i>Love</a></li><li class="menu-item menu-item-friends"><a href="/links/" rel="section"><i class="fas fa-handshake fa-fw"></i>Friends</a></li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
-      </li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-life"><a href="/life/" rel="section"><i class="fa fa-mountain-sun fa-fw"></i>生活</a></li><li class="menu-item menu-item-view"><a href="/view/" rel="section"><i class="fa fa-eye fa-fw"></i>观点</a></li><li class="menu-item menu-item-tech"><a href="/tech/" rel="section"><i class="fa fa-code fa-fw"></i>技术</a></li><li class="menu-item menu-item-note"><a href="/note/" rel="section"><i class="fa fa-book fa-fw"></i>笔记</a></li><li class="menu-item menu-item-love"><a href="/love/" rel="section"><i class="fa fa-heart fa-fw"></i>纪念</a></li><li class="menu-item menu-item-friends"><a href="/links/" rel="section"><i class="fas fa-handshake fa-fw"></i>友链</a></li>
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup"><div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close" role="button">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div class="search-result-container no-result">
-  <div class="search-result-icon">
-    <i class="fa fa-spinner fa-pulse fa-5x"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
 
 </header>
         
@@ -157,10 +131,10 @@
     <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          目 录
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          站点概览
         </li>
       </ul>
 
@@ -174,31 +148,16 @@
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="SUPER"
-      src="https://i0.hdslb.com/bfs/album/6db03d7a87d05d17b228d94520cbfd017b2ded33.png">
+      src="/assets/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">SUPER</p>
-  <div class="site-description" itemprop="description">Super Lee's personal blog.</div>
-</div>
-<div class="site-state-wrap animated">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-        <a href="/archives/">
-          <span class="site-state-item-count">97</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-          <a href="/tags/">
-        <span class="site-state-item-count">20</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
-  </nav>
+  <div class="site-description" itemprop="description">生活 / 读书 / 新知</div>
 </div>
   <div class="links-of-author animated">
       <span class="links-of-author-item">
         <a href="https://github.com/superpung" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;superpung" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:hi@repus.me" title="E-Mail → mailto:hi@repus.me" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+        <a href="mailto:support@superpung.com" title="E-Mail → mailto:support@superpung.com" rel="noopener me"><i class="fa fa-envelope fa-fw"></i></a>
       </span>
       <span class="links-of-author-item">
         <a href="https://twitter.com/repusx" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;repusx" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
@@ -207,20 +166,8 @@
         <a href="https://instagram.com/repusx" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;repusx" rel="noopener me" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://t.me/repusx" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;repusx" rel="noopener me" target="_blank"><i class="fab fa-telegram-plane fa-fw"></i></a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://chat.repus.me/" title="Discord → https:&#x2F;&#x2F;chat.repus.me" rel="noopener me" target="_blank"><i class="fab fa-discord fa-fw"></i></a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://slack.repus.me/" title="Slack → https:&#x2F;&#x2F;slack.repus.me" rel="noopener me" target="_blank"><i class="fab fa-slack fa-fw"></i></a>
-      </span>
-      <span class="links-of-author-item">
         <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i></a>
       </span>
-  </div>
-  <div class="cc-license animated" itemprop="license">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
   </div>
 
         </div>
@@ -228,18 +175,6 @@
     </div>
 
     
-    <div class="sidebar-inner sidebar-blogroll">
-      <div class="links-of-blogroll animated">
-        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
-          Links
-        </div>
-        <ul class="links-of-blogroll-list">
-            <li class="links-of-blogroll-item">
-              <a href="https://repus.me/" title="https:&#x2F;&#x2F;repus.me" rel="noopener" target="_blank">me</a>
-            </li>
-        </ul>
-      </div>
-    </div>
   </aside>
 
 
@@ -255,26 +190,26 @@
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://superpung.com/data-structures-experiment-11/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://i0.hdslb.com/bfs/album/6db03d7a87d05d17b228d94520cbfd017b2ded33.png">
+      <meta itemprop="image" content="/assets/images/avatar.jpg">
       <meta itemprop="name" content="SUPER">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Super Blog">
-      <meta itemprop="description" content="Super Lee's personal blog.">
+      <meta itemprop="description" content="生活 / 读书 / 新知">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="还不知道 Prim 和 Kruskal 算法？ | Super Blog">
+      <meta itemprop="name" content="Prim 和 Kruskal 算法 | Super Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          还不知道 Prim 和 Kruskal 算法？
+          Prim 和 Kruskal 算法
         </h1>
 
         <div class="post-meta-container">
@@ -283,41 +218,41 @@
       <span class="post-meta-item-icon">
         <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Posted on</span>
+      <span class="post-meta-item-text">发表于</span>
 
-      <time title="Created: 2020-04-23 19:16:56" itemprop="dateCreated datePublished" datetime="2020-04-23T19:16:56+08:00">2020-04-23</time>
+      <time title="创建时间：2020-04-23 19:16:56" itemprop="dateCreated datePublished" datetime="2020-04-23T19:16:56+08:00">2020-04-23</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
+        <i class="far fa-folder"></i>
       </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-01-28 14:40:55" itemprop="dateModified" datetime="2023-01-28T14:40:55+08:00">2023-01-28</time>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/tech/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
     </span>
 
   
-    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
-      <span class="post-meta-item-text">Views: </span>
+      <span class="post-meta-item-text">阅读次数：</span>
       <span id="busuanzi_value_page_pv"></span>
     </span>
-
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="Word count in article">
+    <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
         <i class="far fa-file-word"></i>
       </span>
-      <span class="post-meta-item-text">Word count in article: </span>
-      <span>8.1k</span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.6k</span>
     </span>
-    <span class="post-meta-item" title="Reading time">
+    <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
-      <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>7 mins.</span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>5 分钟</span>
     </span>
 </div>
 
@@ -329,7 +264,7 @@
     
     <div class="post-body" itemprop="articleBody">
         <p>Data Structures Experiment #11 - 完成最小生成树Prim算法和Kruskal算法</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <blockquote>
 <p>在上机样例中给出了图类的基础实现。最小生成树算法针对的是无向图，注意与上机10的区别。</p>
@@ -347,60 +282,78 @@
 <p>在边结点中，增加了“起点”<code>vAdj</code>，便于后续算法的实现。</p>
 <p>在点结点中，增加了<code>flag</code>标志，用于区分此顶点是否被访问过，同样便于后续算法的实现。</p>
 <p>对点与边分别计数，便于控制循环次数。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">EdgeNode</span> &#123;</span></span><br><span class="line">        <span class="keyword">int</span> vAdj, vertex;</span><br><span class="line">        <span class="keyword">int</span> weight;</span><br><span class="line">        EdgeNode* next;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">VertexNode</span> &#123;</span></span><br><span class="line">        <span class="keyword">bool</span> flag;</span><br><span class="line">        EdgeNode* firstAdj;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    VertexNode* VexList;</span><br><span class="line">    <span class="keyword">int</span> num_v, num_e;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">EdgeNode</span> &#123;</span><br><span class="line">        <span class="type">int</span> vAdj, vertex;</span><br><span class="line">        <span class="type">int</span> weight;</span><br><span class="line">        EdgeNode* next;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">VertexNode</span> &#123;</span><br><span class="line">        <span class="type">bool</span> flag;</span><br><span class="line">        EdgeNode* firstAdj;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    VertexNode* VexList;</span><br><span class="line">    <span class="type">int</span> num_v, num_e;</span><br></pre></td></tr></table></figure>
+
 <h1 id="0x02-构造函数"><a href="#0x02-构造函数" class="headerlink" title="0x02 构造函数"></a>0x02 构造函数</h1><p>构造一个只有顶点没有边的图，注意顶点依然从<code>1</code>开始排序。</p>
 <p>初始化所有顶点均未被访问过。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Graph::Graph(<span class="keyword">int</span> max_v)&#123;</span><br><span class="line">    num_v = max_v;</span><br><span class="line">    num_e = <span class="number">0</span>;</span><br><span class="line">    VexList = <span class="keyword">new</span> VertexNode[num_v + <span class="number">1</span>];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++) &#123;</span><br><span class="line">        VexList[i].firstAdj = <span class="literal">NULL</span>;</span><br><span class="line">        VexList[i].flag = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Graph::<span class="built_in">Graph</span>(<span class="type">int</span> max_v)&#123;</span><br><span class="line">    num_v = max_v;</span><br><span class="line">    num_e = <span class="number">0</span>;</span><br><span class="line">    VexList = <span class="keyword">new</span> VertexNode[num_v + <span class="number">1</span>];</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++) &#123;</span><br><span class="line">        VexList[i].firstAdj = <span class="literal">NULL</span>;</span><br><span class="line">        VexList[i].flag = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h1 id="0x03-addedge"><a href="#0x03-addedge" class="headerlink" title="0x03 addedge"></a>0x03 addedge</h1><p>两种算法针对的是无向图，故两顶点之间双向连通。</p>
 <p>边数只记一次。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Graph::addedge</span><span class="params">(<span class="keyword">int</span> s, <span class="keyword">int</span> t, <span class="keyword">int</span> w)</span></span>&#123;</span><br><span class="line">    EdgeNode* newEdge1 = <span class="keyword">new</span> EdgeNode;</span><br><span class="line">    newEdge1-&gt;weight = w;</span><br><span class="line">    newEdge1-&gt;vAdj = s;</span><br><span class="line">    newEdge1-&gt;vertex = t;</span><br><span class="line"></span><br><span class="line">    newEdge1-&gt;next = VexList[s].firstAdj;</span><br><span class="line">    VexList[s].firstAdj = newEdge1;</span><br><span class="line"></span><br><span class="line">    EdgeNode* newEdge2 = <span class="keyword">new</span> EdgeNode;</span><br><span class="line">    newEdge2-&gt;weight = w;</span><br><span class="line">    newEdge2-&gt;vAdj = t;</span><br><span class="line">    newEdge2-&gt;vertex = s;</span><br><span class="line"></span><br><span class="line">    newEdge2-&gt;next = VexList[t].firstAdj;</span><br><span class="line">    VexList[t].firstAdj = newEdge2;</span><br><span class="line"></span><br><span class="line">    num_e++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">Graph::addedge</span><span class="params">(<span class="type">int</span> s, <span class="type">int</span> t, <span class="type">int</span> w)</span></span>&#123;</span><br><span class="line">    EdgeNode* newEdge1 = <span class="keyword">new</span> EdgeNode;</span><br><span class="line">    newEdge1-&gt;weight = w;</span><br><span class="line">    newEdge1-&gt;vAdj = s;</span><br><span class="line">    newEdge1-&gt;vertex = t;</span><br><span class="line"></span><br><span class="line">    newEdge1-&gt;next = VexList[s].firstAdj;</span><br><span class="line">    VexList[s].firstAdj = newEdge1;</span><br><span class="line"></span><br><span class="line">    EdgeNode* newEdge2 = <span class="keyword">new</span> EdgeNode;</span><br><span class="line">    newEdge2-&gt;weight = w;</span><br><span class="line">    newEdge2-&gt;vAdj = t;</span><br><span class="line">    newEdge2-&gt;vertex = s;</span><br><span class="line"></span><br><span class="line">    newEdge2-&gt;next = VexList[t].firstAdj;</span><br><span class="line">    VexList[t].firstAdj = newEdge2;</span><br><span class="line"></span><br><span class="line">    num_e++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h1 id="0x04-Prim’s-algorithm"><a href="#0x04-Prim’s-algorithm" class="headerlink" title="0x04 Prim’s algorithm"></a>0x04 Prim’s algorithm</h1><p>Prim算法的核心思想是<strong>加点</strong>。</p>
 <p>从某一顶点开始，寻找与它相连的且相连边权最小的顶点，将它们加入已经访问的顶点集合。再次寻找与这两个顶点相连的所有顶点中相连边权最小的顶点，并加入顶点集合。重复此步骤，直到访问了所有顶点，即全部顶点都已加入已经访问的顶点集合。</p>
 <h2 id="1-Initializing"><a href="#1-Initializing" class="headerlink" title="1. Initializing"></a>1. Initializing</h2><p>初始化所有顶点均未被访问，声明<code>sum</code>以存储权之和、<code>min_w</code>以存储每次循环找到的最小权、<code>visited</code>数组以存储已经访问过的顶点、<code>index</code>记录目前已经访问的顶点个数。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++)</span><br><span class="line">        VexList[i].flag = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> min_w;</span><br><span class="line"><span class="keyword">int</span>* visited = <span class="keyword">new</span> <span class="keyword">int</span>[num_v];</span><br><span class="line"><span class="keyword">int</span> index = <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++)</span><br><span class="line">        VexList[i].flag = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line"><span class="type">int</span> min_w;</span><br><span class="line"><span class="type">int</span>* visited = <span class="keyword">new</span> <span class="type">int</span>[num_v];</span><br><span class="line"><span class="type">int</span> index = <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
 <h2 id="2-Starting"><a href="#2-Starting" class="headerlink" title="2. Starting"></a>2. Starting</h2><p>选择一个顶点作为起始顶点，存储到已访问的顶点集合，<strong>并记录为已访问</strong>。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (VexList[i].firstAdj) &#123;</span><br><span class="line">        visited[index++] = i;</span><br><span class="line">        VexList[i].flag = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (VexList[i].firstAdj) &#123;</span><br><span class="line">        visited[index++] = i;</span><br><span class="line">        VexList[i].flag = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h2 id="3-Calculating"><a href="#3-Calculating" class="headerlink" title="3. Calculating"></a>3. Calculating</h2><p>当所有顶点未被完全访问时，不断循环，直至顶点全部访问。</p>
 <p><code>2</code>～<code>14</code>行：对最小权（<strong>及其顶点</strong>）进行初始化，任取当前顶点与<strong>未访问顶点</strong>所连接边的权（不可随机设定），便于后续进行比较。不可将此步骤置于下一循环体中，否则每当切换顶点后都会对<code>min_w</code>重新赋值。<code>7</code>行要进行判断，若到达链表末尾且未找到尚未访问的顶点，则停止并开始从下一顶点的链表中开始寻找。</p>
 <p><code>16</code>～<code>24</code>行：在已经访问的顶点中，<strong>逐个顶点</strong>寻找其与未访问过顶点所连接的边（链表）中最小的权，并将对应顶点存入已访问的顶点集合。（最小权一定要对应顶点）</p>
 <p><code>26</code>～<code>28</code>行：<strong>当最小权找到后</strong>，将对应顶点记录为已访问，已访问的顶点个数加一，并把最小权加入<code>sum</code>中。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (index &lt; num_v) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; index; i++) &#123;</span><br><span class="line">        EdgeNode* p = VexList[visited[i]].firstAdj;</span><br><span class="line">        <span class="keyword">while</span> (VexList[p-&gt;vertex].flag &amp;&amp; p-&gt;next) &#123;</span><br><span class="line">            p = p-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (VexList[p-&gt;vertex].flag)</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            min_w = p-&gt;weight;</span><br><span class="line">            visited[index] = p-&gt;vertex;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; index; i++) &#123;</span><br><span class="line">        EdgeNode* p = VexList[visited[i]].firstAdj;</span><br><span class="line">        <span class="keyword">while</span> (p) &#123;</span><br><span class="line">            <span class="keyword">if</span> (p-&gt;weight &lt;= min_w &amp;&amp; !VexList[p-&gt;vertex].flag) &#123;</span><br><span class="line">                min_w = p-&gt;weight;</span><br><span class="line">                visited[index] = p-&gt;vertex;</span><br><span class="line">            &#125;</span><br><span class="line">            p = p-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    VexList[visited[index]].flag = <span class="literal">true</span>;</span><br><span class="line">    index++;</span><br><span class="line">    sum += min_w;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (index &lt; num_v) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; index; i++) &#123;</span><br><span class="line">        EdgeNode* p = VexList[visited[i]].firstAdj;</span><br><span class="line">        <span class="keyword">while</span> (VexList[p-&gt;vertex].flag &amp;&amp; p-&gt;next) &#123;</span><br><span class="line">            p = p-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (VexList[p-&gt;vertex].flag)</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            min_w = p-&gt;weight;</span><br><span class="line">            visited[index] = p-&gt;vertex;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; index; i++) &#123;</span><br><span class="line">        EdgeNode* p = VexList[visited[i]].firstAdj;</span><br><span class="line">        <span class="keyword">while</span> (p) &#123;</span><br><span class="line">            <span class="keyword">if</span> (p-&gt;weight &lt;= min_w &amp;&amp; !VexList[p-&gt;vertex].flag) &#123;</span><br><span class="line">                min_w = p-&gt;weight;</span><br><span class="line">                visited[index] = p-&gt;vertex;</span><br><span class="line">            &#125;</span><br><span class="line">            p = p-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    VexList[visited[index]].flag = <span class="literal">true</span>;</span><br><span class="line">    index++;</span><br><span class="line">    sum += min_w;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
 
 <h2 id="4-Freeing-and-Returning"><a href="#4-Freeing-and-Returning" class="headerlink" title="4. Freeing and Returning"></a>4. Freeing and Returning</h2><p><strong>释放内存</strong>，并返回结果。</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span>[] visited;</span><br><span class="line"><span class="keyword">return</span> sum;</span><br></pre></td></tr></table></figure>
-<h2 id="5-完整的Prim算法"><a href="#5-完整的Prim算法" class="headerlink" title="5. 完整的Prim算法"></a>5. 完整的Prim算法</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Graph::prim</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++)</span><br><span class="line">        VexList[i].flag = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> min_w;</span><br><span class="line">    <span class="keyword">int</span>* visited = <span class="keyword">new</span> <span class="keyword">int</span>[num_v];</span><br><span class="line">    <span class="keyword">int</span> index = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (VexList[i].firstAdj) &#123;</span><br><span class="line">            visited[index++] = i;</span><br><span class="line">            VexList[i].flag = <span class="literal">true</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (index &lt; num_v) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; index; i++) &#123;</span><br><span class="line">            EdgeNode* p = VexList[visited[i]].firstAdj;</span><br><span class="line">            <span class="keyword">while</span> (VexList[p-&gt;vertex].flag &amp;&amp; p-&gt;next) &#123;</span><br><span class="line">                p = p-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (VexList[p-&gt;vertex].flag)</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                min_w = p-&gt;weight;</span><br><span class="line">                visited[index] = p-&gt;vertex;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; index; i++) &#123;</span><br><span class="line">            EdgeNode* p = VexList[visited[i]].firstAdj;</span><br><span class="line">            <span class="keyword">while</span> (p) &#123;</span><br><span class="line">                <span class="keyword">if</span> (p-&gt;weight &lt;= min_w &amp;&amp; !VexList[p-&gt;vertex].flag) &#123;</span><br><span class="line">                    min_w = p-&gt;weight;</span><br><span class="line">                    visited[index] = p-&gt;vertex;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (!p-&gt;next)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                p = p-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        VexList[visited[index]].flag = <span class="literal">true</span>;</span><br><span class="line">        index++;</span><br><span class="line">        sum += min_w;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">delete</span>[] visited;</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-完整的Prim算法"><a href="#5-完整的Prim算法" class="headerlink" title="5. 完整的Prim算法"></a>5. 完整的Prim算法</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">Graph::prim</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++)</span><br><span class="line">        VexList[i].flag = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> min_w;</span><br><span class="line">    <span class="type">int</span>* visited = <span class="keyword">new</span> <span class="type">int</span>[num_v];</span><br><span class="line">    <span class="type">int</span> index = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (VexList[i].firstAdj) &#123;</span><br><span class="line">            visited[index++] = i;</span><br><span class="line">            VexList[i].flag = <span class="literal">true</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (index &lt; num_v) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; index; i++) &#123;</span><br><span class="line">            EdgeNode* p = VexList[visited[i]].firstAdj;</span><br><span class="line">            <span class="keyword">while</span> (VexList[p-&gt;vertex].flag &amp;&amp; p-&gt;next) &#123;</span><br><span class="line">                p = p-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (VexList[p-&gt;vertex].flag)</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                min_w = p-&gt;weight;</span><br><span class="line">                visited[index] = p-&gt;vertex;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; index; i++) &#123;</span><br><span class="line">            EdgeNode* p = VexList[visited[i]].firstAdj;</span><br><span class="line">            <span class="keyword">while</span> (p) &#123;</span><br><span class="line">                <span class="keyword">if</span> (p-&gt;weight &lt;= min_w &amp;&amp; !VexList[p-&gt;vertex].flag) &#123;</span><br><span class="line">                    min_w = p-&gt;weight;</span><br><span class="line">                    visited[index] = p-&gt;vertex;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (!p-&gt;next)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                p = p-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        VexList[visited[index]].flag = <span class="literal">true</span>;</span><br><span class="line">        index++;</span><br><span class="line">        sum += min_w;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">delete</span>[] visited;</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h1 id="0x05-Kruskal’s-algorithm"><a href="#0x05-Kruskal’s-algorithm" class="headerlink" title="0x05 Kruskal’s algorithm"></a>0x05 Kruskal’s algorithm</h1><p>Kruskal算法的核心思想是<strong>加边</strong>。</p>
 <p>将图中所有边按权值大小进行排序，从权最小的边开始，逐条边加入生成树中，注意加边后不可与已加入的边构成环，直至所有顶点均连通。</p>
 <h2 id="1-Initializing-1"><a href="#1-Initializing-1" class="headerlink" title="1. Initializing"></a>1. Initializing</h2><p>声明<code>sum</code>以存储权之和、<code>edges</code>数组以存储边、<code>index</code>记录目前已经访问的边数。</p>
 <p>声明<code>begin</code>和<code>end</code>便于判断加边后是否会构成环，<span id = "set"><code>set</code>数组</span>存储每个顶点的<a href="#state"><strong>状态</strong></a>，即所在连通分支，起到函数的作用（<code>set</code>值）。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">EdgeNode* edges = <span class="keyword">new</span> EdgeNode[num_e];</span><br><span class="line"><span class="keyword">int</span> index = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> begin, end;</span><br><span class="line"><span class="keyword">int</span>* <span class="built_in">set</span> = <span class="keyword">new</span> <span class="keyword">int</span>[num_v + <span class="number">1</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++)</span><br><span class="line">    <span class="built_in">set</span>[i] = i;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">EdgeNode* edges = <span class="keyword">new</span> EdgeNode[num_e];</span><br><span class="line"><span class="type">int</span> index = <span class="number">0</span>;</span><br><span class="line"><span class="type">int</span> begin, end;</span><br><span class="line"><span class="type">int</span>* set = <span class="keyword">new</span> <span class="type">int</span>[num_v + <span class="number">1</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++)</span><br><span class="line">    set[i] = i;</span><br></pre></td></tr></table></figure>
+
 <h2 id="2-Storing"><a href="#2-Storing" class="headerlink" title="2. Storing"></a>2. Storing</h2><p>从第一个顶点开始，将所有边存入<code>edges</code>数组中。</p>
 <p>为避免将同一条边“双向”存储，只存储从小顶点到大顶点方向的边，故在<code>4</code>行进行了判断。</p>
 <p>注意存储时还要包括边的“起点”，这是与以往不同的地方，以便于后续对连通分支的判断。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++) &#123;</span><br><span class="line">    EdgeNode* p = VexList[i].firstAdj;</span><br><span class="line">    <span class="keyword">while</span> (p) &#123;</span><br><span class="line">        <span class="keyword">if</span> (p-&gt;vertex &gt; i) &#123;</span><br><span class="line">            edges[index].vAdj = i;</span><br><span class="line">            edges[index].vertex = p-&gt;vertex;</span><br><span class="line">            edges[index].weight = p-&gt;weight;</span><br><span class="line">            index++;</span><br><span class="line">        &#125;</span><br><span class="line">        p = p-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++) &#123;</span><br><span class="line">    EdgeNode* p = VexList[i].firstAdj;</span><br><span class="line">    <span class="keyword">while</span> (p) &#123;</span><br><span class="line">        <span class="keyword">if</span> (p-&gt;vertex &gt; i) &#123;</span><br><span class="line">            edges[index].vAdj = i;</span><br><span class="line">            edges[index].vertex = p-&gt;vertex;</span><br><span class="line">            edges[index].weight = p-&gt;weight;</span><br><span class="line">            index++;</span><br><span class="line">        &#125;</span><br><span class="line">        p = p-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h2 id="3-Sorting"><a href="#3-Sorting" class="headerlink" title="3. Sorting"></a>3. Sorting</h2><p>将存储的边按权从小到大进行排序，采用冒泡算法。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num_e; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; num_e; j++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (edges[i].weight &gt; edges[j].weight) &#123;</span><br><span class="line">            EdgeNode temp = edges[i];</span><br><span class="line">            edges[i] = edges[j];</span><br><span class="line">            edges[j] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; num_e; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> j = i + <span class="number">1</span>; j &lt; num_e; j++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (edges[i].weight &gt; edges[j].weight) &#123;</span><br><span class="line">            EdgeNode temp = edges[i];</span><br><span class="line">            edges[i] = edges[j];</span><br><span class="line">            edges[j] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h2 id="4-Calculating"><a href="#4-Calculating" class="headerlink" title="4. Calculating"></a>4. Calculating</h2><p>以排好序的边数组为基准，从头开始挑选边，并将其加入生成树。当挑选出来的边数达到<code>顶点数-1</code>时，说明已经将所有顶点连通，停止。当所有顶点均已挑选过，停止。</p>
 <p><a href="#set">初始化<code>set</code>数组</a>时，<span id = "state">将第<code>i</code>位赋值为<code>i</code></span>，说明每个顶点一开始均自己为一连通分支，即若两顶点的<code>set</code>值不等，则这两个顶点必位于不同的连通分支，此时可以将连接这两个顶点的边加入生成树中。</p>
 <p>加入以后，这两个顶点便连通了，也即这两个顶点所在的两个连通分支便连通了。记这两个顶点分别为<code>begin</code>和<code>end</code>。此时将与<code>end</code>在同一连通分支的所有顶点（包括它自己）全部加入到<code>begin</code>的连通分支中（也可以从另一个方向），也即将与<code>end</code>的<code>set</code>值相等的所有顶点的<code>set</code>值全部改为<code>begin</code>的<code>set</code>值。</p>
 <p>注意此处必须单独赋值给<code>begin</code>和<code>end</code>，否则随着<code>set</code>值的改变，判断条件中的值也会随即改变，需要让它定下来。</p>
 <p>若新加入一条边，则已加入的边数加一。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>, j = <span class="number">0</span>; i &lt; num_e &amp;&amp; j &lt; num_v; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">set</span>[edges[i].vAdj] != <span class="built_in">set</span>[edges[i].vertex]) &#123;</span><br><span class="line">        sum += edges[i].weight;</span><br><span class="line">        begin = <span class="built_in">set</span>[edges[i].vAdj];</span><br><span class="line">        end = <span class="built_in">set</span>[edges[i].vertex];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= num_v; k++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">set</span>[k] == end)</span><br><span class="line">                <span class="built_in">set</span>[k] = begin;</span><br><span class="line">        &#125;</span><br><span class="line">        j++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>, j = <span class="number">0</span>; i &lt; num_e &amp;&amp; j &lt; num_v; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (set[edges[i].vAdj] != set[edges[i].vertex]) &#123;</span><br><span class="line">        sum += edges[i].weight;</span><br><span class="line">        begin = set[edges[i].vAdj];</span><br><span class="line">        end = set[edges[i].vertex];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> k = <span class="number">1</span>; k &lt;= num_v; k++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (set[k] == end)</span><br><span class="line">                set[k] = begin;</span><br><span class="line">        &#125;</span><br><span class="line">        j++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h2 id="5-Freeing-and-Returning"><a href="#5-Freeing-and-Returning" class="headerlink" title="5. Freeing and Returning"></a>5. Freeing and Returning</h2><p><strong>释放内存</strong>，并返回结果。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span>[] <span class="built_in">set</span>;</span><br><span class="line"><span class="keyword">delete</span>[] edges;</span><br><span class="line"><span class="keyword">return</span> sum;</span><br></pre></td></tr></table></figure>
-<h2 id="6-完整的Kruskal算法"><a href="#6-完整的Kruskal算法" class="headerlink" title="6. 完整的Kruskal算法"></a>6. 完整的Kruskal算法</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Graph::kruskal</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span>* <span class="built_in">set</span> = <span class="keyword">new</span> <span class="keyword">int</span>[num_v + <span class="number">1</span>];</span><br><span class="line">    <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    EdgeNode* edges = <span class="keyword">new</span> EdgeNode[num_e];</span><br><span class="line">    <span class="keyword">int</span> index = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> begin, end;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++)</span><br><span class="line">        <span class="built_in">set</span>[i] = i;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++) &#123;</span><br><span class="line">        EdgeNode* p = VexList[i].firstAdj;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (p) &#123;</span><br><span class="line">            <span class="keyword">if</span> (p-&gt;vertex &gt; i) &#123;</span><br><span class="line">                edges[index].vAdj = i;</span><br><span class="line">                edges[index].vertex = p-&gt;vertex;</span><br><span class="line">                edges[index].weight = p-&gt;weight;</span><br><span class="line">                index++;</span><br><span class="line">            &#125;</span><br><span class="line">            p = p-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num_e; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; num_e; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (edges[i].weight &gt; edges[j].weight) &#123;</span><br><span class="line">                EdgeNode temp = edges[i];</span><br><span class="line">                edges[i] = edges[j];</span><br><span class="line">                edges[j] = temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>, j = <span class="number">0</span>; i &lt; num_e &amp;&amp; j &lt; num_v; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">set</span>[edges[i].vAdj] != <span class="built_in">set</span>[edges[i].vertex]) &#123;</span><br><span class="line">            sum += edges[i].weight;</span><br><span class="line">            begin = <span class="built_in">set</span>[edges[i].vAdj];</span><br><span class="line">            end = <span class="built_in">set</span>[edges[i].vertex];</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= num_v; k++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (<span class="built_in">set</span>[k] == end)</span><br><span class="line">                    <span class="built_in">set</span>[k] = begin;</span><br><span class="line">            &#125;</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">delete</span>[] <span class="built_in">set</span>;</span><br><span class="line">    <span class="keyword">delete</span>[] edges;</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span>[] set;</span><br><span class="line"><span class="keyword">delete</span>[] edges;</span><br><span class="line"><span class="keyword">return</span> sum;</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-完整的Kruskal算法"><a href="#6-完整的Kruskal算法" class="headerlink" title="6. 完整的Kruskal算法"></a>6. 完整的Kruskal算法</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">Graph::kruskal</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span>* set = <span class="keyword">new</span> <span class="type">int</span>[num_v + <span class="number">1</span>];</span><br><span class="line">    <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    EdgeNode* edges = <span class="keyword">new</span> EdgeNode[num_e];</span><br><span class="line">    <span class="type">int</span> index = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> begin, end;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++)</span><br><span class="line">        set[i] = i;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++) &#123;</span><br><span class="line">        EdgeNode* p = VexList[i].firstAdj;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (p) &#123;</span><br><span class="line">            <span class="keyword">if</span> (p-&gt;vertex &gt; i) &#123;</span><br><span class="line">                edges[index].vAdj = i;</span><br><span class="line">                edges[index].vertex = p-&gt;vertex;</span><br><span class="line">                edges[index].weight = p-&gt;weight;</span><br><span class="line">                index++;</span><br><span class="line">            &#125;</span><br><span class="line">            p = p-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; num_e; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = i + <span class="number">1</span>; j &lt; num_e; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (edges[i].weight &gt; edges[j].weight) &#123;</span><br><span class="line">                EdgeNode temp = edges[i];</span><br><span class="line">                edges[i] = edges[j];</span><br><span class="line">                edges[j] = temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>, j = <span class="number">0</span>; i &lt; num_e &amp;&amp; j &lt; num_v; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (set[edges[i].vAdj] != set[edges[i].vertex]) &#123;</span><br><span class="line">            sum += edges[i].weight;</span><br><span class="line">            begin = set[edges[i].vAdj];</span><br><span class="line">            end = set[edges[i].vertex];</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> k = <span class="number">1</span>; k &lt;= num_v; k++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (set[k] == end)</span><br><span class="line">                    set[k] = begin;</span><br><span class="line">            &#125;</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">delete</span>[] set;</span><br><span class="line">    <span class="keyword">delete</span>[] edges;</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h1 id="0x06-析构函数"><a href="#0x06-析构函数" class="headerlink" title="0x06 析构函数"></a>0x06 析构函数</h1><p>逐个结点释放内存。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Graph::~Graph()&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++) &#123;</span><br><span class="line">        <span class="keyword">while</span> (VexList[i].firstAdj) &#123;</span><br><span class="line">            EdgeNode* temp = VexList[i].firstAdj;</span><br><span class="line">            VexList[i].firstAdj = temp-&gt;next;</span><br><span class="line">            <span class="keyword">delete</span> temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">delete</span>[] VexList;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Graph::~<span class="built_in">Graph</span>()&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= num_v; i++) &#123;</span><br><span class="line">        <span class="keyword">while</span> (VexList[i].firstAdj) &#123;</span><br><span class="line">            EdgeNode* temp = VexList[i].firstAdj;</span><br><span class="line">            VexList[i].firstAdj = temp-&gt;next;</span><br><span class="line">            <span class="keyword">delete</span> temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">delete</span>[] VexList;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h1 id="0x07-补充"><a href="#0x07-补充" class="headerlink" title="0x07 补充"></a>0x07 补充</h1><p>由于题目给出的样例图极其特殊，包括但不限于边数过少、边权值大量重复等，以至于你很容易<code>pass check point!</code>而不能发现自身算法的缺陷与不足。</p>
 <p>所以我<strong>强烈建议</strong>自行增加测试样例，下面有三个样例可供参考。</p>
-<h2 id="g1"><a href="#g1" class="headerlink" title="g1"></a>g1</h2><p><img src="https://i0.hdslb.com/bfs/album/fc32ff3b8089381e9ae15f27a01b8f63f0ee07eb.png" alt="11g1"></p>
+<h2 id="g1"><a href="#g1" class="headerlink" title="g1"></a>g1</h2><p><img data-src="https://i0.hdslb.com/bfs/album/fc32ff3b8089381e9ae15f27a01b8f63f0ee07eb.png" alt="11g1"></p>
 <p>（顶点<code>A</code>～<code>G</code>分别对应<code>1</code>～<code>7</code>）</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Graph <span class="title">g1</span><span class="params">(<span class="number">7</span>)</span></span>;</span><br><span class="line"></span><br><span class="line">g1.addedge(<span class="number">1</span>, <span class="number">2</span>, <span class="number">7</span>);</span><br><span class="line">g1.addedge(<span class="number">1</span>, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line">g1.addedge(<span class="number">2</span>, <span class="number">3</span>, <span class="number">8</span>);</span><br><span class="line">g1.addedge(<span class="number">2</span>, <span class="number">4</span>, <span class="number">9</span>);</span><br><span class="line">g1.addedge(<span class="number">2</span>, <span class="number">5</span>, <span class="number">7</span>);</span><br><span class="line">g1.addedge(<span class="number">3</span>, <span class="number">5</span>, <span class="number">5</span>);</span><br><span class="line">g1.addedge(<span class="number">4</span>, <span class="number">5</span>, <span class="number">15</span>);</span><br><span class="line">g1.addedge(<span class="number">4</span>, <span class="number">6</span>, <span class="number">6</span>);</span><br><span class="line">g1.addedge(<span class="number">5</span>, <span class="number">6</span>, <span class="number">8</span>);</span><br><span class="line">g1.addedge(<span class="number">5</span>, <span class="number">7</span>, <span class="number">9</span>);</span><br><span class="line">g1.addedge(<span class="number">6</span>, <span class="number">7</span>, <span class="number">11</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(g1.prim() == <span class="number">39</span>) <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;pass check point 3!&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="keyword">if</span>(g1.kruskal() == <span class="number">39</span>) <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;pass check point 4!&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
-<h2 id="g2"><a href="#g2" class="headerlink" title="g2"></a>g2</h2><p><img src="https://i0.hdslb.com/bfs/album/eb24c019395607ba1022c2a79e44d32753548a95.png" alt="11g2"></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Graph <span class="title">g2</span><span class="params">(<span class="number">6</span>)</span></span>;</span><br><span class="line"></span><br><span class="line">g2.addedge(<span class="number">1</span>, <span class="number">2</span>, <span class="number">6</span>);</span><br><span class="line">g2.addedge(<span class="number">1</span>, <span class="number">3</span>, <span class="number">1</span>);</span><br><span class="line">g2.addedge(<span class="number">1</span>, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line">g2.addedge(<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>);</span><br><span class="line">g2.addedge(<span class="number">2</span>, <span class="number">5</span>, <span class="number">3</span>);</span><br><span class="line">g2.addedge(<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line">g2.addedge(<span class="number">3</span>, <span class="number">5</span>, <span class="number">6</span>);</span><br><span class="line">g2.addedge(<span class="number">3</span>, <span class="number">6</span>, <span class="number">4</span>);</span><br><span class="line">g2.addedge(<span class="number">4</span>, <span class="number">6</span>, <span class="number">2</span>);</span><br><span class="line">g2.addedge(<span class="number">5</span>, <span class="number">6</span>, <span class="number">6</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(g2.prim() == <span class="number">15</span>) <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;pass check point 5!&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="keyword">if</span>(g2.kruskal() == <span class="number">15</span>) <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;pass check point 6!&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
-<h2 id="g3"><a href="#g3" class="headerlink" title="g3"></a>g3</h2><p><img src="https://i0.hdslb.com/bfs/album/e9ee363b1c9836c2d50fee1dd3049e6d6fb54c13.png" alt="11g3"></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Graph <span class="title">g3</span><span class="params">(<span class="number">10</span>)</span></span>;</span><br><span class="line"></span><br><span class="line">g3.addedge(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line">g3.addedge(<span class="number">1</span>, <span class="number">4</span>, <span class="number">6</span>);</span><br><span class="line">g3.addedge(<span class="number">1</span>, <span class="number">5</span>, <span class="number">9</span>);</span><br><span class="line">g3.addedge(<span class="number">2</span>, <span class="number">3</span>, <span class="number">2</span>);</span><br><span class="line">g3.addedge(<span class="number">2</span>, <span class="number">4</span>, <span class="number">4</span>);</span><br><span class="line">g3.addedge(<span class="number">2</span>, <span class="number">6</span>, <span class="number">9</span>);</span><br><span class="line">g3.addedge(<span class="number">3</span>, <span class="number">4</span>, <span class="number">2</span>);</span><br><span class="line">g3.addedge(<span class="number">3</span>, <span class="number">6</span>, <span class="number">8</span>);</span><br><span class="line">g3.addedge(<span class="number">3</span>, <span class="number">7</span>, <span class="number">9</span>);</span><br><span class="line">g3.addedge(<span class="number">4</span>, <span class="number">7</span>, <span class="number">9</span>);</span><br><span class="line">g3.addedge(<span class="number">5</span>, <span class="number">6</span>, <span class="number">8</span>);</span><br><span class="line">g3.addedge(<span class="number">5</span>, <span class="number">10</span>, <span class="number">18</span>);</span><br><span class="line">g3.addedge(<span class="number">6</span>, <span class="number">7</span>, <span class="number">7</span>);</span><br><span class="line">g3.addedge(<span class="number">6</span>, <span class="number">9</span>, <span class="number">9</span>);</span><br><span class="line">g3.addedge(<span class="number">6</span>, <span class="number">10</span>, <span class="number">10</span>);</span><br><span class="line">g3.addedge(<span class="number">7</span>, <span class="number">8</span>, <span class="number">4</span>);</span><br><span class="line">g3.addedge(<span class="number">7</span>, <span class="number">9</span>, <span class="number">5</span>);</span><br><span class="line">g3.addedge(<span class="number">8</span>, <span class="number">9</span>, <span class="number">1</span>);</span><br><span class="line">g3.addedge(<span class="number">8</span>, <span class="number">10</span>, <span class="number">4</span>);</span><br><span class="line">g3.addedge(<span class="number">9</span>, <span class="number">10</span>, <span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(g3.prim() == <span class="number">38</span>) <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;pass check point 7!&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="keyword">if</span>(g3.kruskal() == <span class="number">38</span>) <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;pass check point 8!&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Graph <span class="title">g1</span><span class="params">(<span class="number">7</span>)</span></span>;</span><br><span class="line"></span><br><span class="line">g1.<span class="built_in">addedge</span>(<span class="number">1</span>, <span class="number">2</span>, <span class="number">7</span>);</span><br><span class="line">g1.<span class="built_in">addedge</span>(<span class="number">1</span>, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line">g1.<span class="built_in">addedge</span>(<span class="number">2</span>, <span class="number">3</span>, <span class="number">8</span>);</span><br><span class="line">g1.<span class="built_in">addedge</span>(<span class="number">2</span>, <span class="number">4</span>, <span class="number">9</span>);</span><br><span class="line">g1.<span class="built_in">addedge</span>(<span class="number">2</span>, <span class="number">5</span>, <span class="number">7</span>);</span><br><span class="line">g1.<span class="built_in">addedge</span>(<span class="number">3</span>, <span class="number">5</span>, <span class="number">5</span>);</span><br><span class="line">g1.<span class="built_in">addedge</span>(<span class="number">4</span>, <span class="number">5</span>, <span class="number">15</span>);</span><br><span class="line">g1.<span class="built_in">addedge</span>(<span class="number">4</span>, <span class="number">6</span>, <span class="number">6</span>);</span><br><span class="line">g1.<span class="built_in">addedge</span>(<span class="number">5</span>, <span class="number">6</span>, <span class="number">8</span>);</span><br><span class="line">g1.<span class="built_in">addedge</span>(<span class="number">5</span>, <span class="number">7</span>, <span class="number">9</span>);</span><br><span class="line">g1.<span class="built_in">addedge</span>(<span class="number">6</span>, <span class="number">7</span>, <span class="number">11</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(g1.<span class="built_in">prim</span>() == <span class="number">39</span>) cout &lt;&lt; <span class="string">&quot;pass check point 3!&quot;</span> &lt;&lt; endl;</span><br><span class="line"><span class="keyword">if</span>(g1.<span class="built_in">kruskal</span>() == <span class="number">39</span>) cout &lt;&lt; <span class="string">&quot;pass check point 4!&quot;</span> &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+
+<h2 id="g2"><a href="#g2" class="headerlink" title="g2"></a>g2</h2><p><img data-src="https://i0.hdslb.com/bfs/album/eb24c019395607ba1022c2a79e44d32753548a95.png" alt="11g2"></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Graph <span class="title">g2</span><span class="params">(<span class="number">6</span>)</span></span>;</span><br><span class="line"></span><br><span class="line">g2.<span class="built_in">addedge</span>(<span class="number">1</span>, <span class="number">2</span>, <span class="number">6</span>);</span><br><span class="line">g2.<span class="built_in">addedge</span>(<span class="number">1</span>, <span class="number">3</span>, <span class="number">1</span>);</span><br><span class="line">g2.<span class="built_in">addedge</span>(<span class="number">1</span>, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line">g2.<span class="built_in">addedge</span>(<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>);</span><br><span class="line">g2.<span class="built_in">addedge</span>(<span class="number">2</span>, <span class="number">5</span>, <span class="number">3</span>);</span><br><span class="line">g2.<span class="built_in">addedge</span>(<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line">g2.<span class="built_in">addedge</span>(<span class="number">3</span>, <span class="number">5</span>, <span class="number">6</span>);</span><br><span class="line">g2.<span class="built_in">addedge</span>(<span class="number">3</span>, <span class="number">6</span>, <span class="number">4</span>);</span><br><span class="line">g2.<span class="built_in">addedge</span>(<span class="number">4</span>, <span class="number">6</span>, <span class="number">2</span>);</span><br><span class="line">g2.<span class="built_in">addedge</span>(<span class="number">5</span>, <span class="number">6</span>, <span class="number">6</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(g2.<span class="built_in">prim</span>() == <span class="number">15</span>) cout &lt;&lt; <span class="string">&quot;pass check point 5!&quot;</span> &lt;&lt; endl;</span><br><span class="line"><span class="keyword">if</span>(g2.<span class="built_in">kruskal</span>() == <span class="number">15</span>) cout &lt;&lt; <span class="string">&quot;pass check point 6!&quot;</span> &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+
+<h2 id="g3"><a href="#g3" class="headerlink" title="g3"></a>g3</h2><p><img data-src="https://i0.hdslb.com/bfs/album/e9ee363b1c9836c2d50fee1dd3049e6d6fb54c13.png" alt="11g3"></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Graph <span class="title">g3</span><span class="params">(<span class="number">10</span>)</span></span>;</span><br><span class="line"></span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">1</span>, <span class="number">4</span>, <span class="number">6</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">1</span>, <span class="number">5</span>, <span class="number">9</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">2</span>, <span class="number">3</span>, <span class="number">2</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">2</span>, <span class="number">4</span>, <span class="number">4</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">2</span>, <span class="number">6</span>, <span class="number">9</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">3</span>, <span class="number">4</span>, <span class="number">2</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">3</span>, <span class="number">6</span>, <span class="number">8</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">3</span>, <span class="number">7</span>, <span class="number">9</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">4</span>, <span class="number">7</span>, <span class="number">9</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">5</span>, <span class="number">6</span>, <span class="number">8</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">5</span>, <span class="number">10</span>, <span class="number">18</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">6</span>, <span class="number">7</span>, <span class="number">7</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">6</span>, <span class="number">9</span>, <span class="number">9</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">6</span>, <span class="number">10</span>, <span class="number">10</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">7</span>, <span class="number">8</span>, <span class="number">4</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">7</span>, <span class="number">9</span>, <span class="number">5</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">8</span>, <span class="number">9</span>, <span class="number">1</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">8</span>, <span class="number">10</span>, <span class="number">4</span>);</span><br><span class="line">g3.<span class="built_in">addedge</span>(<span class="number">9</span>, <span class="number">10</span>, <span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(g3.<span class="built_in">prim</span>() == <span class="number">38</span>) cout &lt;&lt; <span class="string">&quot;pass check point 7!&quot;</span> &lt;&lt; endl;</span><br><span class="line"><span class="keyword">if</span>(g3.<span class="built_in">kruskal</span>() == <span class="number">38</span>) cout &lt;&lt; <span class="string">&quot;pass check point 8!&quot;</span> &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+
     </div>
 
     
@@ -411,16 +364,16 @@
           <div class="reward-container">
   <div>Buy me a coffee</div>
   <button>
-    Donate
+    赞赏
   </button>
   <div class="post-reward">
       <div>
-        <img src="https://i0.hdslb.com/bfs/album/d5f382c57eebf6b471b86a8d9788c53423227bf7.jpg" alt="SUPER WeChat Pay">
-        <span>WeChat Pay</span>
+        <img src="https://i0.hdslb.com/bfs/album/d5f382c57eebf6b471b86a8d9788c53423227bf7.jpg" alt="SUPER 微信">
+        <span>微信</span>
       </div>
       <div>
-        <img src="https://i0.hdslb.com/bfs/album/f7e7da9a8b950e3f17c1447e7f9a35586054a515.png" alt="SUPER Alipay">
-        <span>Alipay</span>
+        <img src="https://i0.hdslb.com/bfs/album/f7e7da9a8b950e3f17c1447e7f9a35586054a515.png" alt="SUPER 支付宝">
+        <span>支付宝</span>
       </div>
 
   </div>
@@ -431,73 +384,33 @@
 <div class="post-copyright">
 <ul>
   <li class="post-copyright-author">
-      <strong>Post author:  </strong>SUPER
+      <strong>本文作者： </strong>SUPER
   </li>
   <li class="post-copyright-link">
-      <strong>Post link: </strong>
-      <a href="https://superpung.com/data-structures-experiment-11/" title="还不知道 Prim 和 Kruskal 算法？">https://superpung.com/data-structures-experiment-11/</a>
+      <strong>本文链接：</strong>
+      <a href="https://superpung.com/data-structures-experiment-11/" title="Prim 和 Kruskal 算法">https://superpung.com/data-structures-experiment-11/</a>
   </li>
   <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
 
-          <div class="followme">
-  <span>Welcome to my other publishing channels</span>
-
-  <div class="social-list">
-
-      <div class="social-item">
-          <a target="_blank" class="social-link" href="https://t.me/+XbrKCtXLtDBlYTA1">
-            <span class="icon">
-              <i class="fab fa-telegram"></i>
-            </span>
-
-            <span class="label">Telegram</span>
-          </a>
-      </div>
-
-      <div class="social-item">
-          <span class="social-link">
-            <span class="icon">
-              <i class="fab fa-weixin"></i>
-            </span>
-
-            <span class="label">WeChat</span>
-          </span>
-
-          <img class="social-item-img" src="https://i0.hdslb.com/bfs/album/d9137e1e399c83687fddf34c9aa2cef485d03afd.png">
-      </div>
-
-      <div class="social-item">
-          <a target="_blank" class="social-link" href="/atom.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-
-            <span class="label">RSS</span>
-          </a>
-      </div>
-  </div>
-</div>
-
           <div class="post-tags">
-              <a href="/tags/Experiments/" rel="tag"><i class="fa fa-tag"></i> Experiments</a>
-              <a href="/tags/Data-Structures/" rel="tag"><i class="fa fa-tag"></i> Data Structures</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AE%9E%E9%AA%8C/" rel="tag"><i class="fa fa-tag"></i> 数据结构实验</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/data-structures-experiment-10/" rel="prev" title="还不会存储「有向图」？">
-                  <i class="fa fa-chevron-left"></i> 还不会存储「有向图」？
+                <a href="/data-structures-experiment-10/" rel="prev" title="有向图">
+                  <i class="fa fa-chevron-left"></i> 有向图
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/data-structures-experiment-12/" rel="next" title="还不会「拓扑排序」？">
-                  还不会「拓扑排序」？ <i class="fa fa-chevron-right"></i>
+                <a href="/data-structures-experiment-12/" rel="next" title="拓扑排序">
+                  拓扑排序 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -510,7 +423,27 @@
 
 
 
-    <div class="comments utterances-container"></div>
+    
+  
+  <div class="comments">
+    <script src="https://giscus.app/client.js"
+        data-repo="superpung/blog" 
+        data-repo-id="MDEwOlJlcG9zaXRvcnkzMzk5Mzk2MjI=" 
+        data-category="General"
+        data-category-id="MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyOTc3ODM1"
+        data-mapping="title" 
+        data-reactions-enabled="1" 
+        data-emit-metadata="0" 
+        data-theme="https://gw.alipayobjects.com/os/k/font8/comment.css"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        data-input-position="bottom"
+        data-loading="lazy"
+        async>
+    </script>
+  </div>
+  
+  
 </div>
   </main>
 
@@ -526,26 +459,12 @@
   </span>
   <span class="author" itemprop="copyrightHolder">SUPER</span>
 </div>
-<div class="wordcount">
-  <span class="post-meta-item">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-chart-line"></i>
-    </span>
-    <span title="Word count total">696k</span>
-  </span>
-  <span class="post-meta-item">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="Reading time total">10:33</span>
-  </span>
-</div>
 <div class="busuanzi-count">
     <span class="post-meta-item" id="busuanzi_container_site_uv">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
       </span>
-      <span class="site-uv" title="Total Visitors">
+      <span class="site-uv" title="总访客量">
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
@@ -553,20 +472,20 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
       </span>
-      <span class="site-pv" title="Total Views">
+      <span class="site-pv" title="总访问量">
         <span id="busuanzi_value_site_pv"></span>
       </span>
     </span>
-</div><span id="jinrishici-sentence">正在加载今日诗词....</span>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-
+</div><div class="footer-menu">
+    <a href="/archives/">文章归档</a> · <a href="/tags/">文章标签</a> · <a href="/about/">关于本站</a> · <a href="/sitemap.xml">站点地图</a> · <a href=https://repus.me target="_blank">关于作者</a>
+</div>
 
 
     </div>
   </footer>
 
   
-  <div class="back-to-top" role="button" aria-label="Back to top">
+  <div class="back-to-top" role="button" aria-label="返回顶部">
     <i class="fa fa-arrow-up fa-lg"></i>
     <span>0%</span>
   </div>
@@ -578,32 +497,30 @@
 
 
   
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.1/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
-<script src="/js/third-party/search/local-search.js"></script>
+  
 
 
-
+  <script src="/js/third-party/fancybox.js"></script>
 
   <script src="/js/third-party/pace.js"></script>
 
   
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
 <script src="/js/third-party/math/mathjax.js"></script>
-
-
-<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"superpung/blog","issue_term":"pathname","theme":"preferred-color-scheme"}</script>
-<script src="/js/third-party/comments/utterances.js"></script>
 
 
 
