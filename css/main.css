@@ -2657,15 +2657,15 @@ mjx-container[display='true'] + br {
 .posts-expand .post-meta-container time {
   border-bottom: none;
 }
-.post-meta-item {
-  white-space: nowrap;
-}
 .post-meta-item a {
   color: inherit;
   border-bottom: none;
 }
 .post-meta-item a:hover {
   color: var(--text-color);
+}
+.post-meta-item {
+  white-space: nowrap;
 }
 /* ---------------------------------------------------------------*/
 /* Radius
