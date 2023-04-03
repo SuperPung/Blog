@@ -875,6 +875,15 @@
   </url>
   
   <url>
+    <loc>https://superpung.com/new-ui/</loc>
+    
+    <lastmod>2023-04-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://superpung.com/tags/</loc>
     
     <lastmod>2020-03-26</lastmod>
