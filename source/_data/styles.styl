@@ -1,0 +1,248 @@
+/* ---------------------------------------------------------------*/
+/* Background
+/* ---------------------------------------------------------------*/
+
+.header, .main-inner {
+  margin-top: 10px;
+
+  +mobile() {
+    margin-top: 0;
+  }
+}
+
+/* ---------------------------------------------------------------*/
+/* Sidebar
+/* ---------------------------------------------------------------*/
+
+.site-brand-container {
+  background: url($site-brand-bg-url);
+  background-position: 70% 20%;
+  background-size: cover;
+}
+
+/* ---------------------------------------------------------------*/
+/* Post Info
+/* ---------------------------------------------------------------*/
+
+.posts-expand .post-title {
+  font-weight: bold;
+
+  +mobile() {
+    // margin-top: 10px;
+  }
+}
+
+.index .post-title,
+.post .post-title {
+  text-align: left;
+  border-left: 8px solid;
+  border-image: $mygradient 1;
+  padding-left: 10px;
+}
+
+.index .post-meta,
+.post .post-meta {
+  justify-content: left;
+}
+
+.posts-expand .post-header {
+  margin-bottom: 30px;
+}
+
+.posts-expand .post-meta-container {
+  time {
+    border-bottom: none;
+  }
+}
+
+.post-meta-item a {
+  color: inherit;
+  border-bottom: none;
+
+  &:hover {
+    color: var(--text-color);
+  }
+}
+
+.post-meta-item {
+  white-space: nowrap; // 防止窄屏换行
+}
+
+/* ---------------------------------------------------------------*/
+/* Radius
+/* ---------------------------------------------------------------*/
+
+.header, .sidebar-inner {
+  border-radius: $myradius;
+}
+
+.sub-menu, .post-block {
+  border-radius: $myradius !important;
+}
+
+.site-brand-container {
+  border-radius: $myradius $myradius 0 0;
+
+  +mobile() {
+    border-radius: 0 0 $myradius $myradius;
+  }
+}
+
+.back-to-top {
+  border-radius: 1em;
+
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+
+.pagination {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.pagination .prev,
+.pagination .next,
+.pagination .page-number {
+  border: none;
+  border-radius: $myradius;
+}
+
+/* ---------------------------------------------------------------*/
+/* Sidebar TOC
+/* ---------------------------------------------------------------*/
+
+.sidebar-toc-active .sidebar-nav-toc {
+  border-bottom: none;
+  color: var(--text-color);
+  font-weight: bold;
+
+  &:hover {
+    color: var(--text-color);
+  }
+}
+
+.sidebar-nav li.sidebar-nav-overview {
+  display: none;
+}
+
+.post-toc .nav a {
+  border-bottom: none;
+}
+
+.post-toc .nav .active > a,
+.sub-menu .menu-item-active,
+.sub-menu .menu-item a:hover {
+  border-bottom: none;
+  color: var(--link-hover-color);
+}
+
+/* ---------------------------------------------------------------*/
+/* Post Content
+/* ---------------------------------------------------------------*/
+
+.post-body a, .post-footer a, .footer a, .post-meta-item a {
+  transition: all .2s;
+}
+
+.post-tags {
+  text-align: left;
+
+  & a {
+    border-bottom: none;
+  }
+}
+
+/* ---------------------------------------------------------------*/
+/* Comments
+/* ---------------------------------------------------------------*/
+
+.comments {
+  margin-top: 20px;
+  background: var(--content-bg-color);
+  border-radius: $myradius;
+}
+
+/* ---------------------------------------------------------------*/
+/* Footer
+/* ---------------------------------------------------------------*/
+
+.footer {
+//   margin-top: 50px;
+//   padding-bottom: 40px;
+//   color: var(--blockquote-color);
+}
+
+.footer a {
+  color: inherit;
+  border-bottom:none;
+
+  &:hover {
+    color: var(--text-color);
+  }
+}
+
+// body {
+//     background:url(https://super-bucket1.oss-cn-beijing.aliyuncs.com/bg.png);//图片路径
+//     background-image: linear-gradient(90deg, #FDF5EC 0%, #FCF2EE 15%, #FBEEF2 30%, #F6F0F6 44%, #F1F0F7 58%, #ECF3F7 72%, #EDF7F5 86%, #F2F8F3 100%)
+//     background-repeat: no-repeat;//是否重复平铺
+//     background-attachment: fixed;//是否随着网页上下滚动而滚动，fixed为固定
+//     background-position: 50% 50%;//图片位置
+//     background-size: cover;//图片展示大小
+//     -webkit-background-size: cover;
+//     -o-background-size: cover;
+//     -moz-background-size: cover;
+//     -ms-background-size: cover;
+//     opacity: 0.9;
+//     footer > div > div {
+//         color: #ffffff;//底部文字颜色
+//     }
+// }
+
+// 修改网站头部颜色
+// .site-brand-container {
+// background: linear-gradient(to right, #1d2b64, #f8cdda);
+//     background: linear-gradient(90deg, rgba(247,149,51,0.101961) 0, rgba(243,112,85,0.101961) 15%, rgba(239,78,123,0.101961) 30%, rgba(161,102,171,0.101961) 44%, rgba(80,115,184,0.101961) 58%, rgba(16,152,173,0.101961) 72%, rgba(7,179,155,0.101961) 86%, rgba(109,186,130,0.101961) 100%);
+// }
+
+// 站点名字体
+// .site-title {
+//     color: #666;
+//     font-family: $font-family-title;
+//     font-size: 2em;
+//     font-weight: 900;
+// }
+
+// .site-subtitle {
+//     color: #aaa;
+//     font-family: $font-family-subtitle;
+// }
+
+// post-引用与 note 字体
+// blockquote p, .post-body .note {
+//   font-family: $font-family-quote;
+// }
+
+// 修改选中字符的颜色
+// BELLA #DB7D74
+// 原来文字是#f7f7f7
+/* webkit, opera, IE9 */
+// ::selection {
+//     background: #f8cdda;
+//     color: #1d2b64;
+// }
+/* firefox */
+// ::-moz-selection {
+//     background: #f8cdda;
+//     color: #1d2b64;
+// }
+
+
+// 页面最顶部的横线
+.headband {
+    display: none;
+    // height: 1.5px;
+    // background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+}
+

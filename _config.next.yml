@@ -1,0 +1,301 @@
+# https://github.com/next-theme/hexo-theme-next/blob/master/_config.yml
+
+# ---------------------------------------------------------------
+# Theme Core Configuration Settings
+# See: https://theme-next.js.org/docs/theme-settings/
+# ---------------------------------------------------------------
+
+minify: true
+
+custom_file_path:
+  head: source/_data/head.njk
+  # header: source/_data/header.njk
+  # sidebar: source/_data/sidebar.njk
+  # postMeta: source/_data/post-meta.njk
+  # postBodyEnd: source/_data/post-body-end.njk
+  footer: source/_data/footer.njk
+  # bodyEnd: source/_data/body-end.njk
+  variable: source/_data/variables.styl
+  # mixin: source/_data/mixins.styl
+  style: source/_data/styles.styl
+
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
+
+scheme: Gemini
+darkmode: auto
+
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+favicon:
+  small: /assets/images/favicon-16x16-next.png
+  medium: /assets/images/favicon-32x32-next.png
+  apple_touch_icon: /assets/images/apple-touch-icon-next.png
+  safari_pinned_tab: /assets/images/logo.svg
+  # android_manifest: /assets/manifest.json
+
+creative_commons:
+  post: true
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+
+menu:
+  life: /life/ || fa fa-mountain-sun # 生活：记录
+  view: /view/ || fa fa-eye # 观点：评价
+  tech: /tech/ || fa fa-code # 技术：代码
+  note: /note/ || fa fa-book # 笔记：课程
+  friends: /links/ || fas fa-handshake # 友链
+  forum: /forum/ || fa fa-comment # 留言
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# See: https://theme-next.js.org/docs/theme-settings/sidebar
+# ---------------------------------------------------------------
+
+avatar:
+  url: /assets/images/avatar.jpg
+  rounded: true
+
+site_state: false
+
+social:
+  GitHub: https://github.com/superpung || fab fa-github
+  E-Mail: mailto:support@superpung.com || fa fa-envelope
+  Twitter: https://twitter.com/repusx || fab fa-twitter
+  Instagram: https://instagram.com/repusx || fab fa-instagram
+  RSS: /atom.xml || fa fa-rss
+
+social_icons:
+  icons_only: true
+
+toc:
+  number: false
+  wrap: true
+
+# ---------------------------------------------------------------
+# Footer Settings
+# See: https://theme-next.js.org/docs/theme-settings/footer
+# ---------------------------------------------------------------
+
+footer:
+  since: 2020
+
+  icon:
+    name: fas fa-bolt
+    animated: true
+    color: '#b12'
+
+  copyright: SUPER # Sᴜᴘᴇʀ Lᴇᴇ
+
+  powered: false
+
+# ---------------------------------------------------------------
+# Post Settings
+# See: https://theme-next.js.org/docs/theme-settings/posts
+# ---------------------------------------------------------------
+
+read_more_btn: false
+
+post_meta:
+  item_text: false
+  updated_at:
+    enable: false
+
+symbols_count_time:
+  separated_meta: false
+
+tag_icon: true
+
+reward_settings:
+  enable: false
+
+# TODO: add a sponsor page to remove this
+# reward:
+  # wechatpay: https://i0.hdslb.com/bfs/album/d5f382c57eebf6b471b86a8d9788c53423227bf7.jpg
+  # alipay: https://i0.hdslb.com/bfs/album/f7e7da9a8b950e3f17c1447e7f9a35586054a515.png
+
+# follow_me:
+  # Twitter: https://twitter.com/repusx || fab fa-twitter
+  # Telegram: https://t.me/+XbrKCtXLtDBlYTA1 || fab fa-telegram
+  # WeChat: https://i0.hdslb.com/bfs/album/d9137e1e399c83687fddf34c9aa2cef485d03afd.png || fab fa-weixin
+  # RSS: /atom.xml || fa fa-rss
+
+# ---------------------------------------------------------------
+# Misc Theme Settings
+# See: https://theme-next.js.org/docs/theme-settings/miscellaneous
+# ---------------------------------------------------------------
+
+preconnect: true
+
+codeblock:
+  theme:
+    light: github
+    dark: github-dark
+  copy_button:
+    enable: true
+    # Available values: default | flat | mac
+    style: flat
+
+reading_progress:
+  enable: true
+  height: 1px
+
+# ---------------------------------------------------------------
+# Font Settings
+# ---------------------------------------------------------------
+# Find fonts on Google Fonts (https://fonts.google.com)
+# All fonts set here will have the following styles:
+#   light | light italic | normal | normal italic | bold | bold italic
+# Be aware that setting too much fonts will cause site running slowly
+# ---------------------------------------------------------------
+# Web Safe fonts are recommended for `global` (and `title`):
+# Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
+# ---------------------------------------------------------------
+
+font:
+  enable: true
+
+  # Global font settings used for all elements inside <body>.
+  global:
+    external: false
+    family: LXGW WenKai Lite
+
+  # Font settings for site title (.site-title).
+  title:
+    external: false
+
+  # Font settings for headlines (<h1> to <h6>).
+  headings:
+    external: false
+
+  # Font settings for <code> and code blocks.
+  codes:
+    external: false
+    family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace
+
+# ---------------------------------------------------------------
+# SEO Settings
+# See: https://theme-next.js.org/docs/theme-settings/seo
+# ---------------------------------------------------------------
+
+index_with_subtitle: true
+
+# https://ziyuan.baidu.com/site
+baidu_site_verification: codeva-QE6cs67fKZ
+
+# ---------------------------------------------------------------
+# Tags Settings
+# See: https://theme-next.js.org/docs/tag-plugins/
+# ---------------------------------------------------------------
+
+note:
+  icons: true
+
+# ---------------------------------------------------------------
+# Third Party Plugins & Services Settings
+# See: https://theme-next.js.org/docs/third-party-services/
+# More plugins: https://github.com/next-theme/awesome-next
+# You may need to install the corresponding dependency packages
+# ---------------------------------------------------------------
+
+math:
+  mathjax:
+    enable: true
+
+# ---------------------------------------------------------------
+# External Libraries
+# See: https://theme-next.js.org/docs/third-party-services/external-libraries
+# ---------------------------------------------------------------
+
+pjax: true
+fancybox: true
+lazyload: true
+
+# ---------------------------------------------------------------
+# Animation Settings
+# ---------------------------------------------------------------
+
+motion:
+  enable: false
+
+pace:
+  enable: true
+
+# ---------------------------------------------------------------
+# Comments Settings
+# See: https://theme-next.js.org/docs/third-party-services/comments
+# ---------------------------------------------------------------
+
+# https://github.com/next-theme/hexo-next-giscus
+giscus:
+  enable: true
+  repo: superpung/blog
+  repo_id: MDEwOlJlcG9zaXRvcnkzMzk5Mzk2MjI=
+  category: General
+  category_id: MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyOTc3ODM1
+  mapping: title
+  reactions_enabled: 1
+  emit_metadata: 0
+  # TODO: use selfhost css
+  theme: https://gw.alipayobjects.com/os/k/font8/comment.css
+  lang: zh-CN
+  input_position: bottom
+  loading: lazy
+
+# ---------------------------------------------------------------
+# Statistics and Analytics
+# See: https://theme-next.js.org/docs/third-party-services/statistics-and-analytics
+# ---------------------------------------------------------------
+
+# https://analytics.google.com
+google_analytics:
+  tracking_id: UA-217297346-1
+
+# https://tongji.baidu.com
+baidu_analytics: 28e58f6349989ff6c10e095854dabae6
+
+# https://clarity.microsoft.com/
+clarity_analytics: fhbczexkkr # <project_id>
+
+# https://matomo.org/
+matomo:
+  enable: true
+  server_url: https://super.matomo.cloud/ # https://www.example.com/
+  site_id: 1 # <your site id>
+
+# https://umami.is/
+umami:
+  enable: true
+  script_url: https://analytics.umami.is/script.js # https://umami.example.com/script.js
+  website_id: 6668f6e5-ac77-4a25-af25-c563ff187c3c # <your website id>
+
+# http://ibruce.info/2015/04/04/busuanzi/
+busuanzi_count:
+  enable: true
+
+# ---------------------------------------------------------------
+# CDN Settings
+# See: https://theme-next.js.org/docs/advanced-settings/vendors
+# ---------------------------------------------------------------
+
+vendors:
+  # The CDN provider of NexT internal scripts.
+  # Available values: local | jsdelivr | unpkg | cdnjs | custom
+  # Warning: If you are using the latest master branch of NexT, please set `internal: local`
+  internal: local
+  # The default CDN provider of third-party plugins.
+  # Available values: local | jsdelivr | unpkg | cdnjs | custom
+  # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
+  plugins: cdnjs
+  # Custom CDN URL
+  # For example:
+  # custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
+  # custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
+  custom_cdn_url:
+
+images: /assets/images/
