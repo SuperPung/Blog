@@ -16,7 +16,7 @@ tags: [博客配置, Hexo, Netlify]
 
 {% note info %}
 
-本文的操作是在已经搭建好 GitHub Pages 博客的基础之上的，如果你还没有搭建博客，不妨看一下[这篇文章](https://superpung.com/blog-config-0/)。
+本文的操作是在已经搭建好 GitHub Pages 博客的基础之上的，如果你还没有搭建博客，不妨看一下[这篇文章](/blog-config-0)。
 
 {% endnote %}
 

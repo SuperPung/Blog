@@ -27,7 +27,7 @@ Data Structures Experiment #12 - 完成图形类中拓扑排序的算法
 
 # 0x00 数据域封装
 
-与[#10](https://superpung.com/data-structures-experiment-10/)基本相同。
+与[#10](/data-structures-experiment-10)基本相同。
 
 增加了`inDegree`数组以存放各顶点入度，`result_topology`数组以存放拓扑排序生成的序列。
 
@@ -69,7 +69,7 @@ Graph::Graph(int max_v){
 
 # 0x02 addedge
 
-与[#10](https://superpung.com/data-structures-experiment-10/)基本相同。
+与[#10](/data-structures-experiment-10)基本相同。
 
 增加终点的入度。
 

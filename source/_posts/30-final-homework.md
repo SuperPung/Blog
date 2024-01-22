@@ -18,8 +18,8 @@ Final Homework - 攻击+拆弹+分析
 
 建议提前阅读：
 
-- [Attack Lab](https://superpung.com/attack-lab/)
-- [Bomb Lab](https://superpung.com/bomb-lab/)
+- [Attack Lab](/attack-lab)
+- [Bomb Lab](/bomb-lab)
 
 并准备好实验环境，不要出现下面这种情况。
 
@@ -58,7 +58,7 @@ Final Homework - 攻击+拆弹+分析
 实验材料：
 
 - `exam`：实验目标，需要进行破解的程序
-- `hex2raw`：将格式化的十六进制文本转换成ascii码（使用方法见[Attack Lab](https://superpung.com/attack-lab/)）
+- `hex2raw`：将格式化的十六进制文本转换成ascii码（使用方法见[Attack Lab](/attack-lab)）
 
 首先使用`objdump`反汇编`exam`：
 
@@ -163,7 +163,7 @@ void entrance(int cookie)
 
 可以看出，`COOKIE`值就是`0xf5f9acdf`。*（为什么会有人把它当作地址？）*
 
-*这波操作和Attack Lab的`Level 2`极其相似，所以不过多解释，可以再复习一遍[Attack Lab](https://superpung.com/attack-lab/)。*
+*这波操作和Attack Lab的`Level 2`极其相似，所以不过多解释，可以再复习一遍[Attack Lab](/attack-lab)。*
 
 ---
 
@@ -290,7 +290,7 @@ Ohh! You have found the entrance.
 
 # 任务二——拆弹
 
-和Bomb Lab极其相似，细节不再赘述，可以再复习一遍[Bomb Lab](https://superpung.com/bomb-lab/)。
+和Bomb Lab极其相似，细节不再赘述，可以再复习一遍[Bomb Lab](/bomb-lab)。
 
 > 关于寄存器的常识：
 >

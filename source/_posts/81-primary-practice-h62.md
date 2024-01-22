@@ -18,7 +18,7 @@ Primary Practice h62
 
 开始理解的时候感觉很困难，但实际上就是一个文件操作的实验，套了一个 socket 的壳。
 
-和 [h60](https://superpung.com/primary-practice-h60) 类似，请确保你已经理解 h60。
+和 [h60](/primary-practice-h60) 类似，请确保你已经理解 h60。
 
 先来看一下目录结构：
 

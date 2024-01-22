@@ -11,7 +11,7 @@ mathjax: true
 
 <!--more-->
 
-具体算法参见[数据结构实验](https://superpung.com/data-structures-experiments/)。
+具体算法参见[数据结构实验](/data-structures-experiments)。
 
 # 第1章 绪论
 
@@ -1488,7 +1488,7 @@ Status CopyGList(GList &T, GList L) {
 3. 设计电文总长最短的二进制前缀编码即为以n种字符出现的频率作权，设计一棵赫夫曼树的问题，由此得到的二进制前缀编码便称为**赫夫曼编码**。
 4. 赫夫曼树中没有度为1的结点，这类树又称严格的（strict，正则的）二叉树。
 5. 一棵有n个叶子结点的赫夫曼树共有2n-1个结点，可以存储在一个大小为2n-1的一维数组中。
-6. 赫夫曼树具体算法请走[传送门](https://superpung.com/data-structures-experiment-9/)。
+6. 赫夫曼树具体算法请走[传送门](/data-structures-experiment-9)。
 
 ## 6.7 回溯法与树的遍历
 
@@ -1787,7 +1787,7 @@ Status CopyGList(GList &T, GList L) {
 
      至多对e条边各扫描一次，每次选择最小权的边仅需O(loge)的时间（前提以“堆”存放，且第一次需O(e)）；每个连通分量看成一个等价类，加边则相当于求等价类，仅需O(eloge)时间（前提以MFSet类型来描述），故时间复杂度为O(eloge)，和顶点数无关，适合于求边稀疏的网的最小生成树。
 
-   具体算法请走[传送门](https://superpung.com/data-structures-experiment-11/)。
+   具体算法请走[传送门](/data-structures-experiment-11)。
 
 ### 7.4.4 关节点和重连通分量
 
@@ -1851,7 +1851,7 @@ Status CopyGList(GList &T, GList L) {
    - 从图中删除该顶点和所有以它为尾的弧；
    - 重复上述两步，直至全部顶点均已输出，或者当前图中不存在无前驱的顶点为止（这种情况说明有向图中存在环）。
 
-6. 具体算法请走[传送门](https://superpung.com/data-structures-experiment-12/)。
+6. 具体算法请走[传送门](/data-structures-experiment-12)。
 
 7. 拓扑排序总的时间复杂度为O(n+e)。
 
@@ -1912,7 +1912,7 @@ Status CopyGList(GList &T, GList L) {
 
 解决单源点的最短路径问题——迪杰斯特拉（Dijkstra）算法：
 
-具体算法请走[传送门](https://superpung.com/data-structures-experiment-13/)。
+具体算法请走[传送门](/data-structures-experiment-13)。
 
 ### 7.6.2 每一对顶点之间的最短路径
 
@@ -2286,7 +2286,7 @@ Status CopyGList(GList &T, GList L) {
    - 随机探测再散列、二次探测再散列和再哈希：$S_{nr}\thickapprox -\frac{1}{\alpha}ln(1-\alpha)$
    - 链地址法：$S_{nc}\thickapprox 1+\frac{\alpha}{2}$
 6. 哈希表的ASL是$\alpha$的函数，而不是n的函数。所以，不管n多大，我们总可以选择一个合适的装填因子，以便将ASL限定在一个范围内。
-7. 具体算法请走[传送门](https://superpung.com/data-structures-experiment-15/)。
+7. 具体算法请走[传送门](/data-structures-experiment-15)。
 
 # 第10章 内部排序
 
@@ -2428,7 +2428,7 @@ Status CopyGList(GList &T, GList L) {
 2. 在起泡排序的过程中，关键字较小的记录好比水中气泡逐趟向上漂浮，而关键字较大的记录好比石块往下沉，每一趟有一块“最大”的石头沉到水底。
 3. 起泡排序的时间复杂度为O($n^{2}$)，同时也是一个稳定的排序方法。
 4. **快速排序（Quick Sort）**是对起泡排序的一种改进，它的基本思想是，选取一个对象作为**枢轴**（pivot，支点、基准），将对象序列分为比它大和比它小的两部分，再继续对子序列重复上述过程，直到所有对象都排在相应位置上。
-5. 具体算法请走[传送门](https://superpung.com/data-structures-experiment-16/)。
+5. 具体算法请走[传送门](/data-structures-experiment-16)。
 6. 快速排序在所有同数量级O(nlogn)的排序方法中是平均性能最好的，但若初始记录序列按关键字有序或基本有序时，快排退化为起泡排序，时间复杂度为O($n^{2}$)。
 7. 快速排序是一种不稳定的排序方法。
 
@@ -2462,14 +2462,14 @@ Status CopyGList(GList &T, GList L) {
 ### 10.4.3 堆排序
 
 1. **堆排序（Heap Sort）**只需要一个记录大小的辅助空间，每个待排序的记录仅占有一个存储空间。
-2. 具体算法请走[传送门](https://superpung.com/data-structures-experiment-16/)。
+2. 具体算法请走[传送门](/data-structures-experiment-16)。
 3. 堆排序在最坏的情况下，时间复杂度也为O(nlogn)，同时堆排序是一个不稳定的排序方法。
 
 ## 10.5 归并排序
 
 1. **归并**是将两个或两个以上的有序表组合成一个新的有序表。
 2. 可以将n个记录看成是n个有序的子序列，然后两两归并，得到$\lceil \frac{n}{2}\rceil$个长度为2或1的有序子序列，再重复两两归并，直至得到一个长度为n的有序序列为止，这种排序方法称为**2-路归并排序**。
-3. 具体算法请走[传送门](https://superpung.com/data-structures-experiment-17/)。
+3. 具体算法请走[传送门](/data-structures-experiment-17)。
 4. 实现归并排序需和待排记录等数量的辅助空间，其时间复杂度为O(nlogn)。归并排序是一个稳定的排序方法。
 
 ## 10.6 基数排序
@@ -2478,7 +2478,7 @@ Status CopyGList(GList &T, GList L) {
 
 ### 10.6.1 多关键字的排序
 
-具体算法请走[传送门](https://superpung.com/data-structures-experiment-17/)。
+具体算法请走[传送门](/data-structures-experiment-17)。
 
 ### 10.6.2 链式基数排序
 

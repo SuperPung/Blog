@@ -10,7 +10,7 @@ GitHub&Hexo&NexT Blog 配置过程记录（下）：其他配置及问题
 
 <!--more-->
 
-> 在 [上一篇文章 ](https://superpung.com/blog-config-0/)中，已经搭建好了博客网站，这篇文章就来记录一下玩博客一年多来遇到的问题吧。
+> 在 [上一篇文章 ](/blog-config-0)中，已经搭建好了博客网站，这篇文章就来记录一下玩博客一年多来遇到的问题吧。
 >
 > 下文添加的功能，建议添加完成后通过 `hexo g && hexo s` 本地预览。
 >
@@ -91,7 +91,7 @@ GitHub&Hexo&NexT Blog 配置过程记录（下）：其他配置及问题
 
 # 添加点击特效
 
-具体操作参见[这篇文章](https://superpung.com/blog-click-effects/)。
+具体操作参见[这篇文章](/blog-click-effects)。
 
 # 添加 Safari 彩虹效果
 
@@ -178,7 +178,7 @@ safari_rainbow: true
 
 # 添加文章置顶
 
-具体操作参见[这篇文章](https://superpung.com/blog-top-article/)。
+具体操作参见[这篇文章](/blog-top-article)。
 
 # 添加文章加密
 
@@ -269,11 +269,11 @@ valine:
 
 # 添加看板娘
 
-具体操作参见[这篇文章](https://superpung.com/blog-yuru-chara/)。
+具体操作参见[这篇文章](/blog-yuru-chara)。
 
 # 写文章
 
-具体内容参见[这篇文章](https://superpung.com/markdown/)。
+具体内容参见[这篇文章](/markdown)。
 
 # 插入音乐及视频
 
@@ -309,7 +309,7 @@ valine:
 
 # 插入图片遇到的问题
 
-具体操作参见[这篇文章](https://superpung.com/blog-insert-images/)。
+具体操作参见[这篇文章](/blog-insert-images)。
 
 # 写在最后
 

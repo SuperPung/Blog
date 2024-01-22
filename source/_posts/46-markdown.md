@@ -445,7 +445,7 @@ Markdown 列表有「无序列表」和「有序列表」，二者还可以结�
 
 **图床**
 
-关于为什么使用图床，请参见我的 [另一篇文章](https://superpung.com/blog-insert-images/)。
+关于为什么使用图床，请参见我的 [另一篇文章](/blog-insert-images)。
 
 **本地图片**
 

@@ -42,7 +42,7 @@ Primary Practice h61
 
 {% endnote %}
 
-和 [h53](https://superpung.com/primary-practice-h53) 问题类似，确保你已经理解 h53。
+和 [h53](/primary-practice-h53) 问题类似，确保你已经理解 h53。
 
 {% note warning %}
 

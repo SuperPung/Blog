@@ -29,7 +29,7 @@ Data Structures Experiment #11 - 完成最小生成树Prim算法和Kruskal算法
 
 # 0x01 数据域封装
 
-基本思路与[Experiment #10](https://superpung.com/data-structures-experiment-10/)类似。
+基本思路与[Experiment #10](/data-structures-experiment-10)类似。
 
 在边结点中，增加了“起点”`vAdj`，便于后续算法的实现。
 

@@ -25,7 +25,7 @@ Data Structures Experiment #13 - 完成Dijkstra算法，实现单源最短路的
 
 # 0x00 数据域封装
 
-与[#12](https://superpung.com/data-structures-experiment-12/)基本相同。
+与[#12](/data-structures-experiment-12)基本相同。
 
 增加了`inDegree`数组以存放各顶点入度，`dij`数组以存放dijkstra算法生成的单源最短路数组：`dij[i]`代表顶点`1`到顶点`i`的最短路权。
 
@@ -71,7 +71,7 @@ Graph::Graph(int max_v){
 
 # 0x02 addedge
 
-与[#12](https://superpung.com/data-structures-experiment-12/)基本相同。
+与[#12](/data-structures-experiment-12)基本相同。
 
 ```cpp
 void Graph::addedge(int s, int t, int w){
