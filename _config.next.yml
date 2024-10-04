@@ -271,7 +271,7 @@ matomo:
 # https://umami.is/
 umami:
   enable: true
-  script_url: https://analytics.umami.is/script.js # https://umami.example.com/script.js
+  script_url: https://cloud.umami.is/script.js # https://umami.example.com/script.js
   website_id: 6668f6e5-ac77-4a25-af25-c563ff187c3c # <your website id>
 
 # http://ibruce.info/2015/04/04/busuanzi/
