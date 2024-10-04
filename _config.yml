@@ -121,3 +121,9 @@ symbols_count_time:
   exclude_codeblock: true
   wpm: 300
   suffix: "mins."
+
+feed:
+  type:
+    - atom
+  template:
+    - ./source/_custom.xml
